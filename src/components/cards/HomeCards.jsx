@@ -1,5 +1,7 @@
 import React from 'react'
-import service from '../../assets/images/raya.png'
+import service from '../../assets/images/ourserive.png'
+import teamwork from '../../assets/images/team.png'
+import dailyService from '../../assets/images/DailyCare.png'
 import '../../assets/css/Style.css'
 export default function HomeCards() {
   return (
@@ -10,12 +12,13 @@ export default function HomeCards() {
       </div>
       <div className="card flex justify-center items-center w-[90%] bg-red-500">
       <h1 className='text-white'>رعاية مستمرة</h1>
-        <img src={service} alt='cardone'/>
+        <img src={dailyService} alt='cardone'/>
       </div>
       <div className="card flex justify-center items-center w-[90%] bg-red-500">
       <h1 className='text-white'>فرقنا الطبية</h1>
-        <img src={service} alt='cardone'/>
+        <img src={teamwork} alt='cardone'/>
       </div>
     </div>
   )
 }
+

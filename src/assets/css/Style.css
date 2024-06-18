@@ -23,15 +23,15 @@
 }
 .card{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 80%;
     background-color: #2E335B;
     border-radius: 25px;
     margin-bottom: 10px;
+    width: 93%;
 }
 .card img{
-    width:30%
+    width:30%;
 }
 .card h1{
     color:white;
