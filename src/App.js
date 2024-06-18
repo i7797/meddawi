@@ -1,10 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+
+import AppRouter from './AppRouter';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-     <h1>meddawi </h1>
+    <div className="grid col-span-12">
+      <BrowserRouter>
+         <AppRouter/>
+      </BrowserRouter>
+    
     </div>
   );
 }
