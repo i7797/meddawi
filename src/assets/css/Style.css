@@ -37,3 +37,9 @@
     color:white;
     font-size: 45px;
 }
+.EmergencyContainer{
+    background-image:url('../images/EmergencyBackground.png')
+}
+#outlined-basic{
+    text-align:left;
+}

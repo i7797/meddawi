@@ -8,7 +8,7 @@ function AppRouter() {
     <div>
      <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route index path='/emergency' element={<EmergencyContainer/>}/>
+        <Route  path='/emergency' element={<EmergencyContainer/>}/>
      </Routes>
     </div>
   )

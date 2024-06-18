@@ -68,7 +68,7 @@ function Drawer() {
         </Box>
       );
   return (
-    <div className='self-end'>
+    <div className='self-start'>
     {/* {['left', 'right', 'top', 'bottom'].map((anchor) => (
       <React.Fragment key={anchor}>
         <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
@@ -84,7 +84,7 @@ function Drawer() {
       </React.Fragment>
     ))} */}
 
-      <img src={setting}  className='px-3 py-3' alt="" onClick={toggleDrawer("left" , true)}/>
+      <img src={setting}  className='px-3 py-3' alt="" onClick={toggleDrawer("left" , true)} />
       <SwipeableDrawer
           anchor={"left"}
           open={state["left"]}
