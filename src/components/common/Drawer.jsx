@@ -14,6 +14,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LoginIcon from '@mui/icons-material/Login';
 import LanguageIcon from '@mui/icons-material/Language';
 import Typography from '@mui/material/Typography'; 
+import { Link } from 'react-router-dom';
 function Drawer() {
     const [state, setState] = React.useState({
         top: false,
@@ -45,9 +46,11 @@ function Drawer() {
               <ListItem key={text} disablePadding sx={{fontSize:50}}>
                 <ListItemButton>
                   <ListItemIcon>
-                    {index % 2 === 0 ? <HomeIcon sx={{color:'#272C52',fontSize:50}} /> : <AccountCircleIcon sx={{color:'#272C52',fontSize:50}}/>}
+                    {index % 2 === 0 ?<Link to='/'> <HomeIcon sx={{color:'#272C52',fontSize:50}} /> </Link> : <AccountCircleIcon sx={{color:'#272C52',fontSize:50}}/>}
                   </ListItemIcon>
-                  <ListItemText primary={<Typography sx={{ fontSize: '30px'}}>{text}</Typography>} />
+                  <ListItemText primary={<Typography sx={{ fontSize: '30px'}}>
+                    <Link to='/'>{text}</Link>
+                  </Typography>} />
                 </ListItemButton>
               </ListItem>
             ))}

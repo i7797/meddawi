@@ -12,7 +12,6 @@ export default function EmergencyContainer() {
         <NavBar/>
         <img src={ambulance} alt='ambulance' className='mt-[35px] mb-4'/>
         <EmergencyForm/>
-       
     </div>
   )
 }

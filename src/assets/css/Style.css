@@ -40,6 +40,7 @@
 .EmergencyContainer{
     background-image:url('../images/EmergencyBackground.png')
 }
-#outlined-basic{
-    text-align:left;
+.ToastContainer{
+    height:70%;
+   
 }

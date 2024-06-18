@@ -2,7 +2,9 @@ import React from 'react'
 import TextField from '@mui/material/TextField';
 import '../../assets/css/Style.css'
 import SendBtn from '../bottons/SendBtn';
+
 export default function EmergencyForm() {
+  
   return (
     <div className=' w-full h-[70%] flex flex-col items-center justify-start gap-[20px]'>
       <TextField
@@ -10,6 +12,7 @@ export default function EmergencyForm() {
       <TextField id="outlined-basic" className='w-[70%]' label="رقم الهاتف" variant="outlined" />
       <TextField  id="outlined-basic" className='w-[70%]' label="الحالة المرضية" variant="outlined" />
       <SendBtn/>
+      
     </div>
   )
 }
