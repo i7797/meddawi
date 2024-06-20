@@ -11,8 +11,7 @@ export default function Home() {
       <div className="navbar hidden">
       <NavBar />
       </div>
-      
-     <div className="content">
+     <div className="content flex flex-col-reverse h-[45%] w-[85%]">
      <div className='ImgBtn'>
       <p className='HomeText invisible'>أحنا هنا حتى نراعيك بعناية ومحبة</p>
       <EmergencyBotton />
@@ -23,3 +22,4 @@ export default function Home() {
     </div>
   )
 }
+
