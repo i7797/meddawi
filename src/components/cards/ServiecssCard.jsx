@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
  function ServiecssCard({ data }) {
   return (
     <div>
-                  <Link  to="/AskService">  <button className='bg-red-400 rounded-lg w-80 h-10 text-xs text-center	mt-8 text-white	'> طلب خدمه الرعاية المستمرة  </button>  </Link>
+       <Link  to="/askservice">  <button className='bg-red-400 rounded-lg w-80 h-10 text-xs text-center	mt-8 text-white	'> طلب خدمه الرعاية المستمرة  </button>  </Link>
 
        <div  className='   mt-28 '>    
             {data.map((item) => (
