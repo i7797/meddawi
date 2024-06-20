@@ -1,15 +1,13 @@
 
 import AppRouter from './AppRouter';
 import { BrowserRouter } from 'react-router-dom';
-
+import './assets/css/MediaQuery.css'
 function App() {
   return (
-    <div className="grid col-span-12">
-     
+    <div className="App grid col-span-12">
       <BrowserRouter>
          <AppRouter/>
       </BrowserRouter>
-    
     </div>
   );
 }
