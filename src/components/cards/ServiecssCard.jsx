@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
  function ServiecssCard({ data }) {
   return (
     <div>
-        <div>
-        {data.map((item) => (
-         <div className='gap-5 grid grid-cols-2 mt-5 '>
-            <div className='bg-slate-200 w-40 h-48 rounded-2xl  shadow-lg shadow-gray-500/30  '>
-          <div key={item.id} className='bg-slate-100 rounded-2xl w-28 h-24 mt-2 mr-5 ' >
-            <img className=' h-20 w-20 mt-6 mb-20  mr-4' src={item.image} />
-            <h2 className='mr-8 text-sm ' >{item.title}</h2>
-            <Link  to="/">  <button className='bg-red-300 rounded-sm w-20 mr-8 text-xs '> احجز هنا  </button>  </Link>
+       <div  className='   mt-28 '>    
+            {data.map((item) => (
+         <div className=' grid grid-cols-1 '>
+            <div className='bg-slate-200 w-80 h-72 rounded-2xl  mb-10 '>
+          <div key={item.id} className='bg-slate-100  w-40 h-40 mt-2 rounded-xl block ml-20' >
+            <img className=' ml-1  w-36 h-32 mt-10  ' src={item.image} />
+            <h2 className=' text-lg mt-10 text-center	' >{item.title}</h2>
+            <Link  to="/">  <button className='bg-red-300 rounded-sm w-20 mr-8 text-xs text-center	 ml-10'> احجز هنا  </button>  </Link>
 
           </div>
           </div>
