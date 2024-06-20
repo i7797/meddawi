@@ -1,0 +1,87 @@
+
+@media (min-width:1025px){
+    .App{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards{
+        display: none;
+    }
+    .HomeText{
+        color: black;
+        visibility: visible;
+        font-size: 65px;
+    }
+    .Home{
+        width: 100%;
+        height: 100%;
+        background-image: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* flex-direction: row-reverse; */
+    }
+    .nav{
+        background-color: white;
+    }
+   .items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .item{
+    background-color: white;
+    color: #181D3D;
+    font-size: 20px;
+    transition-delay: 0.3s;
+    transition-duration: 0.3s;
+   }
+   #active{
+    color:#CA5050;
+    font-weight: bold;
+   }
+
+   .item:hover{
+    background-color:#181D3D;
+    color:white;
+    cursor: pointer;
+   }
+    .LoginBtn {
+        
+        align-items: center;
+        display: flex;
+        justify-content: center; 
+    }
+    .LoginBtn .Btn{
+        background-color: #181D3D;
+        color: white;
+        padding: 10px;
+        border-radius: 16px;
+        font-size: 20px;
+    }
+    .content{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .HomeImage{
+        width:45%;
+        height:50%;
+    }
+
+
+    .ImgBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 46px;
+    }
+    .btn{
+        width: 50%;
+    }
+}
