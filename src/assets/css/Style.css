@@ -59,3 +59,11 @@
     background-image:url('../images/EmergencyBackground.png')
 
 }
+
+.div-service{
+    display: grid;
+    grid-column: 50% 50%;
+}
+.askcare{
+    background-image:url('../images/EmergencyBackground.png')
+}
