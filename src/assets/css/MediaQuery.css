@@ -88,4 +88,20 @@
     .btn{
         width: 50%;
     }
+    .EmergencyContainer{
+        width: 100vw;
+        height: 100%;
+        background-image: none;
+    }
+    .Drawer{
+        display:none;
+    }
+    .EmergencyContent{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
 }
