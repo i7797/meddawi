@@ -3,14 +3,19 @@ import service from '../../assets/images/ourserive.png'
 import teamwork from '../../assets/images/team.png'
 import dailyService from '../../assets/images/DailyCare.png'
 import '../../assets/css/Style.css'
+
 import { Link } from 'react-router-dom';
 export default function HomeCards() {
   return (
-    <div className='cards flex flex-col w-[95%] items-center justify-center'>
+  <div>
+    
+      <div className='cards flex flex-col w-[95%] items-center justify-center'>
+      <Link to={'/Service'}>
       <div className="card flex justify-center items-center w-[90%] bg-red-500">
       <h1 className='text-white'>خدماتنا</h1>
         <img src={service} alt='cardone'/>
       </div>
+      </Link>
       <div className="card flex justify-center items-center w-[90%] bg-red-500">
       <h1 className='text-white'>رعاية مستمرة</h1>
         <img src={dailyService} alt='cardone'/>
@@ -22,6 +27,7 @@ export default function HomeCards() {
       </div>
       </Link>
     </div>
+  </div>
   )
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import {TeamData} from  "../data/TeamData";
+import {TeamData} from  "../../data/TeamData";
 import NavBar from "../common/NavBar";
 import TeamCard from "../cards/TeamCards"
 
