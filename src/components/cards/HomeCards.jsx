@@ -10,7 +10,7 @@ export default function HomeCards() {
   <div>
     
       <div className='cards flex flex-col w-[95%] items-center justify-center'>
-      <Link to={'/Service'}>
+      <Link to={'/services'}>
       <div className="card flex justify-center items-center w-[90%] bg-red-500">
       <h1 className='text-white'>خدماتنا</h1>
         <img src={service} alt='cardone'/>

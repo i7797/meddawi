@@ -1,9 +1,9 @@
-import cannula from '../../assets/images/cannula.png';
-import sugar from '../../assets/images/sugar.png';
-import bloodPressure from '../../assets/images/blood-pressure.png';
-import injection from '../../assets/images/injection.png';
-import hand from '../../assets/images/hand.png';
-import suture from '../../assets/images/suture.png';
+import cannula from '../assets/images/cannula.png';
+import sugar from '../assets/images/sugar.png';
+import bloodPressure from '../assets/images/blood-pressure.png';
+import injection from '../assets/images/injection.png';
+import hand from '../assets/images/hand.png';
+import suture from '../assets/images/suture.png';
 
 
 export const ServicesData = [

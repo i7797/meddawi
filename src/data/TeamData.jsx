@@ -1,4 +1,4 @@
-import team from '../../assets/images/TeamWork.png'
+import team from '../assets/images/TeamWork.png'
 
 
 export const TeamData = [
