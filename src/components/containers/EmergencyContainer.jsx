@@ -3,7 +3,6 @@ import Drawer from '../common/Drawer'
 import NavBar from '../common/NavBar'
 import ambulance from '../../assets/images/ambulance.png'
 import EmergencyForm from '../InputForm/EmergencyForm'
-
 // import '../../assets/css/Style.css'
 export default function EmergencyContainer() {
   return (

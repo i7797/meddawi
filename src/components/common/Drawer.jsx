@@ -1,6 +1,7 @@
 import React from 'react'
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
@@ -71,20 +72,7 @@ function Drawer() {
       );
   return (
     <div className='self-start'>
-    {/* {['left', 'right', 'top', 'bottom'].map((anchor) => (
-      <React.Fragment key={anchor}>
-        <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-        <SwipeableDrawer
-          anchor={anchor}
-          open={state[anchor]}
-          onClose={toggleDrawer(anchor, false)}
-          onOpen={toggleDrawer(anchor, true)}
-        >
-            
-          {list(anchor)}
-        </SwipeableDrawer>
-      </React.Fragment>
-    ))} */}
+
 
       <img src={setting}  className='px-3 py-3' alt="" onClick={toggleDrawer("left" , true)} />
       <SwipeableDrawer
