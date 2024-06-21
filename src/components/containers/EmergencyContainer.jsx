@@ -8,15 +8,17 @@ import '../../assets/css/MediaQuery.css'
 // import '../../assets/css/Style.css'
 export default function EmergencyContainer() {
   return (
-    <div className="EmergencyContainer flex flex-col justify-start items-center w-screen h-screen">
-      <div className="Drawer">
+    <div className="EmergencyContainer flex flex-col justify-start items-center w-[100%] h-[screen]">
+      <div className="Drawer flex flex-col justify-center items-center w-[100%]">
       <Drawer className=' fill-white '/>
+       <NavBar/>
+       </div>
+      <div className="ImageFormEmergency">
+      <img src={ambulance} alt='ambulance' className='mt-[35px] mb-4'/>
+      <EmergencyForm/>
       </div>
-        
-        <NavBar/>
-        <img src={ambulance} alt='ambulance' className='mt-[35px] mb-4'/>
-        <EmergencyForm/>
       
     </div>
   )
 }
+
