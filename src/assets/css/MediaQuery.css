@@ -18,13 +18,14 @@
         font-size: 65px;
     }
     .Home{
-        width: 100%;
+        /* width: 100%;
         height: 100%;
-        background-image: none;
+        
         display: flex;
         justify-content: space-around;
         align-items: center;
-        /* flex-direction: row-reverse; */
+        flex-direction: row-reverse; */
+        background-image: none;
     }
     .nav{
         background-color: white;
@@ -67,11 +68,11 @@
     }
     .content{
         display: flex;
-        flex-direction: row-reverse;
+        /* flex-direction: row-reverse; */
     }
     .HomeImage{
-        width:45%;
-        height:50%;
+        /* width:45%;
+        height:50%; */
     }
 
 

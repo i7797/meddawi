@@ -16,7 +16,7 @@ function NavBar() {
         <li id='active' className='item  bg-[#181D3D] rounded-[25px] p-3 text-white  w-[100%]'>الصفحة الرئيسية</li>
         </Link>
       </ul>
-      <div className="Login hidden lg:block">
+      <div className="Login hidden lg:block lg:w-full">
       <LoginBotton/>
       </div>
     </div>
