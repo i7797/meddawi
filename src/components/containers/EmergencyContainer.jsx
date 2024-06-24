@@ -12,11 +12,11 @@ export default function EmergencyContainer() {
       <div className="drawer hidden">
       <Drawer className=' fill-white '/>
       </div>
-      <div className="navbar flex justify-center w-full mt-[60px]">
+      <div className="navbar flex justify-center w-full mt-[60px] lg:mt-0">
       <NavBar/>
       </div>
-      <div className="ImageFormEmergency w-[100%] flex flex-col items-center justify-center">
-      <img src={ambulance} alt='ambulance' className='mt-[35px] mb-4 w-[75%]'/>
+      <div className="ImageFormEmergency w-[100%] flex flex-col items-center justify-center lg:flex-row lg:w-full">
+      <img src={ambulance} alt='ambulance' className='mt-[35px] mb-4 w-[75%] lg:w-1/4 lg:h-[80%]'/>
       <EmergencyForm/>
       </div>
     </div>
