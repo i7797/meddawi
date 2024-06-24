@@ -8,7 +8,7 @@ function AskService() {
   return (
     <div className=" askservice flex flex-col justify-start items-center w-screen h-screen mb-40 ">
       <NavBar />
-      <img src={nurse} alt="ambulance" className="mt-20 mb-4 rounded-sm " />
+      <img src={nurse} alt="ambulance" className=" w-60 mt-24 mb-4 rounded-sm " />
       <AskServiceForm />
     </div>
   );
