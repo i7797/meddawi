@@ -13,8 +13,8 @@ export default function EmergencyContainer() {
       <Drawer className=' fill-white '/>
        <NavBar/>
        </div>
-      <div className="ImageFormEmergency">
-      <img src={ambulance} alt='ambulance' className='mt-[35px] mb-4'/>
+      <div className="ImageFormEmergency w-[100%] flex flex-col items-center justify-center">
+      <img src={ambulance} alt='ambulance' className='mt-[35px] mb-4 w-[75%]'/>
       <EmergencyForm/>
       </div>
       
