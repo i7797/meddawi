@@ -68,3 +68,11 @@
 .askcare{
     background-image:url('../images/EmergencyBackground.png')
 }
+.team-text{
+
+  
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: "----";
+    
+}
