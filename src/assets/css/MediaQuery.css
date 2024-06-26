@@ -100,4 +100,54 @@
         align-items: center;
         flex-direction: row-reverse;
     }
+
+
+    .team{
+ 
+        width: 100vw;
+        height: 100vh;
+        background-image: none;
+    }
+    .service{
+        width: 100vw;
+        height: 100vh;
+        background-image: none;
+    
+    }
+    .askservice{
+        width: 100vw;
+        height: 100vh;
+        background-image: none;
+    }
+    .askcare{
+        width: 100vw;
+        height: 100vh;
+        background-image: none;
+    }
+
+
+    
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2E335B;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    width: 93%;
+}
+.card img{
+    width:30%;
+}
+.card h1{
+    color:white;
+    font-size: 45px;
+}
+
+.cardService
+{
+    display: grid;
+    grid-template-columns: 33.3%  33.3% 33.3%;
+}
+
 }
