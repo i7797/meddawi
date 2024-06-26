@@ -148,6 +148,11 @@
 {
     display: grid;
     grid-template-columns: 33.3%  33.3% 33.3%;
+
 }
 
+.service-card{
+    background-color:   #2E335B;
+    width: 100vw;
+    height: 100vh;}
 }
