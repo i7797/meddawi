@@ -68,3 +68,20 @@
 .askcare{
     background-image:url('../images/EmergencyBackground.png')
 }
+.team-text{
+
+  
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: "----";
+    
+}
+.cardService
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.askcare{
+
+    width: 300px;
+}
