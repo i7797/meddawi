@@ -16,7 +16,7 @@ function Services() {
         <p>خدماتنا تشمل رعاية تمريضية محترفة ورعاية صحية مستمرة على مدار الساعة، مع استجابة سريعة <br/> وفعالة لحالات الطوارئ لضمان صحة وسلامة مرضانا في كل الأوقات.</p>
       </div>
    <div className="Servicecards flex w-full justify-center items-center">
-   <ServiecssCard data={ServicesData}/>
+    <ServiecssCard data={ServicesData}/>
    </div>
   
     </div>
