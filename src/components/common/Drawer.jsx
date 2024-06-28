@@ -46,10 +46,11 @@ function Drawer() {
               <ListItem key={text} disablePadding sx={{fontSize:50}}>
                 <ListItemButton>
                   <ListItemIcon>
-                    {index % 2 === 0 ?<Link to='/'> <HomeIcon sx={{color:'#272C52',fontSize:50}} /> </Link> : <AccountCircleIcon sx={{color:'#272C52',fontSize:50}}/>}
+                    {index % 2 === 0 ?<Link to='/'> <HomeIcon sx={{color:'#272C52',fontSize:50}} /> </Link> : <Link to='/profile'><AccountCircleIcon sx={{color:'#272C52',fontSize:50}}/></Link>}
                   </ListItemIcon>
                   <ListItemText primary={<Typography sx={{ fontSize: '30px'}}>
                     <Link to='/'>{text}</Link>
+                   
                   </Typography>} />
                 </ListItemButton>
               </ListItem>

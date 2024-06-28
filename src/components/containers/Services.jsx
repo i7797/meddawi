@@ -7,7 +7,7 @@ import '../../assets/css/MediaQuery.css'
 function Services() {
   return (
     <div className="service flex flex-col justify-start items-center w-screen h-screen lg:bg-none bg-[#181D3D]">
-      <div className="navbar lg:w-full">
+      <div className="navbar lg:w-full ">
         <NavBar/>
       </div>
       <div className="text text-white text-[25px] text-center flex flex-col justify-center items-center">
