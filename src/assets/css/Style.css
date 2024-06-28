@@ -85,3 +85,52 @@
 
     width: 300px;
 }
+
+.logout {
+    border-radius: 10px;
+    background-color: #7ba3d1;
+    
+   
+    margin-left: 40%;
+  }
+  
+  .login{
+    border-radius: 10px;
+    background-color: #466587;
+  }
+  
+  .label {
+    display: block;
+     
+    margin-bottom: 10px;
+    color: rgb(22, 52, 78);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .welcome{
+    color: rgb(33, 35, 37);
+    text-align: center;
+    
+    margin-top: 100px;
+  
+  }
+
+
+
+@media (max-width: 767px) {
+    .setting {
+        display: block;
+    }
+  
+  }
+  
+  /* Laptop screens (768px and up) */
+  @media (min-width: 768px) {
+    .setting {
+        display: none;
+    }
+    .card{
+        display: none;
+    }
+   
+  }
+  
