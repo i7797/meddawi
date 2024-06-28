@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
     <div className="service-card">
        <Link  to="/askservice">  <button className='bg-red-400 rounded-lg w-80 h-10 text-xs text-center	mt-8 ml-10 text-white hidden	 '> طلب خدمه الرعاية المستمرة  </button>  </Link>
 
-       <div  className='   mt-28 cardService lg:ml-40  '>    
+       <div  className='   mt-28 cardService lg:ml-20  '>    
             {data.map((item) => (
          <div className=' cardService '>
             <div className='bg-slate-200 w-40 h-60 rounded-2xl  mb-10 mr-5 ml-5 lg:w-80 lg:h-80 '>
