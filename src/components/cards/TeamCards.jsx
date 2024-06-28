@@ -11,15 +11,15 @@
   // }
   return (
     // <div className=" lg:w-full lg:h-full flex items-center justify-center">
-         <div className="Servicecards lg:w-[95%] lg:h-[70%] flex lg:gap-5 justify-center items-center lg:mt-10 flex-wrap">
+         <div className="Servicecards mt-[55px] gap-3 lg:w-[95%] lg:h-[70%] flex lg:gap-5 justify-center items-center mr-2 lg:mt-10 flex-wrap h-full w-full">
             {
               data.map((item)=>
                 (
-                  <div className="Servicecard group lg:rounded-[80px] lg:w-[12%] lg:flex  lg:h-full hover:w-[40%]  hover:h-full delay-150 duration-300 ease-in-out  justify-center items-center overflow-hidden " key={item.id} style={{backgroundColor:item.color}} >
-                     <div className="lg:h-[100%] lg:w-full  lg:rounded-[80px] overflow-hidden flex"> 
-                     <img src={item.image} className="transition-all duration-300 ease-in-out " />
+                  <div className="Servicecard group shadow-2xl rounded-2xl lg:rounded-[80px] lg:w-[12%] flex mr-5 lg:h-full hover:w-[40%] h-[25%] w-[90%] hover:h-full delay-150 duration-300 ease-in-out  justify-center items-center overflow-hidden bg-[#DFDFDF]" key={item.id}  >
+                     <div className="lg:h-[100%] lg:w-full  lg:rounded-[80px] overflow-hidden flex h-[75%] rounded-[150px] w-[45%] "> 
+                     <img src={item.image} className="transition-all duration-300 ease-in-out overflow-hidden" />
                      </div>
-                     <div className="group-hover:flex lg:hidden lg:h-full lg:w-full  flex-col justify-center items-center text-white" >
+                     <div className="group-hover:flex lg:hidden lg:h-full lg:w-full  flex-col justify-center items-center text-black text-[25px]" >
                       <h2>الاسم:{item.title}</h2>
                      <h2 >العمر:{item.age}</h2>
                      <h2 >سنوات الخبرة:{item.years}</h2>
