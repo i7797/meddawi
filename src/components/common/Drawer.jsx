@@ -8,14 +8,13 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import setting from '../Settings.svg'
 import HomeIcon from '@mui/icons-material/Home';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LoginIcon from '@mui/icons-material/Login';
 import LanguageIcon from '@mui/icons-material/Language';
 import Typography from '@mui/material/Typography'; 
 import { Link } from 'react-router-dom';
-
+import Settings from '../../assets/images/Settings.svg'
 import { useAuth } from '../../Auth/Auth';
 
 
@@ -80,7 +79,7 @@ function Drawer() {
     <div className='self-start'>
 
 
-      <img  src={setting}  className=' setting px-3 py-3' alt="" onClick={toggleDrawer("left" , true)} />
+      <img  src={Settings}  className=' setting px-3 py-3' alt="" onClick={toggleDrawer("left" , true)} />
       <SwipeableDrawer
           anchor={"left"}
           open={state["left"]}
