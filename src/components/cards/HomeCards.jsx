@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function HomeCards() {
   return (
     <div className="cards flex flex-col w-[95%] items-center justify-center">
-      <Link to='/services'>
+      <Link to='/service'>
         <div className="card flex justify-center items-center w-[90%] bg-red-500">
           <h1 className="text-white">خدماتنا</h1>
           <img src={service} alt="cardone" />
