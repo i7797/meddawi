@@ -1,10 +1,10 @@
 import React from "react";
 import AskCareForm from "../InputForm/AskCareForm";
 import NavBar from "../common/NavBar";
-
 import user1 from "../../assets/images/user (2).png";
 
 function AskService() {
+  <h1 className=" mt-40 ml-20"><NavBar/></h1> 
   return (
     <div className=" askcare flex flex-col justify-start items-center w-screen h-screen mb-40 ">
       <NavBar />
