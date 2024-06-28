@@ -8,10 +8,10 @@ function Services() {
   return (
     <div className="service flex flex-col justify-start items-center w-screen h-screen lg:bg-none bg-[#181D3D]">
       <div className="navbar lg:w-full">
-        <NavBar/>
+       <h1 className=" mt-10 ml-20"><NavBar/></h1> 
       </div>
-      <div className="text text-white text-[25px] text-center flex flex-col justify-center items-center">
-        <h2>خدماتنا الطبية</h2>
+      <div className="text text-white text-[25px] text-center flex flex-col justify-center items-center ">
+        <h2 className=" mt-10">خدماتنا الطبية</h2>
         <div className="line hidden lg:block border lg:bg-[#CA5050] lg:w-[10%]"></div>
         <p>خدماتنا تشمل رعاية تمريضية محترفة ورعاية صحية مستمرة على مدار الساعة، مع استجابة سريعة <br/> وفعالة لحالات الطوارئ لضمان صحة وسلامة مرضانا في كل الأوقات.</p>
       </div> 
