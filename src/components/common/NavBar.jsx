@@ -1,11 +1,9 @@
 
 import React from 'react'
-
 import { Link } from 'react-router-dom'  
-
 function NavBar() {
   return (
-    <div className='nav  flex bg-[#323868] w-[90%] justify-center items-center rounded-[40px] mt-[40px] lg:flex-row-reverse'>
+    <div className='nav  flex bg-[#323868] w-[95%] justify-center items-center rounded-[40px] mt-[40px] lg:flex-row-reverse'>
       <ul className='items inline-flex m-3 gap-2 text-[15px] w-[100%] items-center justify-center'>
       <li className="Login  bg-blacklg:block lg:w-full">
           
@@ -26,9 +24,9 @@ function NavBar() {
         </Link>
      
       </ul>
-      <div className="Login hidden lg:block lg:w-full">
-     
-      </div>
+      {/* <div className="Login hidden lg:block lg:w-full">
+         
+      </div> */}
     </div>
   )
 }

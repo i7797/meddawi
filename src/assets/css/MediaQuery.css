@@ -1,5 +1,8 @@
 
 @media (min-width:1025px){
+    .container{
+        background-image:none;
+    }
     .App{
         display: flex;
         justify-content: center;
