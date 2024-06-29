@@ -21,7 +21,7 @@ export const Login = () => {
     <div className=" flex w-screen h-screen items-center justify-center flex-col">
         {/* <h1 className="text-[60px] h-[30%] text-center flex items-center justify-center text-[#CA5050] font-bold"><span>اهلا و سهلا بك من جديد</span></h1> */}
     <div className="flex flex-col items-center h-[70%] w-full ">
-      <label className="label text-[25px]  self-end color-[#272C52] mr-5 font-extrabold">
+      <label className="label text-[25px]  self-end color-[#272C52] mr-5 font-extrabold ">
         :اسم المستخدم{" "} 
      
       </label> <br/>
