@@ -11,7 +11,8 @@ export const Profile = () => {
     navigate("/" );
   };
   return (
-    <div> <h1 className='welcome'>welcome {auth.user}</h1>
+    <div className='ProfileContainer'> 
+      <h1 className='welcome'>welcome {auth.user}</h1>
     
     <button className='logout' type="button" onClick={handleLogout}>Logout</button></div>
   )
