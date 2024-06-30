@@ -46,8 +46,8 @@ export const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
       <button className="login w-[40%] h-[10%] text-white text-2xl" type="button" onClick={handleLogin}>
-        {" "}
-        تسجيل الدخول{" "}
+        
+        تسجيل الدخول
       </button>
     </div>
     </div>
