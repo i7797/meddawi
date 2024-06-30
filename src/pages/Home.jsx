@@ -26,7 +26,8 @@ export default function Home() {
       <div className="content lg:w-full lg:h-[80%] ">
       <img src={home} alt='homeimage' className='HomeImage lg:h-full lg:w-full'/>
      <div className="TextBtn flex flex-col justify-center items-center text-center">
-     <p className='HomeText invisible lg:visible'>أحنا هنا حتى نراعيك بعناية ومحبة</p>
+     <p className='HomeText mr-5 mb-5 invisible lg:visible'>أحنا هنا حتى نراعيك بعناية ومحبة</p>
+     
      <EmergencyBotton />
      </div>
       <div className="cards flex flex-col  w-3/4 justify-center items-center lg:hidden">

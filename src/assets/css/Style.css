@@ -29,14 +29,19 @@
     background-color: #2E335B;
     border-radius: 25px;
     margin-bottom: 10px;
-    width: 93%;
+    width: 350px;
+    height: 90px;
 }
 .card img{
-    width:30%;
+    width:70px;
+    height: 70px;
 }
 .card h1{
     color:white;
-    font-size: 45px;
+    font-size: 25px;
+    white-space: nowrap;
+      
+        text-overflow: "----";
 }
 .EmergencyContainer{
     background-image:url('../images/EmergencyBackground.png')
@@ -124,6 +129,7 @@ margin-left: 20%;
     margin-top: 100px;
   
   }
+  
 
 
 
