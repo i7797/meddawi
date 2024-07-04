@@ -43,9 +43,8 @@
       
         text-overflow: "----";
 }
-.EmergencyContainer{
-    background-image:url('../images/EmergencyBackground.png')
-}
+
+
 .ToastContainer{
     height:70%;
   
@@ -53,26 +52,41 @@
 }
 
 
-.team{
- 
-    background-image:url('../images/EmergencyBackground.png')
-}
-.container{
-    background-image:url('../images/EmergencyBackground.png')
+.Nab-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 25%;
 
-}
-.askservice{
-    background-image:url('../images/EmergencyBackground.png')
-
-}
+    border-radius: 0px 0px 0 30px;
+  }
+    
+  
+  .Nab-bg::before,.Nab-bg::after
+  {
+    content: '';
+    position: absolute;  
+    right: 0; 
+  
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #090950;
+    
+   
+  }
+  
+  .Nab-bg::after{
+    background-color: #fff;
+    border-radius: 0 25px 0 0;
+  }
 
 .div-service{
     display: grid;
     grid-column: 50% 50%;
 }
-.askcare{
-    background-image:url('../images/EmergencyBackground.png')
-}
+
 .team-text{
 
   
@@ -135,21 +149,32 @@ margin-left: 20%;
     outline: none;
     background: transparent;
   }
+  
+.overaly{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 50%;
+    height: 50%;
+    background-color: #2c3390;
+    border-radius: 25px 25px 0 25px;
+}
+.overaly::before,.overaly::after
+{
+    content: '';
+    position: absolute;  
+    right: 0; 
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #8d2c90;
+   
+}
+
+.overaly::after{
+    background-color: #9e9292;
+}
  
-  .slick-prev:before {
-    color: red; /* Change this to your desired color */
-  }
-  
-  /* Change the color of the right arrow */
-  .slick-next:before {
-    color: red; /* Change this to your desired color */
-  }
-  
-  /* Optional: Adjust the size of the arrows */
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 30px; /* Change this to adjust the size of the arrows */
-  }
   
   
   
