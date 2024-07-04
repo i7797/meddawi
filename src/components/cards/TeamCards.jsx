@@ -1,55 +1,67 @@
-// import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
- function TeamCard({ data }) {
-  // const [isHovering , setIsHovering] = useState(false)
-  // const handleMouseOver = () =>{
-  //   setIsHovering(true)
-  // }
-  // const handleMouseIsOut = () =>{
-  //   setIsHovering(false)
-  // }
+function TeamCard({ data }) {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive:[{
+      breakpoint:1024,
+      settings:{
+        slidesToShow:2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint:768,
+      settings:{
+        slidesToShow:1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint:480,
+      settings:{
+        slidesToShow:1,
+        slidesToScroll: 1,
+      },
+    },
+    ]
+  };
+ 
   return (
-    // <div className=" lg:w-full lg:h-full flex items-center justify-center">
-         <div className="Servicecards mt-[55px] gap-3 lg:w-[95%] lg:h-[70%] flex lg:gap-5 justify-center items-center mr-2 lg:mt-10 flex-wrap h-full w-full">
-            {
-              data.map((item)=>
-                (
-                  <div className="Servicecard group shadow-2xl rounded-2xl lg:rounded-[80px] lg:w-[12%] flex mr-5 lg:h-full hover:w-[40%] h-[25%] w-[90%] hover:h-full delay-150 duration-300 ease-in-out  justify-center items-center overflow-hidden bg-[#DFDFDF]" key={item.id}  >
-                     <div className="lg:h-[100%] lg:w-full  lg:rounded-[80px] overflow-hidden flex h-[75%] rounded-[150px] w-[45%] "> 
-                     <img src={item.image} className="transition-all duration-300 ease-in-out overflow-hidden" />
-                     </div>
-                     <div className="group-hover:flex lg:hidden lg:h-full lg:w-full  flex-col justify-center items-center text-black text-[25px]" >
-                      <h2>الاسم:{item.title}</h2>
-                     <h2 >العمر:{item.age}</h2>
-                     <h2 >سنوات الخبرة:{item.years}</h2>
-                     </div>
-                     
-                  </div>
-                )
-              )
-            }
-         {/* </div> */}
-        {/* <div className=' lg:flex lg:flex-wrap lg:justify-center lg:items-center  mt-28  lg:mt-0'>
-        {data.map((item) => (
-         <div className=' grid grid-cols-1  mt-10 mb-10  lg:flex lg:flex-row lg:w-full lg:h-full'>
-            <div className= ' w-80 h-40 rounded-2xl  shadow-lg shadow-gray-500/30 lg:flex lg:justify-center  lg:h-[300px] lg:w-[85%] hover:w-full hover:mr-9 lg:rounded-[65px] delay-150 duration-300 ease-in-out' style={{backgroundColor:item.color}}>
-          <div key={item.id} className=' w-28 h-24 mt-10 ml-5 flex rounded-xl lg:flex-col' >
-            <img className=' h-20 w-20 rounded-xl lg:h-full ' src={item.image} alt=" "/>
-            <div  className='  mr-10 ml-20  lg:ml-0 bg-red-600 lg:self-center  group/edit lg:mt-[15px] lg:mr-auto lg:w-[90%] lg:hidden group/edit'>
-            <h2 className=' team-text text-sm ml-0 mt-0 flex self-center  group-hover/edit:translate-x-0.5'  > الاسم: {item.title} </h2>
-           
-            <h2 className='team-text text-sm ml-0 mt-0 flex ' > العمر: {item.age} سنة</h2>
-            <h2 className='team-text text-sm ml-0 mt-0 flex ' >  سنوات الخبرة : {item.years } سنة</h2>
 
+    <div className="w-3/4 m-auto   ">
+      <div className="mt-20   ">
+        <Slider {...settings}>
+          {data.map((item,index) => (
+            <div key={index} className="slick-slide-item">
+            <div className="  bg-slate-200 h-[450px]  text-black rounded-xl">
+              <div className="  h-56 rounded-t-xl bg-[#181D3D] flex justify-center items-center">
+                <img src={item.image} className="h-44 w-44 rounded-full border-slate-200	border-4" />
+              </div>
+              <div className=" flex  flex-col justify-center items-center gap-4 p-4">
+                <p className="text-xl font-semibold">الاسم:{item.title}</p>
 
+                <p>العمر:{item.age}</p>
+                <p>سنوات الخبرة:{item.years}</p>
+
+                <button className=" bg-[#181D3D] text-white text-lg px-6 py-1 rounded-xl">
+                  
+                  اقرأ المزيد
+                </button>
+              </div>
             </div>
-          </div>
-          </div>
-          </div>
-        ))}
-      </div> */}
-
+            </div>
+          ))}
+        </Slider>
+      </div>
+      
     </div>
   );
 }
