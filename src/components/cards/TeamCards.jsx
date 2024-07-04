@@ -2,12 +2,14 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../../assets/css/Style.css"
 
 function TeamCard({ data }) {
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
+    arrows: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive:[{
@@ -31,7 +33,9 @@ function TeamCard({ data }) {
         slidesToScroll: 1,
       },
     },
+    
     ]
+    
   };
  
   return (
@@ -63,6 +67,7 @@ function TeamCard({ data }) {
       </div>
       
     </div>
+
   );
 }
 

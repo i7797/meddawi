@@ -131,10 +131,26 @@ margin-left: 20%;
   }
   .slick-slide-item{
     padding: 0 10px;
+        color: transparent;
+    outline: none;
+    background: transparent;
   }
-  .slick-list{
-    margin: 0 -10px;
+ 
+  .slick-prev:before {
+    color: red; /* Change this to your desired color */
   }
+  
+  /* Change the color of the right arrow */
+  .slick-next:before {
+    color: red; /* Change this to your desired color */
+  }
+  
+  /* Optional: Adjust the size of the arrows */
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px; /* Change this to adjust the size of the arrows */
+  }
+  
   
   
 @media (max-width: 767px) {
