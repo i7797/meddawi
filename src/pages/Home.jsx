@@ -1,10 +1,11 @@
 import React from 'react'
 import '../assets/css/Style.css'
 import '../assets/css/MediaQuery.css'
-import home from '../assets/images/homeSvg.svg'
+import home from '../assets/images/Medical care-pana.svg'
 import EmergencyBotton from '../components/bottons/EmergencyBotton'
 import HomeCards from '../components/cards/HomeCards'
 import NavBar from '../components/common/NavBar'
+import Translate from '../Translate'
 export default function Home() {
   return (
     <div className='Home flex flex-col lg:bg-none lg:w-[90%] lg:h-screen  w-screen h-screen lg:mt-36'>
@@ -32,6 +33,7 @@ export default function Home() {
      </div>
       <div className="cards flex flex-col  w-3/4 justify-center items-center lg:hidden">
       <HomeCards  />
+      <Translate  />
       </div>
       </div>
 
