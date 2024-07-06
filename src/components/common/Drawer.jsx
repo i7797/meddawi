@@ -62,11 +62,11 @@ function Drawer() {
           </List>
           <Divider sx={{color:'#CA5050',backgroundColor:'#CA5050',height:5}}/>
           <List sx={{fontSize:40 }}>
-            {[' خدماتنا', 'تسجيل الدخول'].map((text, index) => (
+            {[' تسجيل دخول', ' اللغه '].map((text, index) => (
               <ListItem key={text} disablePadding sx={{fontSize:50}}>
                 <ListItemButton>
                 <ListItemIcon>
-                    {index % 2 === 0 ?  <Link to='/service'> <LoginIcon sx={{color:'#272C52' , fontSize:50}} /></Link>  :   <Link to="/login"> <LanguageIcon sx={{color:'#272C52' , fontSize:50}}/></Link>}
+                    {index % 2 === 0 ?  <Link to='/login'> <LoginIcon sx={{color:'#272C52' , fontSize:50}} /></Link>  :   <Link to="/"> <LanguageIcon sx={{color:'#272C52' , fontSize:50}}/></Link>}
                   </ListItemIcon>
                   <ListItemText primary={<Typography sx={{ fontSize: '30px'}}>{text}</Typography>} />
                 </ListItemButton>
