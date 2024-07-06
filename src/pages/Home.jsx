@@ -5,10 +5,10 @@ import home from '../assets/images/Medical care-pana.svg'
 import EmergencyBotton from '../components/bottons/EmergencyBotton'
 import HomeCards from '../components/cards/HomeCards'
 import NavBar from '../components/common/NavBar'
-import Translate from '../Translate'
 export default function Home() {
+
   return (
-    <div className='Home flex flex-col lg:bg-none lg:w-[90%] lg:h-screen  w-screen h-screen lg:mt-36'>
+    <div className='Home flex flex-col lg:bg-none lg:w-[90%] lg:h-screen  w-screen h-screen justify-center items-center lg:mt-36 '>
       {/* <div className="navbar hidden ">
       <NavBar />
       </div>
@@ -27,13 +27,14 @@ export default function Home() {
       <div className="content lg:w-full lg:h-[80%] ">
       <img src={home} alt='homeimage' className='HomeImage lg:h-full lg:w-full'/>
      <div className="TextBtn flex flex-col justify-center items-center text-center">
-     <p className='HomeText mr-5 mb-5 invisible lg:visible'>أحنا هنا حتى نراعيك بعناية ومحبة</p>
+     <p className='HomeText mr-5 mb-5 invisible lg:visible'>    احنا هنا حتى نراعيك بعنايه و محبه 
+  </p>
+
      
      <EmergencyBotton />
      </div>
       <div className="cards flex flex-col  w-3/4 justify-center items-center lg:hidden">
       <HomeCards  />
-      <Translate  />
       </div>
       </div>
 
