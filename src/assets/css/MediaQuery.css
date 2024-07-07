@@ -3,6 +3,10 @@
     .container{
         background-image:none;
     }
+    .servicesContainer{
+        background-image:none
+      }
+
     .App{
         display: flex;
         justify-content: center;

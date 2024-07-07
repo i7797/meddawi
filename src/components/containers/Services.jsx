@@ -7,8 +7,8 @@ import '../../assets/css/MediaQuery.css'
 import'../../assets/css/MediaQuery.css'
 function Services() {
   return (
-    <div className="container flex flex-col justify-start items-center w-screen h-screen lg:bg-none bg-[#181D3D] ">
-      <div className="navbar flex w-full items-center justify-center lg:w-full">
+    <div className="container flex flex-col justify-start items-center w-screen h-screen lg:bg-none bg-[#181D3D] mt-[20px]">
+      {/* <div className="navbar flex w-full items-center justify-center lg:w-full">
        <NavBar/>
       </div>
       <div className="text text-white text-[25px] text-center flex flex-col justify-center items-center ">
@@ -20,7 +20,7 @@ function Services() {
    
     <ServiecssCard data={ServicesData}/>
 
-  
+   */}
     </div>
   );
 }

@@ -5,6 +5,10 @@
     width:100%;
 }
 
+.servicesContainer{
+  background-image:url('../images/EmergencyBackground.png')
+}
+
 .btn{
    
     display: flex;
