@@ -34,6 +34,7 @@
         flex-direction: row-reverse; */
         background-image: none;
     }
+    
     .nav{
         background-color: white;
         box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
@@ -170,7 +171,9 @@
     display: grid;
     grid-template-columns: 33.3%  33.3% 33.3%;
 
+
 }
+
 
 .service-card{
     background-color:  #181D3D;
@@ -178,4 +181,38 @@
     height: 100vh;}
 
     
+    Nab-bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 30%;
+    
+        border-radius: 25px 25px 0 25px;
+      }
+        
+      
+      .Nab-bg::before,.Nab-bg::after
+      {
+        content: '';
+        position: absolute;  
+        right: 0; 
+      
+        bottom: -40px;
+        height: 40px;
+        width: 40px;
+        background-color: #ffffff;
+        
+       
+      }
+      
+      .Nab-bg::after{
+        background-color: #ffffff;
+        border-radius: 0 25px 0 0;
+      }
+
+
+
 }
+
+
