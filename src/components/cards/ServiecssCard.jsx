@@ -5,7 +5,7 @@ import SendBtn from "../bottons/SendBtn";
 
  function ServiecssCard({ data }) {
   return (
-    <div className="service-cards flex flex-wrap  justify-start lg:justify-start items-center w-full h-full lg:h-full lg:w-[97%]">
+    <div className="service-cards flex flex-wrap  justify-start lg:justify-start items-center w-full h-full lg:h-full lg:w-[97%] mt-36">
        
 
        
@@ -14,7 +14,8 @@ import SendBtn from "../bottons/SendBtn";
            
           <div key={item.id} className='lg:bg-[#323868] bg-[#e2e0e0] h-[24%] mt-2 rounded-xl  ml-5 mr-3 flex flex-col  justify-start items-center w-[40%] lg:w-[25%]  lg:h-[60%] shadow-lg' >
             <div className="flex lg:w-full h-1/2 w-[90%] mt-3 lg:mt-0 justify:center items-center bg-white">
-            <img className='  w-20 h-20 mt-10 lg:mt-0 items-center  mr-36 lg:w-[60%]  lg:h-[75%] lg:ml-auto lg:mr-auto lg:self-center lg:rounded-xl self-center ' src={item.image} alt=" "/>
+            <img className='  w-20 h-20 mt-10 lg:mt-0 items-center  mr-36 lg:w-[60%]  lg:h-[75%] lg:ml-auto lg:mr-auto lg:self-center lg:rounded-xl self-center '
+             src={item.image} alt=" "/>
             </div>
             <div className="circleOut bg-[#CA5050] opacity-50 w-[40%] mt-[-50px] h-[30%] lg:flex justify-center items-center rounded-full hidden">
               <div className="circleIn bg-[#CA5050] w-[85%] h-[80%] rounded-full bg-transparent bg-opacity-100"><ArrowForwardIcon  sx={{ color: 'white' , width:90 , height:90 }}/></div>

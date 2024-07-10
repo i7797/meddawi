@@ -23,7 +23,7 @@ function UploadImage() {
 
         <img src={avatar} 
         alt="usser"
-         className=" h-64 w-64 rounded-full" />
+         className=" h-64 w-64 rounded-full   " />
      
 
       <form id="form" encType='multipart/form-data'>
@@ -33,7 +33,7 @@ function UploadImage() {
           className=" flex-center absolute  right-5 bottom-5 h-9 w-9 rounded-full" >
           <img
             src={Edit}
-            className='object-cover'
+            className='object-cover  bg-white '
             
           />
         </button>

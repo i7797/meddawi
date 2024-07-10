@@ -18,8 +18,8 @@ export const Profile = () => {
     navigate("/" );
   };
   return (
-    <div className=''> 
-    <h1 className='text-center mt-5 mb-5 '>الصفحة الشخصيه </h1>
+    <div className='border border-zinc-800 rounded-3xl m-2	'> 
+    <h1 className='text-center mt-5 mb-10 text-3xl  '>الصفحة الشخصيه </h1>
     <div className='w-24 h-24 ml-20 mb-64'> <UploadImage/></div>
    
     <div className='flex ml-32  mb-5' > 

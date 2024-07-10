@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="App grid col-span-12 w-screen h-screen lg:w-screen lg:h-screen">
       <BrowserRouter>
-         <AppRouter/>
-         
+         <AppRouter/>  
       </BrowserRouter>
     </div>
   );
