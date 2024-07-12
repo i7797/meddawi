@@ -1,5 +1,5 @@
 
-import AppRouter from './AppRouter';
+import AppRouter from './AppRouter.jsx';
 import { BrowserRouter } from 'react-router-dom';
 import './assets/css/MediaQuery.css'
 

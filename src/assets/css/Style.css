@@ -61,12 +61,16 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 25%;
+    height: 17%;
 
     border-radius: 0px 0px 0 30px;
   }
     
-  
+  @media (min-width:1025px){
+    .Nab-bg{
+      height:25%
+    }
+  }
   .Nab-bg::before,.Nab-bg::after
   {
     content: '';

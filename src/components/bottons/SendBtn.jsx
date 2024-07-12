@@ -14,7 +14,12 @@ function SendBtn() {
   });
   return (
     <div className='SendBtn flex w-full justify-center items-center'>
-      <Button onClick={notify} sx={{backgroundColor:'#181D3D', fontSize:20 }} className='w-1/2 ' variant="contained">اطلب</Button>
+      <Button 
+       sx={{backgroundColor:'#181D3D',fontSize:20 }} 
+        className='w-1/2 ' 
+        variant="contained"
+        type='submit'
+        >اطلب</Button>
       <ToastContainer className="ToastContainer"
       position="bottom-center"
       rtl={true}

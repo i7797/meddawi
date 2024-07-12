@@ -6,9 +6,11 @@ import nurse from "../../assets/images/nurse (1).png";
 
 function AskService() {
   return (
-    <div className=" askservice flex flex-col justify-start items-center w-screen h-screen mb-40 ">
+    <div className=" askservice flex flex-col lg:flex-row justify-start items-center w-screen h-screen mb-40 lg:mt-[120px] mt-[60px]">
+      <div>
       <NavBar />
-      <img src={nurse} alt="ambulance" className=" w-60 mt-24 mb-4 rounded-sm " />
+      </div>
+      <img src={nurse} alt="ambulance" className=" w-60 mt-24 lg:ml-[100px] mb-4 rounded-sm " />
       <AskServiceForm />
     </div>
   );

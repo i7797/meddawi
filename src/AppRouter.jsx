@@ -14,7 +14,9 @@ import {Login} from './Auth/Login';
 import { ConstProvider } from './Auth/Auth';
 import RequierAuth from './Auth/RequierAuth'
 import Drawer from './components/common/Drawer';
-import ServiceTwo from './components/containers/ServiceTwo'
+import FinalService from './components/containers/FinalService'
+import NurseLayout from './pages/NurseLayout'
+import UserType from './components/common/UserType'
 
 
 function AppRouter() {
@@ -26,19 +28,21 @@ function AppRouter() {
         {/* <Drawer/> */}
 
         <Routes>
+          {/* <Route path='/' element={<UserType/>}/> */}
           <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
-          <Route path='/service/:id' element={<AskService/>}/>
+          <Route path='/service/:id/:name' element={<AskService/>}/>
           <Route path='/askcare' element={<AskCare/>}/>
           <Route  path='/emergency' element={<EmergencyContainer/>}/>
-   
+          <Route path='/nurse' element={<NurseLayout/>}/>
 
           <Route 
           path="/service" 
           element={
             <RequierAuth>
               {/* <Services /> */}
-              <ServiceTwo/>
+              {/* <ServiceTwo/> */}
+              <FinalService/>
             </RequierAuth>
           } 
         />
