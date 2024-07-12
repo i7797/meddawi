@@ -21,6 +21,7 @@ import NurseProfile from './components/containers/NurseProfile'
 import NursePost from './components/containers/NursePost'
 import NurseHomeCards from './components/cards/NurseHomeCrad'
 import NurseLayout from './pages/NurseLayout'
+import NurseStartPage from './pages/NurseStartPage'
 
 
 function AppRouter() {
@@ -32,6 +33,7 @@ function AppRouter() {
         {/* <Drawer/> */}
 
         <Routes>
+          <Route path='/nursestartpage' element={<NurseStartPage/>}/>
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<NurseHomeCards />} />
 

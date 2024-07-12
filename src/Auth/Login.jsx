@@ -3,6 +3,7 @@ import { useAuth } from "./Auth";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
+
 export const Login = () => {
   const auth = useAuth();
   const navigate = useNavigate();
@@ -18,6 +19,7 @@ export const Login = () => {
     navigate(redirectpath, { replace: true });
   };
   return (
+
     <div className=" flex w-screen h-screen items-center justify-center flex-col">
         {/* <h1 className="text-[60px] h-[30%] text-center flex items-center justify-center text-[#CA5050] font-bold"><span>اهلا و سهلا بك من جديد</span></h1> */}
     <div className="flex flex-col items-center h-[70%] w-full ">
@@ -51,5 +53,6 @@ export const Login = () => {
       </button>
     </div>
     </div>
+  
   );
 };
