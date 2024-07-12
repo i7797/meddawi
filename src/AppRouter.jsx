@@ -7,6 +7,7 @@ import Services from './components/containers/Services'
 import AskService from './components/containers/AskService'
 import AskCare from './components/containers/AskCare'
 import ServicesData from './data/ServiceData'
+import FinalService from './components/containers/FinalService'
 
 import {Profile} from './Auth/Profile';
 
@@ -14,9 +15,12 @@ import {Login} from './Auth/Login';
 import { ConstProvider } from './Auth/Auth';
 import RequierAuth from './Auth/RequierAuth'
 import Drawer from './components/common/Drawer';
-import FinalService from './components/containers/FinalService'
+import NurseHome from './pages/NurseHome'
+import NurseTeam from './components/containers/NurseTeam'
+import NurseProfile from './components/containers/NurseProfile'
+import NursePost from './components/containers/NursePost'
+import NurseHomeCards from './components/cards/NurseHomeCrad'
 import NurseLayout from './pages/NurseLayout'
-import UserType from './components/common/UserType'
 
 
 function AppRouter() {
@@ -28,8 +32,16 @@ function AppRouter() {
         {/* <Drawer/> */}
 
         <Routes>
-          {/* <Route path='/' element={<UserType/>}/> */}
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<NurseHomeCards />} />
+
+          <Route path="/nurseteam" element={< NurseTeam/>} />
+          <Route path="/nurseprofile" element={<NurseProfile />} />
+          <Route path="/nursepost" element={<NursePost />} />
+
+          <Route path="/nursepost" element={<NurseHome />} />
+
+
           <Route path="/Login" element={<Login />} />
           <Route path='/service/:id/:name' element={<AskService/>}/>
           <Route path='/askcare' element={<AskCare/>}/>
