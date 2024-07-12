@@ -3,7 +3,7 @@ import { Route,  Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import EmergencyContainer from './components/containers/EmergencyContainer'
 import Team from './components/containers/Team'
-import Services from './components/containers/Services'
+
 import AskService from './components/containers/AskService'
 import AskCare from './components/containers/AskCare'
 import ServicesData from './data/ServiceData'
@@ -14,7 +14,6 @@ import {Profile} from './Auth/Profile';
 import {Login} from './Auth/Login';
 import { ConstProvider } from './Auth/Auth';
 import RequierAuth from './Auth/RequierAuth'
-import Drawer from './components/common/Drawer';
 import NurseHome from './pages/NurseHome'
 import NurseTeam from './components/containers/NurseTeam'
 import NurseProfile from './components/containers/NurseProfile'
@@ -22,6 +21,7 @@ import NursePost from './components/containers/NursePost'
 import NurseHomeCards from './components/cards/NurseHomeCrad'
 import NurseLayout from './pages/NurseLayout'
 import NurseStartPage from './pages/NurseStartPage'
+import Front from './pages/Front'
 
 
 function AppRouter() {
@@ -30,9 +30,9 @@ function AppRouter() {
     <div>
      <ConstProvider>
       
-        {/* <Drawer/> */}
 
         <Routes>
+        <Route path="/" element={<Front/>} />
           <Route path='/nursestartpage' element={<NurseStartPage/>}/>
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<NurseHomeCards />} />
@@ -41,7 +41,7 @@ function AppRouter() {
           <Route path="/nurseprofile" element={<NurseProfile />} />
           <Route path="/nursepost" element={<NursePost />} />
 
-          <Route path="/nursepost" element={<NurseHome />} />
+          <Route path="/nurse" element={<NurseHome />} />
 
 
           <Route path="/Login" element={<Login />} />
@@ -54,8 +54,7 @@ function AppRouter() {
           path="/service" 
           element={
             <RequierAuth>
-              {/* <Services /> */}
-              {/* <ServiceTwo/> */}
+              
               <FinalService/>
             </RequierAuth>
           } 
