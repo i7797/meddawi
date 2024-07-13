@@ -7,19 +7,19 @@ export default function NurseHomeCards() {
     <div className=" flex flex-col   items-center justify-center">
       <Link to='/nurseteam'>
         <div className=" flex justify-center items-center w-80 h-24 rounded-3xl mt-10 mb-10 bg-blue-900">
-          <h1 className="text-black  text-sm	">فرقنا</h1>
+          <h1 className="  text-xl text-white		">فرقنا</h1>
         </div>
       </Link>
 
       <Link to ='nurseprofile'>
       <div className=" flex justify-center items-center w-80 h-24 rounded-3xl mt-10 mb-10 bg-blue-900">
-        <h1 className="text-black text-sm	">بروفايل </h1>
+        <h1 className=" text-xl text-white	">بروفايل </h1>
       </div>
       </Link>
       
       <Link to='/nursepost'>
         <div className=" flex justify-center items-center  w-80 h-24 rounded-3xl mt-10 mb-10 bg-blue-900">
-          <h1 className="text-black  	"> نشر بوست</h1>
+          <h1 className="  text-xl text-white		"> نشر بوست</h1>
         </div>
       </Link>
     </div>
