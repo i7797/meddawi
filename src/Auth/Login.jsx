@@ -8,7 +8,7 @@ export const Login = () => {
   const auth = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  const redirectpath = location.state?.path || "/";
+  const redirectpath = location.state?.path || "/home";
 
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
