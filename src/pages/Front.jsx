@@ -12,8 +12,9 @@ export default function Front() {
     <div className=' '>
 
 
-    <Button variant="contained"  sx={{backgroundColor:'',fontSize:'30px',borderRadius:'40px', width:'90%' ,marginBottom:'10px' ,marginTop:'10rem'  ,marginLeft:'2rem'}}><Link to='/home'> Home </Link></Button>
-    <Button variant="contained"  sx={{backgroundColor:'',fontSize:'30px',borderRadius:'40px', width:'90%' ,margin:'auto' ,marginBottom:'10px' ,marginLeft:'2rem'}}><Link to='/nurse'> Nurse </Link></Button>
+
+    <Button variant="contained"  sx={{backgroundColor:'',fontSize:'30px',borderRadius:'40px', width:'90%' ,marginBottom:'10px' ,marginTop:'10rem'  ,marginLeft:'2rem'}}><Link to='/home'> مريض </Link></Button>
+    <Button variant="contained"  sx={{backgroundColor:'',fontSize:'30px',borderRadius:'40px', width:'90%' ,margin:'auto' ,marginBottom:'10px' ,marginLeft:'2rem'}}><Link to='/nurse'> ممرض  </Link></Button>
 
 
 
