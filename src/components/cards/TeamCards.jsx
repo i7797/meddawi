@@ -40,7 +40,7 @@ function TeamCard({ data }) {
  
   return (
 
-    <div className="w-3/4 m-auto   ">
+    <div className="w-3/4 m-auto  lg:mt-0 ">
       <div className="mt-20   ">
         <Slider {...settings}>
           {data.map((item,index) => (

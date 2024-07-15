@@ -9,7 +9,7 @@ const FinalService = () => {
     const [data, setData] = useState(ServicesData);
 
     return (
-        <div className='ServiceContainer lg:bg-[#181D3D] grid grid-cols-12 grid-rows-[auto,auto,1fr] h-screen w-screen justify-items-center overflow-x-hidden'>
+        <div className='ServiceContainer lg:bg-[#181D3D] grid grid-cols-12 grid-rows-[auto,auto,1fr] lg:h-[70%] h-screen w-screen justify-items-center overflow-x-hidden'>
              <div className="w-[90%] h-[30%] lg:w-full lg:h-[20%] mt-[50px] lg:mt-0 lg:hidden">
               <NavBar/>
              
