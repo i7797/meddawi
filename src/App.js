@@ -2,25 +2,13 @@
 import AppRouter from './AppRouter.jsx';
 import { BrowserRouter } from 'react-router-dom';
 import './assets/css/MediaQuery.css'
-import Home from './pages/Home.jsx';
-import FinalService from './components/containers/FinalService.jsx';
-import Team from './components/containers/Team.jsx';
 
 
 function App() {
   return (
-    <div className="App flex justify-center items-center flex-col w-screen h-screen lg:w-full lg:h-full">
+    <div className="App grid col-span-12 w-screen h-screen lg:w-screen lg:h-screen">
       <BrowserRouter>
-         {/* <AppRouter/>   */}
-         <section className='flex h-screen w-screen'>
-           <Home/>
-         </section >
-         <section className='hidden lg:block'>
-          <FinalService/>
-         </section>
-         <section className='hidden lg:block'>
-          <Team/>
-         </section>
+         <AppRouter/>  
       </BrowserRouter>
     </div>
   );
