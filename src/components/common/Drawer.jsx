@@ -15,11 +15,9 @@ import LanguageIcon from '@mui/icons-material/Language';
 import Typography from '@mui/material/Typography'; 
 import { Link } from 'react-router-dom';
 import Settings from '../../assets/images/Settings.svg'
-import { useAuth } from '../../Auth/Auth';
 
 
 function Drawer() {
-  const auth =useAuth();
     const [state, setState] = React.useState({
         top: false,
         left: false,
