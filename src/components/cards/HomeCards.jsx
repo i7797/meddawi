@@ -15,7 +15,7 @@ export default function HomeCards() {
         </div>
       </Link>
 
-      <Link to ='askservice'>
+      <Link to ="/askservice">
       <div className="card flex justify-center items-center  bg-red-500">
         <h1 className="text-white text-sm	">رعاية مستمرة</h1>
         <img src={dailyService} alt="cardone " />

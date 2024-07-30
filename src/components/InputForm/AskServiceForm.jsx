@@ -12,8 +12,11 @@ export default function AskServiceForm() {
       <TextField id="outlined-basic" className='w-[70%]' label="رقم الهاتف" type='number' minRows={0} maxRows={11} variant="outlined" required/>
       <TextField  id="outlined-basic" className='w-[70%]' label="الحالة المرضية" type='text' variant="outlined" required/>
       <TextField  id="outlined-basic" className='w-[70%]' label="عدد مرات الزياره" type='number' variant="outlined" required/>
-      <SendBtn onClick={console.log('hello')}/>
-      
+      <TextField  id="outlined-basic" className='w-[70%]' label=" نوع الخدمه  " type='number' variant="outlined" required/>
+      <TextField  id="outlined-basic" className='w-[70%]' label=" الموقع  " type='number' variant="outlined" required/>
+
+
+      <SendBtn />
     </div>
   )
 }
