@@ -7,7 +7,7 @@ import '../../assets/css/MediaQuery.css'
 
 function Team() {
   return (
-    <div className="team flex flex-col justify-start items-center w-screen h-screen">
+    <div id="team" className="team flex flex-col justify-start items-center w-screen h-screen">
       <div className="w-[90%] h-[30%] lg:w-full lg:h-[20%] mt-[50px] lg:mt-0">
       <NavBar/>
       </div>
