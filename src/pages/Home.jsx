@@ -9,7 +9,7 @@ import Translate from '../Translate'
 export default function Home() {
 
   return (
-    <div className='Home flex flex-col lg:bg-none lg:w-[90%] lg:h-screen  w-screen h-screen lg:mt-36 '>
+    <div  id='home' className='Home flex flex-col lg:bg-none lg:w-[90%] lg:h-screen  w-screen h-screen lg:mt-36 '>
       {/* <div className="navbar hidden ">
       <NavBar />
       </div>

@@ -16,6 +16,7 @@ import Signup from './Sign/SignUp.jsx';
 import Signin from './Sign/SignIn.jsx';
 import { AuthProvider } from "./Sign/AuthContext.jsx";
 
+import Footerr from './Footerr.jsx'
 
 function App() {
   
@@ -32,6 +33,7 @@ function App() {
 
           <Route path="/signin" element ={<Signin/>}/>
           <Route path="/signup" element ={<Signup/>}/>
+          <Route path="/signup" element ={< Footerr />}/>
 
 
         <Route path="/" element={<Front/>} />
@@ -76,7 +78,9 @@ function App() {
           
 
         </AuthProvider>  
-    
+ 
+
+    <section>  <Footerr/></section>
     </div>
   )
 }

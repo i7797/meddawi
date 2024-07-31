@@ -16,7 +16,7 @@ const Footerr = () => {
     <li> <a href='#home' > الصفحة الرئيسيه</a></li>
     <li> <a  href='#about'>  عننا</a></li>
    <li>  <a  href='#service'>  الخدمات</a></li>
-    <li><a  href='#team'> الفريق</a></li>
+    <li><a  href='#tea'> الفريق</a></li>
     </ul>
   
 </div>
