@@ -1,6 +1,5 @@
 
 import nurse from '../assets/images/nurse (1).png'
-import mahdi from '../assets/images/mahdi.jpg'
 export const TeamData = [
     { id: 1, title: ' محمد حامد ',age: '27 ' , years: '2' , image: nurse , color:'#3255A4'},
     { id: 2, title: "علي باسم  ",age: '24 ',years: '20' ,image: nurse,color:'#CA5050'},

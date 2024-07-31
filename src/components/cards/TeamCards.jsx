@@ -75,10 +75,7 @@ var settings = {
                 <p>العمر:{item.age}</p>
                 <p>سنوات الخبرة:{item.years}</p>
 
-                <button className=" bg-[#181D3D] text-white text-lg px-6 py-1 rounded-xl">
-                  
-                  اقرأ المزيد
-                </button>
+                
               </div>
             </div>
             </div>
