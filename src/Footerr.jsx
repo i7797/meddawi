@@ -13,10 +13,10 @@ const Footerr = () => {
 <div>
     <h2 className='text-xl font-bold '>:  روابط سريعة   </h2>
     <ul className='mt-2 space-y-2'> 
-    <li> الصفحة الرئيسيه</li>
-    <li>  عننا</li>
-    <li>  الخدمات</li>
-    <li> الفريق</li>
+    <li> <a href='#home' > الصفحة الرئيسيه</a></li>
+    <li> <a  href='#about'>  عننا</a></li>
+   <li>  <a  href='#service'>  الخدمات</a></li>
+    <li><a  href='#team'> الفريق</a></li>
     </ul>
   
 </div>
@@ -24,11 +24,12 @@ const Footerr = () => {
 <div>
 <p className='text-xl font-bold mb-4'>يمكننك التواصل معنا هنا 
 </p>
-<a className="bg-gradient-to-r from-orange-400 to-[#CA5050] text-white rounded-full px-6 py-3 mb-4 inline-flex items-center justify-center shadow-lg">    <i className='fas fa-phone-alt mr-2'> 077077777777 : الهاتف </i>
+<a className="bg-gradient-to-r from-orange-400 to-[#CA5050] text-white rounded-full px-6 py-3 mb-4 inline-flex items-center justify-center shadow-lg">  
+      <i className='fas fa-phone-alt mr-2'> 077077777777 : الهاتف </i>
     </a>      
 
 <div className=' flex space-x-4'>
-    <a href='https://facebook.com'><i className="fab fa-twitter text-2xl">twitter</i>    </a>
+    <a href='https://facebook.com'><i className="fab fa-twitter text-2xl">Facebook</i>    </a>
     <a href='https://twitter.com'><i className="fab fa-twitter text-2xl">twitter</i>
     </a>
     <a href='https://linkedin.com'> <i className="fab fa-linkedin-in text-2xl">linkedin</i>
