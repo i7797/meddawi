@@ -60,12 +60,8 @@ function App() {
 
           
         <Route 
-          path="/team" 
-          element={
-        
-              <Team />
-           
-          } 
+          path="/team1" 
+          element={<Team />} 
         />
          
           <Route path="*" element={<h1>page not found </h1>} />

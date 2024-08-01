@@ -37,8 +37,8 @@ function NavBar() {
                   </li>
                 </Link>
               )}
-              <Link to="/team">
-                <li className="item bg-[#797e9a] rounded-[25px] p-3 text-white w-[100%]">
+              <Link to="/team1">
+                <li className="">
                   الفرق الطبيه
                 </li>
               </Link>

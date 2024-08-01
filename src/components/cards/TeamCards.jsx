@@ -80,6 +80,7 @@ var settings = {
             </div>
             </div>
           ))}
+        
         </Slider>
       </div>
       

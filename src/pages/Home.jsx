@@ -5,6 +5,10 @@ import home from '../assets/images/Medical care-pana.svg'
 import EmergencyBotton from '../components/bottons/EmergencyBotton'
 import HomeCards from '../components/cards/HomeCards'
 import NavBar from '../components/common/NavBar'
+import Drawer from '../components/common/Drawer'
+
+import MenuIcon from '@mui/icons-material/Menu';
+
 import Translate from '../Translate'
 export default function Home() {
 
@@ -22,8 +26,13 @@ export default function Home() {
      <HomeCards  />
      </div>
       */}
-      <div className="navbar hidden lg:inline-flex justify-center items-center">
+            <div className=" md:hidden  ">
+        <Drawer/>
+      
+      </div>
+      <div className=" xs:hidden  sm:hidden  md:hidden   lg:inline-flex ">
         <NavBar/>
+      
       </div>
       <div className="content lg:w-full lg:h-[80%] ">
       <img src={home} alt='homeimage' className='HomeImage lg:h-full lg:w-full'/>
