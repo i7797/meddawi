@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function HomeCards() {
   return (
 
-    <div className="homediv ">
+    <div className="homediv lg:hidden ">
     <div className="cards  flex flex-col   items-center justify-center">
       <Link to='/service'>
         <div className="card flex justify-center items-center  bg-red-500">

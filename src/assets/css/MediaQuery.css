@@ -1,5 +1,5 @@
 
-@media (min-width:1025px){
+@media (min-width:1024px){
     .container{
         background-image:none;
     }
@@ -174,14 +174,17 @@
 
 }
 
+.homediv {
 
+    display: none;
+}
 .service-card{
     background-color:  #181D3D;
     width: 100vw;
     height: 100vh;}
 
     
-    Nab-bg{
+    .Nab-bg{
         position: absolute;
         left: 0;
         top: 0;
