@@ -1,53 +1,42 @@
-import express from "express";
-import cors from "cors";
-import mongoose from "mongoose";
+import express from 'express';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import Emergency from '../models/EmergencyModel.js';
+const app = express();
+const port = 5002;
 
-const server = express()
-const PORT = 3002
+// Middleware
+app.use(cors());
+app.use(express.json());
 
-//contect to database
+// MongoDB connection
+mongoose.connect('mongodb://localhost:27017/Mdaweii', { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
 
-mongoose.connect("mongodb://localhost:27017/EmergencyDatabase" , { useNewUrlParser: true, useUnifiedTopology: true } )
-.then(() => console.log("Database connected"))
-.catch((e)=>console.log("Database Error :" , e))
+// Emergency post data
+app.post('/api/emergency', async (req, res) => {
+  const { name, phone, caseOfEmergency, addressOfPatient } = req.body;
 
-//define schema
-const emergencyShema = new mongoose.Schema({
-name: String,
-phone: Number,
-emergencyCase: String
+  console.log("Request body:", req.body); // Log the request body
 
-})
+  const newEmergencyCase = new Emergency({
+    name,
+    phone,
+    caseOfEmergency,
+    addressOfPatient
+  });
 
-//creat model 
+  try {
+    await newEmergencyCase.save();
+    console.log("Saved document:", newEmergencyCase); // Log the saved document
+    res.status(201).send('Data saved');
+  } catch (err) {
+    console.error('Error saving data:', err);
+    res.status(500).send('Error saving data');
+  }
+});
 
-const EmergencyCaseModel = mongoose.model("EmergencyCase" , emergencyShema)
-
-//middelware
-server.use(express.json());
-server.use(cors());
- 
-//Define  to post rout
-
-server.post("/api/EmergencyTable" , async(req , res)=>{
-    const {name , phone , emergencyCase} = req.body;
-    const newEmergencyInput = new EmergencyCaseModel({
-        name ,
-        phone,
-        emergencyCase
-    })
-    try{
-        await newEmergencyInput.save()
-        res.status(200).send("case added")
-
-    }
-    catch(e){
-        res.status(500).send("error add data")
-    }
-})
-
-//start server
-
-server.listen(PORT , ()=>{
-    console.log(`server run on port ${PORT}`)
-})
+app.listen(port, () => {
+  console.log(`Server is running on port: ${port}`);
+});
