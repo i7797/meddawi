@@ -12,6 +12,13 @@ export default function EmergencyForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const phonePattern = /^\d{11}$/;
+    if (!phonePattern.test(phone)) {
+      alert('Please enter a valid 11-digit phone number.');
+      return;
+    }
+    
     try {
       await axios.post('http://localhost:5002/api/emergency', {
         name,
