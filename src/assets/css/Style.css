@@ -19,15 +19,39 @@
   right: 10px; /* Adjust positioning as needed */
 }
 
-
-
-
-.Home{
-    background-image:url('../images/background.png');
-    background-size:cover;
-    height:100vh;
-    width:100%;
+.homediv {
+  margin-top: 50px;
+  position: relative;
+  height: 100%;
+  width:100%;
+  /* background of main div*/
+  background: rgb(12, 12, 60);
+  padding: 20px;
+  
+  display: grid;
+  place-items: center;
 }
+
+
+.homediv:before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background: transparent;
+
+  /* border-radius of pseudo element */
+  border-bottom-left-radius: 50%;
+
+  /* box shadow to give the shadow of the pseudo-element the same color as the background */
+  box-shadow: 0 20px 0 0 rgb(12, 12, 60);
+}
+
+
+
+
 
 .servicesContainer{
   background-image:url('../images/EmergencyBackground.png')

@@ -5,50 +5,57 @@ import home from '../assets/images/Medical care-pana.svg'
 import EmergencyBotton from '../components/bottons/EmergencyBotton'
 import HomeCards from '../components/cards/HomeCards'
 import NavBar from '../components/common/NavBar'
-import Drawer from '../components/common/Drawer'
-
-import MenuIcon from '@mui/icons-material/Menu';
-
 import Translate from '../Translate'
-export default function Home() {
+import Drawer from '../components/common/Drawer'
+import HeroSectio from '../components/HeroSectio'
 
-  return (
-    <div  id='home' className='Home flex flex-col lg:bg-none lg:w-[90%] lg:h-screen  w-screen h-screen lg:mt-36 '>
-      {/* <div className="navbar hidden ">
-      <NavBar />
-      </div>
-     <div className="content flex flex-col-reverse h-[45%] w-[85%]">
-     <div className='ImgBtn'>
-      <p className='HomeText invisible'>أحنا هنا حتى نراعيك بعناية ومحبة</p>
-      <EmergencyBotton />
-      </div>
-     <img src={home} alt='homeimage' className='HomeImage'/>
-     <HomeCards  />
-     </div>
-      */}
-            <div className=" md:hidden  ">
-        <Drawer/>
-      
-      </div>
-      <div className=" xs:hidden  sm:hidden  md:hidden   lg:inline-flex ">
-        <NavBar/>
-      
-      </div>
-      <div className="content lg:w-full lg:h-[80%] ">
-      <img src={home} alt='homeimage' className='HomeImage lg:h-full lg:w-full'/>
-     <div className="TextBtn flex flex-col justify-center items-center text-center">
-     <p className='HomeText mr-5 mb-5 invisible lg:visible'>    احنا هنا حتى نراعيك بعنايه و محبه 
-  </p>
+import FinalService from '../components/containers/FinalService'
+import Team from '../components/containers/Team'
+import Footerr from '../Footerr'
 
-     
-     <EmergencyBotton />
-     </div>
-      <div className="cards flex flex-col  w-3/4 justify-center items-center lg:hidden">
-      <HomeCards  />
-      </div>
-      </div>
+export default function Home(){
 
-    </div>
-  )
+return (
+  <>
+<div className='grid grid-cols-12 h-screen w-screen Homecontent '>
+
+  <div className='lg:hidden ' >
+    <Drawer/>
+
+  </div>
+
+
+  <div className='hidden md:block col-span-12 '>
+<NavBar/>
+
+  </div>
+
+
+  <section id='homeSection' className=' homeSection lg:block col-span-12'>
+  <HeroSectio />
+  </section>
+
+  <section id='serviceSection' className=' serviceSection hidden lg:block col-span-12'>
+<FinalService/>
+  </section>
+  <section id='teamSection' className=' teamSection hidden lg:block col-span-12'>
+    <Team/>
+
+  </section>
+  <section id='footerSection' className='footerSection  hidden lg:block col-span-12'>
+    <Team/>
+
+  </section>
+  <section id='' className=''>
+
+  </section>
+</div>
+
+
+
+  
+ 
+
+  </>
+);
 }
-

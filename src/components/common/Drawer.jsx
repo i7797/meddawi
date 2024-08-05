@@ -185,7 +185,7 @@ const Navbar = () => {
             ))} */}
 
       <MenuIcon
-        sx={{ color: "#181D3D", width: "10%", height: "10%" }}
+        sx={{ color: "#181D3D", width: "40px", height: "40px", marginTop:"10px", marginLeft:"10px" }}
         onClick={toggleDrawer("left", true)}
       />
 

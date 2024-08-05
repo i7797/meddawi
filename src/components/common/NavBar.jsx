@@ -13,8 +13,8 @@ function NavBar() {
 
   return (
     <>
-      <div className="Nab-bg bg-[#090950] lg:bg-inherit flex justify-center lg:h-[20%]">
-        <div className=" nav flex bg-[#323868] w-[95%]  h-[40%]  justify-center  items-center  rounded-[40px]  mt-[40px] lg:flex-row-reverse ">
+      <div className="Nab-bg hidden  lg:inline-flex  lg:bg-inherit lg:h-[20%]">
+        <div className=" nav flex  w-[95%]  h-[40%]  justify-center  items-center  rounded-[40px]  mt-[40px] lg:flex-row-reverse ">
           <nav> 
             <ul className=" items inline-flex m-3 gap2 text-[15px]   w-[100%] items-center justify-center">
               {currentUser ? (
@@ -32,7 +32,7 @@ function NavBar() {
                 </>
               ) : (
                 <Link to="/signup">
-                  <li className=" item bg-[#181D3D] rounded-[25px] p-3 text-white w-[130px] lg:w-full text-center ">
+                  <li className=" item  rounded-[25px] p-3 text-white w-[130px] lg:w-full text-center ">
                     تسجيل دخول{" "}
                   </li>
                 </Link>
