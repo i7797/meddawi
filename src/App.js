@@ -39,7 +39,7 @@ function App() {
         <Route path="/" element={<Front/>} />
           <Route path='/nursestartpage' element={<NurseStartPage/>}/>
           <Route path="/home" element={<Home />} />
-          <Route path="/service" element={ <FinalService /> } />
+          <Route path="/services" element={ <FinalService /> } />
           
         
 
@@ -53,7 +53,7 @@ function App() {
 
 
         
-          <Route path='/service/:id/:name' element={<AskService/>}/>
+          <Route path='/service' element={<AskService/>}/>
           <Route path='/askcare' element={<AskCare/>}/>
           <Route  path='/emergency' element={<EmergencyContainer/>}/>
           <Route path='/nurse' element={<NurseLayout/>}/>
