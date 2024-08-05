@@ -76,7 +76,7 @@ function App() {
         </AuthProvider>  
  
 
-    <section>  <Footerr/></section>
+   
     </div>
   )
 }
