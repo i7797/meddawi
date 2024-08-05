@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import Emergency from '../models/EmergencyModel.js';
+import dailyService from '../models/AskCare.js';
 const app = express();
 const port = 5002;
 
@@ -16,9 +17,7 @@ mongoose.connect('mongodb://localhost:27017/Mdaweii', { useNewUrlParser: true, u
 
 // Emergency post data
 app.post('/api/emergency', async (req, res) => {
-  const { name, phone, caseOfEmergency, addressOfPatient } = req.body;
-
-  console.log("Request body:", req.body); // Log the request body
+  const { name, phone, caseOfEmergency  , addressOfPatient } = req.body;
 
   const newEmergencyCase = new Emergency({
     name,
@@ -29,13 +28,46 @@ app.post('/api/emergency', async (req, res) => {
 
   try {
     await newEmergencyCase.save();
-    console.log("Saved document:", newEmergencyCase); // Log the saved document
     res.status(201).send('Data saved');
   } catch (err) {
-    console.error('Error saving data:', err);
     res.status(500).send('Error saving data');
   }
 });
+
+//daily service post data
+app.post('/api/service', async (req, res) => {
+  const { paientName, phone, healthCase, noOfVisits , address } = req.body;
+  const newServiceRequest = new dailyService({
+    paientName,
+    phone,
+    healthCase,
+    noOfVisits,
+    address
+  });
+
+  try {
+    await newServiceRequest.save();
+    res.status(201).send('Data saved');
+  } catch (e) {
+    console.error('Error saving request', e);
+    res.status(500).send('Error saving data');
+  }
+});
+
+//fetch data of daily services 
+app.get('/api/dashboard',(req,res)=>{
+  dailyService.find()
+  .then(service => res.json(service))
+  .catch(err =>res.json(err))
+})
+
+//fetch emergency data
+
+app.get('/api/dashboard',(req,res)=>{
+  Emergency.find()
+  .then(cases => res.json(cases))
+  .catch(err =>res.json(err))
+})
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
