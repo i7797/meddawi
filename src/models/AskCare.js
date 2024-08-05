@@ -6,8 +6,8 @@ const askCare = new mongoose.Schema({
         require:true
     },
     phone:{
-        type:Number,
-        require:true
+        type:String,
+        require:true,
     },
     healthCase:{
         type:String,

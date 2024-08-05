@@ -15,6 +15,11 @@ export default function AskServiceForm() {
   
  const handleSubmit = async (e) => {
   e.preventDefault();
+  const phonePattern = /^\d{11}$/;
+  if (!phonePattern.test(phone)) {
+    alert('Please enter a valid 11-digit phone number.');
+    return;
+  }
   try {
     await axios.post(`http://localhost:5002/api/service`, {
       paientName,
@@ -43,7 +48,8 @@ export default function AskServiceForm() {
        id="outlined-basic"
         className='w-[70%]' 
         label="رقم الهاتف" 
-        type='number' 
+        pattern="\d{11}"
+        type='text' 
         minRows={0} 
         maxRows={11} 
         variant="outlined" 
@@ -71,7 +77,9 @@ export default function AskServiceForm() {
       <select 
       value={healthCase}
       onChange={(e)=>setHealthCase(e.target.value)}
-      >
+      className='w-[70%]'
+      name='اختر الخدمة'
+      > 
         <option  value='suger'>قياس السكر</option>
         <option  value='pressure'>قياس ضغط الدم</option>
         <option  value='cannula'>الكانولا</option>
