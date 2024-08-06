@@ -9,7 +9,7 @@ const FinalService = () => {
 
   return (
     <>
-      <div className="ServiceContainer md:bg-[#181D3D] lg:bg-[#181D3D] grid grid-cols-12 grid-rows-[auto,auto,1fr]  xl:h-[70%] lg:h-[70%]  h-screen w-screen justify-items-center overflow-x-hidden   ">
+      <div className=" md:bg-[#181D3D] lg:bg-[#181D3D] grid grid-cols-12 grid-rows-[auto,auto,1fr]  xl:h-[70%] lg:h-[70%]  h-screen w-screen justify-items-center overflow-x-hidden   ">
       
         <div
           id="service"
@@ -30,7 +30,7 @@ const FinalService = () => {
           </div>
         </div>
         
-        <div className="Servicecards mt-10 col-span-12 row-start-3 w-full grid gap-5 p-4 grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-3   xl:grid-cols-3">
+        <div className=" mt-10 col-span-12 row-start-3 w-full grid gap-5 p-4 grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-3   xl:grid-cols-3">
           {data.map((e, index) => (
             <ServiceCardFinal data={e} key={index} />
           ))}
