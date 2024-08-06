@@ -1,7 +1,7 @@
 import React from "react";
 import EmergencyBotton from "./bottons/EmergencyBotton";
 import HomeCards from "./cards/HomeCards";
-import home from "../assets/images/Medical care-pana.svg";
+import home from "../assets/images/Nursing home-pana.svg";
 import Button from "@mui/material/Button";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -13,12 +13,13 @@ export default function HeroSectio() {
      
       <img
         src={home}
-        alt="homeimage"
-        className="HomeImage lg:h-3/4 lg:w-[60%]"
+        alt="homeimage" 
+        className="HomeImage lg:mt-20 lg:h-3/4 lg:w-[60%]"
       />
       <div className="TextBtn flex flex-col justify-center items-center text-center">
         <p className="HomeText mr-5 mb-5 invisible lg:visible text-md lg:text-[40px] leading-[60px]">
-          احنا هنا حتى نراعيك بعنايه و محبه
+          احنا هنا حتى نراعيك 
+          <br></br> بعنايه و محبه
         </p>
         <EmergencyBotton />
       </div>
