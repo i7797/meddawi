@@ -2,18 +2,22 @@ import React, { useState } from "react";
 import ServicesData from "../../data/ServiceData";
 import ServiceCardFinal from "../cards/ServiceCardFinal";
 import NavBar from "../common/NavBar";
-import "../../assets/css/Service.css";
+import { Link } from "react-router-dom";
+
 
 const FinalService = () => {
   const [data, setData] = useState(ServicesData);
 
   return (
     <>
+           
+
       <div className=" md:bg-[#181D3D] lg:bg-[#181D3D] grid grid-cols-12 grid-rows-[auto,auto,1fr]  xl:h-[70%] lg:h-[70%]  h-screen w-screen justify-items-center overflow-x-hidden   ">
+        
       
         <div
           id="service"
-          className="w-[90%] h-[30%] lg:w-full lg:h-[20%] mt-[50px] lg:mt-0 md:hidden lg:hidden  xl:hidden xl:h-[20%] "
+          className="w-[90%] h-[30%] lg:w-full lg:h-[20%] mt-[50px] lg:mt-0 lg:hidden  xl:hidden xl:h-[20%] "
         >
           <NavBar />
         </div>
@@ -27,14 +31,21 @@ const FinalService = () => {
               <br />
               وفعالة لحالات الطوارئ لضمان صحة وسلامة مرضانا في كل الأوقات.
             </p>
+            <Link to ='/askservice'>
+            <button className="bg-[#7980a8]  hover:bg-[#2e3564]  text-white  font-bold py-2 px-4 rounded-lg mt-5 "> اطلب الخدمة </button> 
+            </Link>
           </div>
         </div>
-        
-        <div className=" mt-10 col-span-12 row-start-3 w-full grid gap-5 p-4 grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-3   xl:grid-cols-3">
+       
+        <div className="   mt-10 col-span-12 row-start-3 w-full grid gap-5 p-4 grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-3   xl:grid-cols-3">
           {data.map((e, index) => (
             <ServiceCardFinal data={e} key={index} />
+
+
+            
           ))}
         </div>
+     
       </div>
      
     </>

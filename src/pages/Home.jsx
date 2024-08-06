@@ -42,7 +42,6 @@ export default function Home() {
         >
           <Footerr />
         </section>
-        <section id="" className=""></section>
       </div>
     </>
   );

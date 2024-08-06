@@ -50,6 +50,42 @@
 }
 
 
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  width:100%;
+}
+.card{
+  margin-left: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2E335B;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  width: 90%;
+  height: auto;
+  box-sizing: border-box;
+}
+.card img{
+  width:20%;
+  height: auto;
+}
+.card h1{
+  color:white;
+  font-size: 25px;
+  white-space: nowrap;
+    
+      text-overflow: "----";
+}
+
+
+
+
 
 
 
@@ -66,35 +102,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    width:98%;
-}
-.card{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #2E335B;
-    border-radius: 25px;
-    margin-bottom: 10px;
-    width: 350px;
-    height: 90px;
-}
-.card img{
-    width:70px;
-    height: 70px;
-}
-.card h1{
-    color:white;
-    font-size: 25px;
-    white-space: nowrap;
-      
-        text-overflow: "----";
-}
+
 
 
 .ToastContainer{

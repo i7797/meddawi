@@ -53,7 +53,7 @@ function App() {
 
 
         
-          <Route path='/service' element={<AskService/>}/>
+          <Route path='/askservice' element={<AskService/>}/>
           <Route path='/askcare' element={<AskCare/>}/>
           <Route  path='/emergency' element={<EmergencyContainer/>}/>
           <Route path='/nurse' element={<NurseLayout/>}/>
