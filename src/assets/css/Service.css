@@ -1,3 +1,28 @@
-.ServiceContainer{
-    
-}
+@media (min-width: 1280px) {
+    .ServiceContainer {
+      background-color: #181D3D;
+      /* Add other styles for xl screens */
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .ServiceContainer {
+      background-color: #181D3D;
+      /* Add other styles for 2xl screens */
+    }
+  
+    .Servicecards {
+      padding: 2rem;
+      gap: 2rem;
+      /* Add other styles for 2xl screens */
+    }
+  
+    .text h1 {
+      font-size: 2.5rem; /* Adjust font size for 2xl */
+    }
+  
+    .text p {
+      font-size: 1.25rem; /* Adjust font size for 2xl */
+    }
+  }
+  

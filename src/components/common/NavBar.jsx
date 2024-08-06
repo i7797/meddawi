@@ -43,7 +43,7 @@ function NavBar() {
                 </li>
               </Link>
 
-              <Link to="/service">
+              <Link to="/services">
                 <li className="item bg-[#181D3D] rounded-[25px] p-3 text-white w-[130px] lg:w-full text-center">
                   الخدمات
                 </li>

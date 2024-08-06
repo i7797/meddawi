@@ -9,7 +9,7 @@ const FinalService = () => {
 
   return (
     <>
-      <div className="ServiceContainer md:bg-[#181D3D] lg:bg-[#181D3D] grid grid-cols-12 grid-rows-[auto,auto,1fr] xl:h-[70%] lg:h-[70%] h-screen w-screen justify-items-center overflow-x-hidden   ">
+      <div className="ServiceContainer md:bg-[#181D3D] lg:bg-[#181D3D] grid grid-cols-12 grid-rows-[auto,auto,1fr]  xl:h-[70%] lg:h-[70%]  h-screen w-screen justify-items-center overflow-x-hidden   ">
       
         <div
           id="service"
@@ -21,7 +21,7 @@ const FinalService = () => {
         <div className="text flex justify-center flex-col items-center gap-2 col-span-12 row-start-2 text-center w-full">
           <h1 className="text-white text-3xl"> خدماتنا الطبية </h1>
           <div className="text flex justify-center flex-col items-center gap-2 col-span-12 row-start-2 text-center w-full">
-          <p className="hidden text-white md:block lg:block   xl:block ">
+          <p className="hidden text-white md:block lg:block  xl:block ">
               خدماتنا تشمل رعاية تمريضية محترفة ورعاية صحية مستمرة على مدار
               الساعة، مع استجابة سريعة
               <br />
