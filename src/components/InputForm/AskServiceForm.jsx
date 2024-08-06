@@ -75,15 +75,20 @@ export default function AskServiceForm() {
       onChange={(e)=>setAddress(e.target.value)}
       required/>
       <select 
+
+      
       value={healthCase}
       onChange={(e)=>setHealthCase(e.target.value)}
       className='w-[70%]'
       name='اختر الخدمة'
       > 
-        <option  value='suger'>قياس السكر</option>
         <option  value='pressure'>قياس ضغط الدم</option>
+        <option  value='suger'>قياس السكر</option>
         <option  value='cannula'>الكانولا</option>
         <option  value='suture'>خياطة الجروح</option>
+        <option  value='suture'>حريق الجلد </option>
+        <option  value='suture'> حقن الابر</option>
+
       </select>
       <SendBtn/>
       

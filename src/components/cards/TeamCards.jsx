@@ -60,8 +60,8 @@ var settings = {
 
   return (
 
-    <div className="w-3/4 m-auto  lg:mt-0 ">
-      <div className="mt-20   ">
+    <div className="w-3/4   ">
+      <div className="   ">
         <Slider {...settings}>
           {data.map((item,index) => (
             <div key={index} className="slick-slide-item">
