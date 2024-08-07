@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <>
       <div className="grid grid-cols-12 h-screen w-screen Homecontent ">
+
         <div className="lg:hidden ">
           <Drawer />
         </div>
@@ -20,25 +21,25 @@ export default function Home() {
           <NavBar />
         </div>
 
-        <section id="homeSection" className=" homeSection lg:block col-span-12">
+        <section id="homeSection" className="  lg:block col-span-12">
           <HeroSectio />
         </section>
 
         <section
           id="serviceSection"
-          className=" serviceSection hidden lg:block col-span-12"
+          className="  hidden lg:block col-span-12"
         >
           <FinalService />
         </section>
         <section
           id="teamSection"
-          className=" teamSection hidden lg:block col-span-12"
+          className="  hidden lg:block col-span-12"
         >
           <Team />
         </section>
         <section
           id="footerSection"
-          className="footerSection  hidden lg:block col-span-12"
+          className="  hidden lg:block col-span-12"
         >
           <Footerr />
         </section>

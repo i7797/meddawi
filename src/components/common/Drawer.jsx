@@ -112,7 +112,7 @@ const Navbar = () => {
             <ListItemIcon>
               <MedicalInformationIcon sx={{ color: "#181D3D" }} />
             </ListItemIcon>
-            <Link to="/service">
+            <Link to="/services">
               {" "}
               <ListItemText sx={{ color: "#181D3D" }} primary={"الخدمات"} />
             </Link>

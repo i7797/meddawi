@@ -11,7 +11,7 @@ export default function HomeCards() {
 
     <div className="homediv lg:hidden ">
     <div className="cards  flex flex-col   items-center justify-center">
-      <Link to='/service'>
+      <Link to='/services'>
         <div className="card flex justify-center items-center  bg-red-500">
           <h1 className="text-white text-sm	">خدماتنا</h1>
           <img className="homecard-image " src={service} alt="cardone" />
@@ -25,7 +25,7 @@ export default function HomeCards() {
       </div>
       </Link>
       
-      <Link to="/team">
+      <Link to="/team1">
         <div className="card flex justify-center items-center  bg-red-500">
           <h1 className="text-white 	">فرقنا الطبية</h1>
           <img src={teamwork} alt="cardone" />
