@@ -3,8 +3,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../assets/css/Style.css"
+import {useTranslation} from "react-i18next"
 
-function TeamCard({ data }) { const CustomPrevArrow =(props)=>(
+function TeamCard({ data }) {
+  const { i18n,t}=useTranslation();
+
+  const CustomPrevArrow =(props)=>(
   <div {...props}
   style={{ ...props.style,color:'blue'}}
   className="slick-prev"
@@ -70,10 +74,10 @@ var settings = {
                 <img src={item.image} className="h-44 w-44 rounded-full border-slate-200	border-4" />
               </div>
               <div className=" flex  flex-col justify-center items-center gap-4 p-4">
-                <p className="text-xl font-semibold">الاسم:{item.title}</p>
+                <p className="text-sm font-semibold"> {t( "Name")   } : {item.title}</p>
 
-                <p>العمر:{item.age}</p>
-                <p>سنوات الخبرة:{item.years}</p>
+                <p > {t( "Age")   } : {item.age}</p>
+                <p> {t( "Years of Experience")   } : {item.years}</p>
 
                 
               </div>

@@ -10,6 +10,7 @@ import Footerr from "../Footerr";
 import "../assets/css/Style.css";
 export default function Home() {
   return (
+    
     <>
       <div className="grid grid-cols-12 h-screen w-screen Homecontent  lg:mt-0">
 
@@ -24,6 +25,7 @@ export default function Home() {
 
         <section id="homeSection" className="  lg:block col-span-12">
           <HeroSectio />
+      
         </section>
 
         <section

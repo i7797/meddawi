@@ -4,9 +4,12 @@ import ServiceCardFinal from "../cards/ServiceCardFinal";
 import Drawer from  "../common/Drawer";
 import NavBar from "../common/NavBar";
 import { Link } from "react-router-dom";
+import {useTranslation} from "react-i18next"
+
 
 const FinalService = () => {
   const [data, setData] = useState(ServicesData);
+  const { i18n,t}=useTranslation();
 
   return (
     
@@ -19,22 +22,18 @@ const FinalService = () => {
           <Drawer />
         </div>
 
-        <div className="hidden md:block col-span-12 lg:hidden   ">
-          <NavBar />
-        </div>
+        
         
         <div className="text-center col-span-12 mt-5 ">
-          <h1 className="text-white text-3xl"> خدماتنا الطبية </h1>
-            <p className="hidden mt-2 text-white md:block lg:block  xl:block ">
-              خدماتنا تشمل رعاية تمريضية محترفة ورعاية صحية مستمرة على مدار
-              الساعة، مع استجابة سريعة
-              <br />
-              وفعالة لحالات الطوارئ لضمان صحة وسلامة مرضانا في كل الأوقات.
+          <h1 className="text-white text-3xl ">  {t("OurMedicalServices")} </h1>
+            <p className="hidden px-4 text-center mt-2  text-white md:block lg:block  xl:block ">
+
+              {t("MedicalServicesDescription")}
+              
             </p>
             <Link to="/askservice">
               <button className="bg-[#7980a8]  hover:bg-[#2e3564]  text-white  font-bold py-2 px-4 rounded-lg mt-5 ">
-                {" "}
-                اطلب الخدمة{" "}
+                {t("Ask-The-Servive")}
               </button>
             </Link>
           

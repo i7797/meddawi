@@ -38,20 +38,7 @@ function Translate() {
       <h2>{t("Welcome to React")}</h2>;
       <h2>{t("p")}</h2>;
 
-      <button
-        onClick={() => {
-          i18n.changeLanguage("ar");
-        }}
-      >
-        Ar
-      </button>
-      <button
-        onClick={() => {
-          i18n.changeLanguage("en");
-        }}
-      >
-        En
-      </button>
+      
     </>
   );
 }

@@ -7,12 +7,12 @@ import suture from '../assets/images/suture.jpg';
 
 
  const ServicesData = [
-    { id: 1, title: 'كانولا ', image: cannula , text:'نقدم خدمة تركيب الكانولا بمهارة لضمان تلقي العلاج الوريدي بفعالية وأمان.'},
-    { id: 2, title: 'قياس سكر',image: sugar , text:"نقدم خدمة قياس السكر بدقة وسرعة لضمان متابعة مستمرة لمستويات السكر ."},
-    { id: 3, title: 'قياس ضغط اللدم ',image: bloodPressure , text:'نقدم خدمة قياس ضغط الدم بانتظام لمراقبة صحتك وضمان استقرار حالتك.' },
-    { id: 4, title: 'حقن الابر ',image: injection , text:'نقدم خدمة زرق الإبر بدقة واحترافية لضمان راحتك وسلامتك.'},
-    { id: 5, title: 'حريق الجلد ',image: hand ,text:'نقدم خدمة قياس ضغط الدم بانتظام لمراقبة صحتك وضمان استقرار حالتك '},
-    { id: 6, title: 'خياطه الجروح ',image: suture ,text:'نقدم خدمة قياس ضغط الدم بانتظام لمراقبة صحتك وضمان استقرار حالتك.'},
+    { id: 1, title: 'cannula-title', image: cannula , text:'cannula-text'},
+    { id: 2, title: 'sugar-title',image: sugar , text:'sugar-text'},
+    { id: 3, title: 'bloodPressure-title',image: bloodPressure , text:'bloodPressure-text' },
+    { id: 4, title: 'injection-tilte',image: injection , text:'injection-text'},
+    { id: 5, title: 'hand-title',image: hand ,text:'hand-text'},
+    { id: 6, title: 'suture-title',image: suture ,text:'suture-text'},
  
   ];
 
