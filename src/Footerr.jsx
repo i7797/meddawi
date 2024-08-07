@@ -31,7 +31,7 @@ const Footerr = () => {
     <li> <a href='#home' > {t('Home')} </a></li>
     <li> <a  href='#about'>  {t('About')}</a></li>
    <li>  <a  href='#service'>  {t('Services')}</a></li>
-    <li><a  href='#tea'> {t('Team')}</a></li>
+    <li><a  href='#team'> {t('Team')}</a></li>
     </ul>
   
 </div>

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     
     <>
-      <div className="grid grid-cols-12 h-screen w-screen Homecontent  lg:mt-0">
+      <div  id="home" className="grid grid-cols-12 h-screen w-screen Homecontent  lg:mt-0">
 
         <div className="lg:hidden ">
           <Drawer />
