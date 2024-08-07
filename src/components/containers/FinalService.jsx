@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ServicesData from "../../data/ServiceData";
 import ServiceCardFinal from "../cards/ServiceCardFinal";
+import Drawer from  "../common/Drawer";
 import NavBar from "../common/NavBar";
 import { Link } from "react-router-dom";
 
@@ -9,13 +10,19 @@ const FinalService = () => {
 
   return (
     
-      <div className=" grid grid-cols-12 w-screen justify-items-center overflow-x-hidden md:bg-[#181D3D] lg:bg-[#181D3D]    ">
-        <div
-          id="service"
-          className="w-[90%]  mt-[50px] lg:mt-0 lg:hidden xl:hidden">
-          <NavBar />
+      <div   id="service" className="  grid grid-cols-12 w-screen justify-items-center overflow-x-hidden md:bg-[#181D3D] lg:bg-[#181D3D]    ">
+      
+        
+    
+
+      <div className="lg:hidden ">
+          <Drawer />
         </div>
 
+        <div className="hidden md:block col-span-12 lg:hidden   ">
+          <NavBar />
+        </div>
+        
         <div className="text-center col-span-12 mt-5 ">
           <h1 className="text-white text-3xl"> خدماتنا الطبية </h1>
             <p className="hidden mt-2 text-white md:block lg:block  xl:block ">

@@ -20,6 +20,7 @@ export default function Home() {
         <div className="hidden md:block col-span-12  ">
           <NavBar />
         </div>
+        
 
         <section id="homeSection" className="  lg:block col-span-12">
           <HeroSectio />
