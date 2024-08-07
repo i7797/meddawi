@@ -209,3 +209,11 @@
 
 
 
+@media (min-width:700px){
+    .homediv {
+        display: none;
+    }
+
+}
+
+

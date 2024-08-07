@@ -1,22 +1,20 @@
 
 
 /* Arrows */
-/* Override default slick arrow styles */
 .slick-prev::before, .slick-next::before {
-  color: rgb(6, 6, 59) !important; /* Use !important to override existing styles */
+  color: rgb(6, 6, 59) !important; 
 }
 
-/* You can also try applying styles directly to the arrow container if needed */
 .slick-prev, .slick-next {
-  color:rgb(6, 6, 59) !important; /* Ensure arrows are visible */
+  color:rgb(6, 6, 59) !important; 
 }
 
 .slick-prev {
-  left: 10px; /* Adjust positioning as needed */
+  left: 10px; 
 }
 
 .slick-next {
-  right: 10px; /* Adjust positioning as needed */
+  right: 10px; 
 }
 
 
@@ -28,7 +26,6 @@
   position: relative;
   min-height: 55vh;
   width:100%;
-  /* background of main div*/
   background: rgb(12, 12, 60);
   padding: 20px;
   
@@ -84,8 +81,7 @@
   color:white;
   font-size: 25px;
   white-space: nowrap;
-    
-      text-overflow: "----";
+  text-overflow: "----";
 }
 
 
@@ -129,7 +125,6 @@
     content: '';
     position: absolute;  
     right: 0; 
-  
     bottom: -40px;
     height: 40px;
     width: 40px;

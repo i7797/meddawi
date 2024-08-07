@@ -10,7 +10,7 @@ export default function HomeCards() {
   return (
 
     <div className="homediv lg:hidden ">
-    <div className="cards  flex flex-col   items-center justify-center">
+    <div className="cards     flex flex-col   items-center justify-center">
       <Link to='/services'>
         <div className="card flex justify-center items-center  bg-red-500">
           <h1 className="text-white text-sm	">خدماتنا</h1>
