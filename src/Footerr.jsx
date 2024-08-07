@@ -3,10 +3,10 @@ import React from 'react';
 
 const Footerr = () => {
   return (
-    <footer id='footerSection'  className='bg-gradient-to-r from-[#7378a0] to-[#323868] text-white py-10 mt-10'> 
+    <footer id='footerSection'  className='bg-gradient-to-r from-[#3d436e] to-[#040a37] text-white py-10 mt-0'> 
 <div className='container  mx-auto  grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-3  gap-10 px-5   '>
 <div>
-<h2 className='text-3xl font-bold'> Meddawi</h2>
+<h2 className='text-3xl font-serif'> Meddawi</h2>
 <p className="mt-2">اعمل اليوم من أجل غد أكثر صحة</p>
 <p className='mt-4 text-sm'>  © Copyright 2024.</p>
 </div>

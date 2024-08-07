@@ -19,7 +19,7 @@ export default function HeroSectio() {
         <EmergencyBotton />
       </div>
 
-      <div className="cards flex flex-col  w-3/4 justify-center items-center lg:hidden">
+      <div className="cards flex flex-col   w-3/4 justify-center items-center lg:hidden">
         <HomeCards />
       </div>
     </div>

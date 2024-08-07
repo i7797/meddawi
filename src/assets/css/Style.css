@@ -117,15 +117,7 @@
 }
 
 
-.Nab-bg{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 17%;
 
-    border-radius: 0px 0px 0 30px;
-  }
     
   @media (min-width:1025px){
     .Nab-bg{

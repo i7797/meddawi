@@ -9,7 +9,7 @@ function Team() {
   return (
     <div id="team" className="team flex flex-col justify-start items-center w-screen h-screen">
       <div className="w-[90%] h-[30%] lg:w-full lg:h-[20%] mt-[50px] lg:mt-0">
-      <NavBar/>
+     
       </div>
       {/* <div className="TeamCards lg:h-[90%] lg:w-full h-full lg:mt-0 flex items-baseline lg:items-center lg:justify-center mt-[50px]"> */}
       <TeamCard data={TeamData}/>
