@@ -8,6 +8,7 @@ import FinalService from "../components/containers/FinalService";
 import Team from "../components/containers/Team";
 import Footerr from "../Footerr";
 import "../assets/css/Style.css";
+import Translate from "../Translate";
 export default function Home() {
   return (
     
@@ -45,6 +46,7 @@ export default function Home() {
           className="hidden lg:block col-span-12"
         >
           <Footerr />
+          <Translate/>
         </section>
       </div>
     </>

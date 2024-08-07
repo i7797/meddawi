@@ -35,10 +35,8 @@ function Translate() {
 
   return (
     <>
-      <h2>{t("Welcome to React")}</h2>;
-      <h2>{t("p")}</h2>;
-
-      
+     
+     
     </>
   );
 }
