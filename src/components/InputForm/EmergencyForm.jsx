@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import TextField from '@mui/material/TextField';
 import '../../assets/css/Style.css';
 import SendBtn from '../bottons/SendBtn';
@@ -10,21 +10,22 @@ export default function EmergencyForm() {
   const [caseOfEmergency, setEmergencyCase] = useState('');
   const [addressOfPatient, setAddress] = useState('');
 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const phonePattern = /^\d{11}$/;
     if (!phonePattern.test(phone)) {
       alert('Please enter a valid 11-digit phone number.');
       return;
     }
-    
+
     try {
-      await axios.post('http://localhost:5002/api/emergency', {
+      await axios.post('http://localhost:5000/api/emergency', {
         name,
         phone,
         caseOfEmergency,
-        addressOfPatient
+        addressOfPatient,
+        
       });
       console.log('Your data has been sent');
     } catch (e) {

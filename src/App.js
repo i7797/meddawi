@@ -17,6 +17,8 @@ import Signin from './Sign/SignIn.jsx';
 import { AuthProvider } from "./Sign/AuthContext.jsx";
 
 import Footerr from './Footerr.jsx'
+import Dashboard from './components/Dashboard/Dashboard.jsx';
+import EmergencyData from './components/Dashboard/EmergencyData.jsx';
 
 function App() {
   
@@ -58,6 +60,8 @@ function App() {
           <Route  path='/emergency' element={<EmergencyContainer/>}/>
           <Route path='/nurse' element={<NurseLayout/>}/>
 
+          <Route path='/dashboard' element={<Dashboard/>}/>
+          <Route path='/emergencyData' element={<EmergencyData/>}/>
           
         <Route 
           path="/team1" 
