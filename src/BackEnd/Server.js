@@ -4,7 +4,7 @@ import cors from 'cors';
 import Emergency from '../models/EmergencyModel.js';
 import dailyService from '../models/AskCare.js';
 const app = express();
-const port = 5002;
+const port = 5000;
 
 // Middleware
 app.use(cors());
@@ -55,7 +55,7 @@ app.post('/api/service', async (req, res) => {
 });
 
 //fetch data of daily services 
-app.get('/api/dashboard',(req,res)=>{
+app.get('/api/daily-services', (req, res)=>{
   dailyService.find()
   .then(service => res.json(service))
   .catch(err =>res.json(err))
@@ -63,7 +63,7 @@ app.get('/api/dashboard',(req,res)=>{
 
 //fetch emergency data
 
-app.get('/api/dashboard',(req,res)=>{
+app.get('/api/emergency-data', (req, res)=>{
   Emergency.find()
   .then(cases => res.json(cases))
   .catch(err =>res.json(err))

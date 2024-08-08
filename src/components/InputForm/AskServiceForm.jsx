@@ -25,7 +25,7 @@ export default function AskServiceForm() {
     return;
   }
   try {
-    await axios.post(`http://localhost:5002/api/service`, {
+    await axios.post(`http://localhost:5000/api/service`, {
       paientName,
       phone,
       healthCase,

@@ -9,7 +9,10 @@ const SignUp= () => {
   const [password, setpassword] = useState("");
   const navigate = useNavigate();
 
-
+ const handelSubmit = () => {
+  console.log('this is submit signup page')
+  
+ }
   return (
     <>
       
