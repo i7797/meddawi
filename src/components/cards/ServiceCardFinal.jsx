@@ -1,7 +1,9 @@
 import React from "react";
-import AskService from "../containers/AskService";
+import {useTranslation} from "react-i18next"
 
 function ServiceCardFinal({ data }) {
+  const { i18n,t}=useTranslation();
+
   return (
     <div
       key={data.id}
@@ -16,10 +18,10 @@ function ServiceCardFinal({ data }) {
       </div>
       <div className="text text-center p-3">
         <h2 className="title text-2xl text-pink-400 font-bold mb-2">
-          {data.title}
+          {t(data.title)}
         </h2>
         <p className=" text-gray-700 md:text-white lg:text-white xl:text-white 2xl:text-white mb-4">
-          {data.text}
+          {t(data.text)}
         </p>
       </div>
     </div>

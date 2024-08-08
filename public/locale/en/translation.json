@@ -1,10 +1,59 @@
 {
-    "Welcome to React": "Welcome to React and react-i18next",
-     "p":"hello"
-     ,
-     
-     
-      "homeText": "We are here to take care of you with care and love"
+    "Meddawi": "Meddawi",
+    "Profile": "Profile",
+    "Logout": "Logout",
+    "Login": "Login",
+    "Medical Teams": "Medical Teams",
+    "Services": "Services",
+    "Home": "Home", 
+  "Ongoing Care": "Ongoing Care",
+  "Team": "Team",
+  "Arabic": "Arabic",
+  "English": "English",
+
+    "Name": "Name",
+    "Age": "Age",
+    "Years of Experience": "Years of Experience",
   
-    
+
+
+
+  "cannula-title": "Cannula",
+  "cannula-text": "We provide cannula insertion services with skill to ensure effective and safe intravenous treatment.",
+  "sugar-title": "Blood Sugar Measurement",
+  "sugar-text": "We offer blood sugar measurement services with precision and speed to ensure continuous monitoring of sugar levels.",
+  "bloodPressure-title": "Blood Pressure Measurement",
+  "bloodPressuretext": "We provide regular blood pressure measurement services to monitor your health and ensure stable condition.",
+  "injection-tilte": "Injection",
+  "injection-text": "We offer injection services with accuracy and professionalism to ensure your comfort and safety.",
+  "hand-title": "Burn Treatment",
+  "hand-text": "We provide burn treatment services with skill to ensure quick and safe recovery.",
+  "suture-title": "Wound Suturing",
+  "suture-text": "We offer wound suturing services with skill to ensure quick and safe healing of wounds.",
+  "Ask-The-Servive":"Ask the service", 
+   "careMessage": "We are here to care for you with kindness and love",
+   "Emergency":"Emergency" ,
+    "OurMedicalServices": "Our Medical Services",
+  "MedicalServicesDescription": "Our services include professional nursing care and continuous health care around the clock, with a rapid and effective response to emergencies to ensure the health and safety of our patients at all times.",
+  "Phone-Number": "Phone Number",
+  "Number-of-visits": "Number of Visits",
+  "Address": "Address",
+  "Select-Service": "Select Service",
+  "order":"Order",
+  "Healthy Future": "Work today for a healthier tomorrow",
+  "Quick Links": "Quick Links",
+  "About": "About",
+  "Contact Us": "You can contact us here",
+  "Phone": "Phone",
+  "Facebook": "Facebook",
+  "Twitter": "Twitter",
+  "LinkedIn": "LinkedIn",
+  "Disease-condition":"Disease condition"
+
+
+
+
+
+  
   }
+  

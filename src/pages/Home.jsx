@@ -7,22 +7,26 @@ import HeroSectio from "../components/HeroSectio";
 import FinalService from "../components/containers/FinalService";
 import Team from "../components/containers/Team";
 import Footerr from "../Footerr";
-
+import "../assets/css/Style.css";
+import Translate from "../Translate";
 export default function Home() {
   return (
+    
     <>
-      <div className="grid grid-cols-12 h-screen w-screen Homecontent ">
+      <div  id="home" className="grid grid-cols-12 h-screen w-screen Homecontent  lg:mt-0">
 
         <div className="lg:hidden ">
           <Drawer />
         </div>
 
-        <div className="hidden md:block col-span-12 ">
+        <div className="hidden md:block col-span-12  ">
           <NavBar />
         </div>
+        
 
         <section id="homeSection" className="  lg:block col-span-12">
           <HeroSectio />
+      
         </section>
 
         <section
@@ -33,15 +37,16 @@ export default function Home() {
         </section>
         <section
           id="teamSection"
-          className="  hidden lg:block col-span-12"
+          className="  hidden lg:block col-span-12 "
         >
           <Team />
         </section>
         <section
           id="footerSection"
-          className="  hidden lg:block col-span-12"
+          className="hidden lg:block col-span-12"
         >
           <Footerr />
+          <Translate/>
         </section>
       </div>
     </>

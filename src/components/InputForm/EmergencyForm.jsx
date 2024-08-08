@@ -3,8 +3,12 @@ import TextField from '@mui/material/TextField';
 import '../../assets/css/Style.css';
 import SendBtn from '../bottons/SendBtn';
 import axios from 'axios';
+import {useTranslation} from "react-i18next"
+
 
 export default function EmergencyForm() {
+  const { i18n,t}=useTranslation();
+
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [caseOfEmergency, setEmergencyCase] = useState('');
@@ -35,11 +39,14 @@ export default function EmergencyForm() {
 
   return (
     <div className='flex flex-col items-center w-full h-full gap-5 lg:w-1/2'>
+      
       <form onSubmit={handleSubmit} className='flex flex-col gap-5 w-full items-center'>
+
+
         <TextField
           className='w-4/5 border-solid border-2 border-[#181D3D]'
           id="outlined-basic" 
-          label="الاسم" 
+          label={t("Name")} 
           variant="outlined" 
           type='text'
           value={name}
@@ -49,7 +56,7 @@ export default function EmergencyForm() {
         <TextField 
           id="outlined-basic" 
           className='w-4/5 border-solid border-2 border-[#181D3D]'
-          label="رقم الهاتف" 
+          label={t("Phone-Number")} 
           variant="outlined" 
           type='number'
           value={phone}
@@ -59,7 +66,7 @@ export default function EmergencyForm() {
         <TextField 
           id="outlined-basic" 
           className='w-4/5 border-solid border-2 border-[#181D3D]'
-          label="الحالة المرضية" 
+          label={t("Disease-condition")} 
           variant="outlined" 
           type='text'
           value={caseOfEmergency}
@@ -69,7 +76,7 @@ export default function EmergencyForm() {
         <TextField 
           id="outlined-basic" 
           className='w-4/5 border-solid border-2 border-[#181D3D]'
-          label="عنوان السكن" 
+          label={t("Address")} 
           variant="outlined" 
           type='text'
           value={addressOfPatient}

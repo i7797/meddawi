@@ -38,33 +38,22 @@
     .nav{
         background-color: white;
         box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+        border-radius:20px;
     }
     .nav li{
         color:rgb(0, 0, 0);
         font-size: 25px;
         white-space: nowrap;
-          
-            text-overflow: "----";
+         text-overflow: "----";
     }
 
     nav li:hover{
         background-color: #0e195d;
         border-radius: 13px;
+        color: #ffffff;
+        
         
     }
-   .items{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   }
-   .item{
-    background-color: white;
-    color: #181D3D;
-    font-size: 20px;
-    transition-delay: 0.3s;
-    transition-duration: 0.3s;
-   }
    #active{
     color:#CA5050;
     font-weight: bold;
@@ -218,5 +207,13 @@
 
 }
 
+
+
+@media (min-width:700px){
+    .homediv {
+        display: none;
+    }
+
+}
 
 

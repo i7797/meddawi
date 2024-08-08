@@ -4,9 +4,13 @@ import { useParams } from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import '../../assets/css/Style.css'
 import SendBtn from '../bottons/SendBtn';
+import {useTranslation} from "react-i18next"
+
 import axios from 'axios';
 
 export default function AskServiceForm() {
+  const { i18n,t}=useTranslation();
+
   const [paientName, setPatientName] = useState('');
   const [phone, setPhone] = useState(0);
   const [healthCase , setHealthCase] = useState('')
@@ -39,7 +43,7 @@ export default function AskServiceForm() {
       <TextField
       className='inputText w-[70%] border-solid border-2 border-[#181D3D] '
       type='text' id="outlined-basic"
-      label="الاسم"
+      label={t("Name")}
       variant="outlined" 
       value={paientName}
       onChange={(e)=>setPatientName(e.target.value)}
@@ -47,7 +51,7 @@ export default function AskServiceForm() {
       <TextField
        id="outlined-basic"
         className='w-[70%]' 
-        label="رقم الهاتف" 
+        label={t("Phone-Number")}
         pattern="\d{11}"
         type='text' 
         minRows={0} 
@@ -59,7 +63,7 @@ export default function AskServiceForm() {
       <TextField  
       id="outlined-basic" 
       className='w-[70%]' 
-      label="عدد مرات الزياره" 
+      label={t("Number-of-visits")}
       type='number' 
       variant="outlined" 
       value={noOfVisit}
@@ -68,7 +72,7 @@ export default function AskServiceForm() {
         <TextField  
       id="outlined-basic" 
       className='w-[70%]' 
-      label="عنوان السكن" 
+      label={t("Address")}
       type='string' 
       variant="outlined" 
       value={address}
@@ -86,12 +90,12 @@ export default function AskServiceForm() {
       className='w-[70%]'
       name='اختر الخدمة'
       > 
-        <option  value='pressure'>قياس ضغط الدم</option>
-        <option  value='suger'>قياس السكر</option>
-        <option  value='cannula'>الكانولا</option>
-        <option  value='suture'>خياطة الجروح</option>
-        <option  value='suture'>حريق الجلد </option>
-        <option  value='suture'> حقن الابر</option>
+        <option  value='pressure'> {t("bloodPressure-title")} </option>
+        <option  value='suger'>{t("sugar-title")}</option>
+        <option  value='cannula'>{t("cannula-title")}</option>
+        <option  value='injection'>{t("injection-title")} </option>
+        <option  value='burn'>{t("hand-title")}  </option>
+        <option  value='suture'>  {t("suture-title")}</option>
 
       </select>
       <SendBtn/>

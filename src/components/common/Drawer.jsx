@@ -18,10 +18,13 @@ import LoginIcon from "@mui/icons-material/Login";
 import PersonIcon from "@mui/icons-material/Person";
 import LogoutIcon from "@mui/icons-material/Logout";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
+import {useTranslation} from "react-i18next"
 
 const Navbar = () => {
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
+  const { i18n,t}=useTranslation();
+
 
   const handleLogout = () => {
     logout();
@@ -86,7 +89,8 @@ const Navbar = () => {
               {" "}
               <ListItemText
                 sx={{ color: "#181D3D" }}
-                primary={"الصفحه الرئيسية"}
+                primary={t("Home")}
+
               />{" "}
             </Link>
           </ListItemButton>
@@ -101,7 +105,7 @@ const Navbar = () => {
               {" "}
               <ListItemText
                 sx={{ color: "#181D3D" }}
-                primary={"عناية مستمرة  "}
+                primary={t( "Ongoing Care")}
               />{" "}
             </Link>
           </ListItemButton>
@@ -114,7 +118,8 @@ const Navbar = () => {
             </ListItemIcon>
             <Link to="/services">
               {" "}
-              <ListItemText sx={{ color: "#181D3D" }} primary={"الخدمات"} />
+              <ListItemText sx={{ color: "#181D3D" }}                primary={t("Services")}
+ />
             </Link>
           </ListItemButton>
         </ListItem>
@@ -125,7 +130,9 @@ const Navbar = () => {
             </ListItemIcon>
             <Link to="/team1">
               {" "}
-              <ListItemText sx={{ color: "#181D3D" }} primary={"الفريق"} />
+              <ListItemText sx={{ color: "#181D3D" }}  
+                             primary={t("Team")}
+ />
             </Link>
           </ListItemButton>
         </ListItem>
@@ -140,7 +147,8 @@ const Navbar = () => {
                   <PersonIcon sx={{ color: "#181D3D" }} />
                 </ListItemIcon>
                 <Link to="/profile">
-                  <ListItemText sx={{ color: "#181D3D" }} primary="البروفايل" />
+                  <ListItemText sx={{ color: "#181D3D" }}                 primary={t("Profile")}
+ />
                 </Link>
               </ListItemButton>
             </ListItem>
@@ -149,7 +157,8 @@ const Navbar = () => {
                 <ListItemIcon>
                   <LogoutIcon sx={{ color: "#181D3D" }} />
                 </ListItemIcon>
-                <ListItemText sx={{ color: "#181D3D" }} primary="تسجيل خروج" />
+                <ListItemText sx={{ color: "#181D3D" }}                 primary={t("Logout")}
+ />
               </ListItemButton>
             </ListItem>
           </>
@@ -160,11 +169,34 @@ const Navbar = () => {
                 <LoginIcon sx={{ color: "#181D3D" }} />
               </ListItemIcon>
               <Link to="/signup">
-                <ListItemText sx={{ color: "#181D3D" }} primary="تسجيل دخول" />
+                <ListItemText sx={{ color: "#181D3D" }}                 primary={t("Login")}
+ />
               </Link>
             </ListItemButton>
           </ListItem>
         )}
+<ListItem disablePadding>
+            <ListItemButton onClick={()=> i18n.changeLanguage("ar")}>
+             
+             
+                <ListItemText sx={{ color: "#181D3D" }} primary={t("Arabic")} />
+              
+            </ListItemButton>
+          </ListItem>
+<ListItem disablePadding>
+            <ListItemButton onClick={()=> i18n.changeLanguage("en")}>
+             
+             
+                <ListItemText sx={{ color: "#181D3D" }} primary={t("English")} />
+              
+            </ListItemButton>
+          </ListItem>
+
+
+
+
+
+
       </List>
     </Box>
   );
