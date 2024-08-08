@@ -7,7 +7,7 @@ import nurse from "../../assets/images/nurse (1).png";
 function AskService() {
   return (
     <>
-     <div className="lg:hidden ">
+     <div className=" lg:hidden ">
         <Drawer />
       </div>
 

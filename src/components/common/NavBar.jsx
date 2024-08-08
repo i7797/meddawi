@@ -18,7 +18,7 @@ function NavBar() {
     <>
       <div class="  sm:bg-inherit md:bg-inherit lg:bg-[#181D3D] lg:text-white lg:p-4 lg:flex lg:justify-between lg:items-center">
         <div class=" hidden  font-serif text-3xl ml-10 lg:block">
-        {t("Meddawi")}        </div>
+        {"Meddawi"}        </div>
         <div className="hidden  lg:justify-end   lg:inline-flex   w-full lg:h-[30%]">
           <div className=" nav lg:inline-flex justify-center items-center  w-[80%]">
             <nav>
@@ -50,7 +50,7 @@ function NavBar() {
                   {t("Services")}                  </li>
                 </Link>
 
-                <Link to="/home">
+                <Link to="/">
                   <li className="hidden lg:block"> {t("Home")}</li>
                 </Link>
               </ul>

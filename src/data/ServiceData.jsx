@@ -9,7 +9,7 @@ import suture from '../assets/images/suture.jpg';
  const ServicesData = [
     { id: 1, title: 'cannula-title', image: cannula , text:'cannula-text'},
     { id: 2, title: 'sugar-title',image: sugar , text:'sugar-text'},
-    { id: 3, title: 'bloodPressure-title',image: bloodPressure , text:'bloodPressure-text' },
+    { id: 3, title: 'bloodPressure-title',image: bloodPressure , text:'bloodPressuretext' },
     { id: 4, title: 'injection-tilte',image: injection , text:'injection-text'},
     { id: 5, title: 'hand-title',image: hand ,text:'hand-text'},
     { id: 6, title: 'suture-title',image: suture ,text:'suture-text'},

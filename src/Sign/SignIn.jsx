@@ -57,7 +57,7 @@ const SignIn = () => {
                   const user = userCredential.user;
                   console.log(user);
                  
-                  navigate("/home");
+                  navigate("/");
                 })
                 .catch((error) => {
                   const errorCode = error.code;

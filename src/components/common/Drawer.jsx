@@ -85,7 +85,7 @@ const Navbar = () => {
             <ListItemIcon>
               <HomeIcon sx={{ color: "#181D3D" }} />
             </ListItemIcon>
-            <Link to="/home">
+            <Link to="/">
               {" "}
               <ListItemText
                 sx={{ color: "#181D3D" }}
@@ -147,7 +147,8 @@ const Navbar = () => {
                   <PersonIcon sx={{ color: "#181D3D" }} />
                 </ListItemIcon>
                 <Link to="/profile">
-                  <ListItemText sx={{ color: "#181D3D" }}                 primary={t("Profile")}
+                  <ListItemText sx={{ color: "#181D3D" }}                 
+                  primary={t("Profile")}
  />
                 </Link>
               </ListItemButton>
@@ -157,7 +158,8 @@ const Navbar = () => {
                 <ListItemIcon>
                   <LogoutIcon sx={{ color: "#181D3D" }} />
                 </ListItemIcon>
-                <ListItemText sx={{ color: "#181D3D" }}                 primary={t("Logout")}
+                <ListItemText sx={{ color: "#181D3D" }}                 
+                primary={t("Logout")}
  />
               </ListItemButton>
             </ListItem>

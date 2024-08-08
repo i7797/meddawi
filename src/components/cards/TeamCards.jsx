@@ -67,6 +67,7 @@ var settings = {
     <div className="w-3/4   ">
       <div className="   ">
         <Slider {...settings}>
+          
           {data.map((item,index) => (
             <div key={index} className="slick-slide-item">
             <div className="  bg-slate-200 h-[400px]  text-black rounded-xl">

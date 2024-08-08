@@ -93,7 +93,7 @@ export default function AskServiceForm() {
         <option  value='pressure'> {t("bloodPressure-title")} </option>
         <option  value='suger'>{t("sugar-title")}</option>
         <option  value='cannula'>{t("cannula-title")}</option>
-        <option  value='injection'>{t("injection-title")} </option>
+        <option  value='injection'>{t("injection-tilte")} </option>
         <option  value='burn'>{t("hand-title")}  </option>
         <option  value='suture'>  {t("suture-title")}</option>
 

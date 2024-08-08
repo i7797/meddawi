@@ -11,7 +11,6 @@ import NurseProfile from './components/containers/NurseProfile.jsx'; // Use the 
 import NursePost from './components/containers/NursePost.jsx'; // Use the correct file extension
 import NurseLayout from './pages/NurseLayout.jsx'; // Use the correct file extension
 import NurseStartPage from './pages/NurseStartPage.jsx'; // Use the correct file extension
-import Front from './pages/Front.jsx'; // Use the correct file extension
 import Signup from './Sign/SignUp.jsx';
 import Signin from './Sign/SignIn.jsx';
 import { AuthProvider } from "./Sign/AuthContext.jsx";
@@ -36,9 +35,8 @@ function App() {
           <Route path="/signup" element ={< Footerr />}/>
 
 
-        <Route path="/" element={<Front/>} />
           <Route path='/nursestartpage' element={<NurseStartPage/>}/>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/services" element={ <FinalService /> } />
           
         
