@@ -96,6 +96,23 @@ const Navbar = () => {
           </ListItemButton>
         </ListItem>
 
+        
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <HomeIcon sx={{ color: "#181D3D" }} />
+            </ListItemIcon>
+            <Link to="/dashboard">
+              {" "}
+              <ListItemText
+                sx={{ color: "#181D3D" }}
+                primary={"Dashboard"}
+
+              />{" "}
+            </Link>
+          </ListItemButton>
+        </ListItem>
+
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>

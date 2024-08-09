@@ -1,107 +1,108 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import EmergencyData from './EmergencyData'
-import ServiceData from './ServiceData'
-import admin from '../../assets/images/user.png'
-import image from '../../assets/images/dashboardImage.svg'
-import alarm from '../../assets/images/alarm.png'
-import DailyCare from '../../assets/images/DailyCare.png'
+import React from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import EmergencyData from "./EmergencyData";
+import ServiceData from "./ServiceData";
+import admin from "../../assets/images/user.png";
+import image from "../../assets/images/dashboardImage.svg";
+import alarm from "../../assets/images/alarm.png";
+import DailyCare from "../../assets/images/DailyCare.png";
 function Dashboard() {
   const [showEmergencyData, setShowEmergencyData] = useState(false);
   const [showDailyServiceData, setShowDailyServiceData] = useState(false);
 
   return (
- <div className='flex w-screen h-screen bg-black '>
-    <div className='dashboardContent flex bg-red-300 w-full'>
-       <aside className='bg-white w-[15%] h-full items-center justify-evenly flex flex-col'>
-       <h1 className='font-extrabold text-2xl'>MEDDAWI</h1>
-       <div className='w-[30%] h-[9%] bg-black rounded-full flex justify-center items-center'>
-       <img src={admin} alt='admin image' className='w-3/4 ml-[9px]' />
-       </div>
-      
-         <Link to='/home'>Patient Home Page</Link>
-         <Link to='/home'>Nurse Home Page</Link>
-         <button 
-            className='bg-red-200 h-[10%] w-[80%] rounded-full' 
+    <div className=" block   lg:flex lg:h-screen bg-gradient-to-br from-pink-200 via-blue-900 to-blue-300  ">
+      <aside className="bg-white w-64 shadow-lg flex rounded-3xl m-4  flex-col items-center py-4">
+        <h1 className="font-extrabold mb-4 text-blue-900 text-2xl">MEDDAWI</h1>
+        <div className="w-24 h-24 bg-gray-300 rounded-full flex justify-center items-center mb-6">
+          <img src={admin} alt="admin image" className="w-40" />
+        </div>
+
+        <nav className="flex flex-col w-full">
+          <Link to="/" className="py-2 px-4 hover:bg-gray-200 rounded">
+            Patient Home Page
+          </Link>
+          <Link to="/nurse" className="py-2 px-4 hover:bg-gray-200 rounded">
+            Nurse Home Page
+          </Link>
+
+          <button
+            className="bg-blue-900  text-white py-2 px-4 rounded w-44  mt-10 ml-5"
             onClick={() => setShowEmergencyData(!showEmergencyData)}
           >
-            {showEmergencyData ? 'Hide Emergency Data' : 'Show Emergency Data'}
-          </button>
-          
-          <button 
-            className='bg-red-200 h-[10%] w-[80%] rounded-full' 
-            onClick={() => setShowDailyServiceData(!showDailyServiceData)}
-          >
-            {showDailyServiceData ? 'Hide Daily Service Data' : 'Show Daily Service Data'}
+            {showEmergencyData ? "Hide Emergency Data" : "Show Emergency Data"}
           </button>
 
-       </aside>
-       <div className='dashboardData bg-blue-300 flex flex-col justify-start h-full  w-full gap-3'>
-       <div>
-       <h1 className='font-extrabold text-2xl'>Dashboard</h1>
-       </div>
-       <div className='flex  justify-evenly bg-red w-full h-3/4 '>
-        <div className='textDev flex justify-center bg-white rounded-3xl w-1/2 h-full'>
-        <div className='helloSection w-full flex flex-col justify-center items-start'>
-            {(showEmergencyData || showDailyServiceData) ? (
-              <div className='mt-4 flex flex-col justify-center items-start'>
+          <button
+            className="bg-blue-900  text-white py-2 px-4 rounded w-44  mt-10 ml-5"
+            onClick={() => setShowDailyServiceData(!showDailyServiceData)}
+          >
+            {showDailyServiceData
+              ? "Hide Daily Service Data"
+              : "Show Daily Service Data"}
+          </button>
+        </nav>
+      </aside>
+
+      <main className="block lg:flex-1 p-6">
+        <header className=" flex items-center justify-between mb-6">
+          <h1 className=" text-3xl font-blod  text-blue-900">Dashboard</h1>
+          <div className=" flex items-center">
+            <button className="bg-gray-200 px-4 py-2 rounded mr-4">
+              Settings
+            </button>
+          </div>
+        </header>
+
+        <section className="space-y-5 md:grid md:grid-cols-2 md:gap-6  lg:grid lg:grid-cols-2 lg:gap-6 mb-6">
+          <div className=" bg-white p-6 rounded-lg shadow-lg">
+            {showEmergencyData || showDailyServiceData ? (
+              <div>
                 {showEmergencyData && <EmergencyData />}
                 {showDailyServiceData && <ServiceData />}
               </div>
             ) : (
-              <div className='w-full flex flex-col justify-start items-center h-full'>
-                <div className='flex flex-col items-center w-full h-[25%]'>
-                  <h1 className='text-[30px] font-extrabold'>Hello,<br/>Maryam & Noor</h1>
-                  <h4 className=''>What we will do today?</h4>
-                </div>
-                <div className='w-full h-[75%] self-center'>
-                  <img src={image} alt='welcome image' className='h-full'/>   
-                </div>
+              <div className="text-center">
+                <h1 className="text-xl font-bold mb-4">
+                  Hello,
+                  <br />
+                  Maryam & Noor
+                </h1>
+                <p className="mb-4">What we will do today?</p>
+                <img src={image} alt="welcome image" className="w-full" />
               </div>
             )}
-       </div>
-        </div>
-        <div className='notification flex flex-col justify-start items-center  w-1/4 h-full rounded-3xl'>
-         <div className='bg-blue-400 w-full h-[40%] flex flex-col justify-evenly items-center rounded-3xl'>
-            <h3>Notifications</h3>
-            <div><h5>some text</h5></div>
-            <div><h5>some text</h5></div>
-         </div>
-        <div className='cardDashboard w-full  h-[30%] flex justify-evenly flex-wrap mt-3'>
-        <div className='flex justify-evenly  rounded-3xl w-[45%]  items-center h-[60%] bg-gray-200 mb-2'>
-          <div className='h-1/2 w-1/2'>
-            <img src={alarm} alt='alarm image ' className='h-1/2 w-1/2'/>
           </div>
-          <h6>Emergency request</h6>
-        </div>
-        <div className='flex  rounded-3xl w-[45%] items-center h-[60%] bg-gray-200'>
-          <div className='h-1/2 w-1/2'>
-            <img src={DailyCare} alt='alarm image ' className='h-1/2 w-1/2'/>
+
+          <div className='bg-white p-8 rounded-3xl shadow-lg space-y-10 '>
+          <div className="bg-indigo-100 p-6  rounded-3xl flex items-center">
+        <img src={alarm} alt="alarm image " className="h-16 w-16 mr-4" />
+            <span className=" text-gray-700 font-semibold">Emergency request</span>
           </div>
-          <h6>Daily service request</h6>
-        </div>
-        <div className='flex justify-around rounded-3xl w-[45%] items-center h-[60%] bg-gray-200'>
-          <div className='h-1/2 w-1/2'>
-            <img src={alarm} alt='alarm image ' className='h-1/2 w-1/2'/>
+
+          <div className="bg-indigo-100 p-6  rounded-3xl flex items-center">
+            <img src={alarm} alt="alarm image " className="h-16 w-16 mr-4" />
+            <span className=" text-gray-700 font-semibold">Daily service request</span>
           </div>
-          <h6>patien login</h6>
-        </div>
-        <div className='flex justify-around rounded-3xl w-[45%]  h-[60%] bg-gray-200'>
-          <div className='h-1/2 w-1/2'>
-            <img src={alarm} alt='alarm image ' className='h-1/2 w-1/2'/>
+
+          <div className="bg-indigo-100 p-6  rounded-3xl flex items-center">
+            <img src={alarm} alt="alarm image " className="h-16 w-16 mr-4" />
+            <span className=" text-gray-700 font-semibold"> patien login</span>
           </div>
-          <h6>nurse login</h6>
-        </div>
-      </div>
+
+          <div className="bg-indigo-100 p-6  rounded-3xl flex items-center">
+            <img src={alarm} alt="alarm image " className="h-16 w-16 mr-4" />
+            <span className=" text-gray-700 font-semibold"> nurse login</span>
+          </div>
+          </div>
           
-      </div>
-      
-       </div>
-       </div>
+        </section>
+
+       
+      </main>
     </div>
- </div>
-  )
+  );
 }
 
-export default Dashboard
+export default Dashboard;

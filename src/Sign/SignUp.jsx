@@ -9,10 +9,7 @@ const SignUp= () => {
   const [password, setpassword] = useState("");
   const navigate = useNavigate();
 
- const handelSubmit = () => {
-  console.log('this is submit signup page')
-  
- }
+
   return (
     <>
       
@@ -62,7 +59,7 @@ const SignUp= () => {
                   const user = userCredential.user;
                   console.log("doneeeeeeeeee");
                   // ...
-                  navigate("/home");
+                  navigate("/");
                 })
                 .catch((error) => {
                   const errorCode = error.code;
