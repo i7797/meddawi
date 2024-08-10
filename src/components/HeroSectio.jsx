@@ -14,8 +14,8 @@ export default function HeroSectio() {
         alt="homeimage" 
         className="HomeImage mb-5 lg:mt-20 lg:h-3/4 lg:w-[60%]"
       />
-      <div className="TextBtn flex flex-col justify-center items-center text-center">
-        <p className="HomeText mr-5 mb-5 hidden lg:block text-md lg:text-[40px] leading-[60px]">
+      <div className="pr-10  flex flex-col justify-center items-center text-center">
+        <p className="pt-10 mr-5 mb-5  hidden lg:block text-md lg:text-[40px] leading-[60px]">
         {t("careMessage")}        </p>
         
         <EmergencyBotton />

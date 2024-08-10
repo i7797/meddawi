@@ -28,7 +28,7 @@
   width:100%;
   background: rgb(12, 12, 60);
   padding: 20px;
-  
+  border-radius: 0px 60px 0px 0px;
   display: grid;
   place-items: center;
 }
