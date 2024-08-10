@@ -25,14 +25,14 @@ export default function HomeCards() {
       <Link to ="/askservice">
       <div className="card flex justify-center items-center  bg-red-500">
         <h1 className="text-white "> {t( "Ongoing Care")}</h1>
-        <img className="px-4 py-4 "  src={dailyService} alt="cardone " />
+        <img className="px-4 py-4 mr-3 "  src={dailyService} alt="cardone " />
       </div>
       </Link>
       
       <Link to="/team1">
         <div className="card flex justify-center items-center  bg-red-500">
           <h1 className="text-white 	"> {t("Team")}</h1>
-          <img  className="px-4 py-4 " src={teamwork} alt="cardone" />
+          <img  className="px-4 py-4 ml-7 " src={teamwork} alt="cardone" />
         </div>
       </Link>
     </div>
