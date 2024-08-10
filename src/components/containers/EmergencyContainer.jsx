@@ -1,7 +1,7 @@
 import React from 'react'
 import Drawer from '../common/Drawer'
 import NavBar from '../common/NavBar'
-import ambulance from '../../assets/images/ambulance.png'
+import ambulance from '../../assets/images/ambulance (1).png'
 import EmergencyForm from '../InputForm/EmergencyForm'
 import '../../assets/css/MediaQuery.css'
 
@@ -19,7 +19,7 @@ export default function EmergencyContainer() {
     <div className="EmergencyContainer flex flex-col  items-center w-full h-full ">
        
       <div className="ImageFormEmergency w-[100%] flex flex-col items-center justify-center mt-[60px] lg:mt-[120px] lg:flex-row lg:w-full">
-      <img src={ambulance} alt='ambulance' className='mt-[35px] mb-4 w-[75%] lg:w-1/4 lg:h-[80%]'/>
+      <img src={ambulance} alt='ambulance' className='mt-[35px] mb-4 w-[50%]  lg:w-1/4 lg:h-[80%]'/>
       <EmergencyForm/>
       </div>
     </div>

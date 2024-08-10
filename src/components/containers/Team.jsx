@@ -20,7 +20,7 @@ function Team() {
 
    
         
-      <div className="w-[90%] h-[30%] lg:w-full lg:h-[20%] mt-[10px] lg:mt-0">
+      <div className="w-[90%] h-[30%] lg:w-full lg:h-[20%] mt-[150px] lg:mt-0">
  
       </div>
       {/* <div className="TeamCards lg:h-[90%] lg:w-full h-full lg:mt-0 flex items-baseline lg:items-center lg:justify-center mt-[50px]"> */}

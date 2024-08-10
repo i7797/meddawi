@@ -15,12 +15,12 @@ const Footerr = () => {
 
 <div className=" flex space-x-4 mt-3">
   <button onClick={()=>i18n.changeLanguage('ar')}
-    className=" bg-white text-blue-950 rounded-xl px-4 py-2">
+    className=" bg-gradient-to-r from-pink-400 to-[#CA5050] text-white rounded-xl px-4 py-2">
       {t('Arabic')}
   </button>
     
   <button onClick={()=>i18n.changeLanguage('en')}
-    className=" bg-white text-blue-950 rounded-xl px-4 py-2">
+    className=" bg-gradient-to-r from-pink-400 to-[#CA5050] text-white rounded-xl px-4 py-2">
       {t('English')}
   </button>
 </div>
@@ -39,7 +39,7 @@ const Footerr = () => {
 <div>
 <p  className='text-xl font-bold mb-4'>   {t('Contact Us')} 
 </p>
-<a className="bg-gradient-to-r from-orange-400 to-[#CA5050] text-white rounded-full px-6 py-3 mb-4 inline-flex items-center justify-center shadow-lg">  
+<a className="bg-gradient-to-r from-pink-400 to-[#CA5050] text-white rounded-full px-6 py-3 mb-4 inline-flex items-center justify-center shadow-lg">  
       <i className='fas fa-phone-alt mr-2'>  {t('Phone')} : 077077777777  </i>
     </a>      
 

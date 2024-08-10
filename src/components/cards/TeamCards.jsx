@@ -77,8 +77,8 @@ var settings = {
               <div className=" flex  flex-col justify-center items-center gap-4 p-4">
                 <p className="text-sm font-semibold"> {t( "Name")   } : {item.title}</p>
 
-                <p > {t( "Age")   } : {item.age}</p>
-                <p> {t( "Years of Experience")   } : {item.years}</p>
+                <p  > {t( "Age")   } : {item.age} {t("years-old")} </p>
+                <p> {t( "Years of Experience")   } :  {item.years}</p>
 
                 
               </div>
