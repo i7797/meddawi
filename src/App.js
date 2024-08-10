@@ -13,6 +13,7 @@ import NurseLayout from './pages/NurseLayout.jsx'; // Use the correct file exten
 import NurseStartPage from './pages/NurseStartPage.jsx'; // Use the correct file extension
 import Signup from './Sign/SignUp.jsx';
 import Signin from './Sign/SignIn.jsx';
+import Profile from './Sign/Profile.jsx'
 import { AuthProvider } from "./Sign/AuthContext.jsx";
 
 
@@ -52,6 +53,7 @@ function App() {
          
 
 
+          <Route path="/profile" element={<Profile />} />
 
         
           <Route path='/askservice' element={<AskService/>}/>
