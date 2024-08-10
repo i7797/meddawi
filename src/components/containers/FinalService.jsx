@@ -25,14 +25,14 @@ const FinalService = () => {
         
         
         <div className="text-center col-span-12 mt-5 ">
-          <h1 className="text-white text-3xl ">  {t("OurMedicalServices")} </h1>
-            <p className="hidden px-4 text-center mt-2  text-white md:block lg:block  xl:block ">
+          <h1 className=" text-3xl text-pink-400 font-mono mb-8 "> - {t("OurMedicalServices")} -</h1>
+            <p className="hidden md:px-36   lg:px-40 xl:px-60 text-center mt-2  text-white md:block lg:block  xl:block ">
 
               {t("MedicalServicesDescription")}
               
             </p>
             <Link to="/askservice">
-              <button className="bg-[#7980a8]  hover:bg-[#2e3564]  text-white  font-bold py-2 px-4 rounded-lg mt-5 ">
+              <button className="bg-[#2e3564]  hover:bg-[#9b9fb1]  text-white  font-bold py-2 px-4 rounded-lg mt-5 ">
                 {t("Ask-The-Servive")}
               </button>
             </Link>

@@ -10,7 +10,7 @@ function TeamCard({ data }) {
 
   const CustomPrevArrow =(props)=>(
   <div {...props}
-  style={{ ...props.style,color:'blue'}}
+  style={{ ...props.style , color:'blue'}}
   className="slick-prev"
      >
       <i className="fas fa-chevron-left"> </i>
@@ -20,7 +20,7 @@ function TeamCard({ data }) {
 
 const CustomNextArrow =(props)=>(
   <div {...props}
-  style={{ ...props.style,color:'blue'}}
+  style={{ ...props.style , color:'blue'}}
   className="slick-next"
      >
       <i className="fas fa-chevron-right"> </i>

@@ -18,6 +18,7 @@ import LoginIcon from "@mui/icons-material/Login";
 import PersonIcon from "@mui/icons-material/Person";
 import LogoutIcon from "@mui/icons-material/Logout";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
+import DashboardCustomizeIcon from '@mui/icons-material/DashboardCustomize';
 import {useTranslation} from "react-i18next"
 
 const Navbar = () => {
@@ -68,14 +69,8 @@ const Navbar = () => {
                     </ListItem>
                 ))} */}
 
-        <h1
-          style={{
-            color: "#181D3D",
-            fontWeight: "bold",
-            marginLeft: "20px",
-            marginBottom: "10px",
-          }}
-        >
+        <h1 class="bg-pink-100 text-[#181D3D] h-10 font-bold pl-2 pt-2 mb-2 mt-0">
+       
           {" "}
           MEDDAWI{" "}
         </h1>
@@ -100,7 +95,7 @@ const Navbar = () => {
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <HomeIcon sx={{ color: "#181D3D" }} />
+              <DashboardCustomizeIcon sx={{ color: "#181D3D" }} />
             </ListItemIcon>
             <Link to="/dashboard">
               {" "}
