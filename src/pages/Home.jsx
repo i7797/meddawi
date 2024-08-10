@@ -9,7 +9,6 @@ import Team from "../components/containers/Team";
 import Footerr from "../Footerr";
 import "../assets/css/Style.css";
 import Translate from "../Translate";
-import Dashboard from "../components/Dashboard/Dashboard"
 export default function Home() {
   return (
     
@@ -50,7 +49,6 @@ export default function Home() {
           
         </section>
         <Translate/>
-          <Dashboard/>
       </div>
     </>
   );
