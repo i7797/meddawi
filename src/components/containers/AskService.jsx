@@ -15,12 +15,12 @@ function AskService() {
         <NavBar />
       </div>
    
-    <div className=" askservice flex flex-col lg:flex-row justify-start items-center w-screen h-screen  lg:mt-[0px] ">
+    <div className=" askservice flex flex-col lg:flex-row justify-center items-center w-screen h-screen lg:mt-[0px] ">
      
       <img
         src={nurse}
         alt="ambulance"
-        className=" w-60 mt-24 lg:ml-[100px] mb-4 rounded-3xl "
+        className=" w-52 mt-24 lg:ml-[100px]  rounded-3xl "
       />
       <AskServiceForm />
     </div>

@@ -38,7 +38,7 @@ export default function AskServiceForm() {
   }
 }; 
   return (
-    <div className=' w-full h-[70%] flex flex-col items-center justify-center mt-3 gap-[20px] lg:w-1/2 lg:mt-[120px]'>
+    <div className=' w-full h-[70%] flex flex-col items-center justify-center  mt-3 gap-[20px] lg:w-1/2 lg:mt-[120px]'>
       <form onSubmit={handleSubmit} className='flex flex-col gap-5 w-full items-center'>
       <TextField
       className='inputText w-[70%] border-solid border-2 border-[#181D3D] '

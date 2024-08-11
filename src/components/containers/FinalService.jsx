@@ -5,11 +5,13 @@ import Drawer from  "../common/Drawer";
 import NavBar from "../common/NavBar";
 import { Link } from "react-router-dom";
 import {useTranslation} from "react-i18next"
+import { useAuth } from "../../Sign/AuthContext";
 
 
 const FinalService = () => {
   const [data, setData] = useState(ServicesData);
   const { i18n,t}=useTranslation();
+  const {currentUser}=useAuth();
 
   return (
     
@@ -31,11 +33,11 @@ const FinalService = () => {
               {t("MedicalServicesDescription")}
               
             </p>
-            <Link to="/askservice">
+            {currentUser && (<Link to="/askservice">
               <button className="bg-[#2e3564]  hover:bg-[#9b9fb1]  text-white  font-bold py-2 px-4 rounded-lg mt-5 ">
                 {t("Ask-The-Servive")}
               </button>
-            </Link>
+            </Link>)}
           
         </div>
 
