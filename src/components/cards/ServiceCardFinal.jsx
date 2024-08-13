@@ -13,7 +13,7 @@ function ServiceCardFinal({ data }) {
         <img
           src={data.image}
           alt={data.title}
-          className="w-full h-full object-cover rounded-2xl md:rounded-none lg:rounded-none xl:rounded-none 2xl:rounded-none"
+          className="w-full h-full object-cover rounded-2xl md:rounded-none lg:rounded-2xl xl:rounded-2xl"
         />
       </div>
       <div className="text text-center p-3">
