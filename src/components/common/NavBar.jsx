@@ -54,7 +54,8 @@ function NavBar() {
                 </Link>
 
                 <Link to="/">
-                  <li className="hidden lg:block"> {t("Home")}</li>
+                <li className="  rounded-[25px] p-3 text-white w-[130px] lg:w-full text-center">
+                {t("Home")}</li>
                 </Link>
               </ul>
             </nav>
