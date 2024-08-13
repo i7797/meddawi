@@ -18,6 +18,8 @@ import LoginIcon from "@mui/icons-material/Login";
 import PersonIcon from "@mui/icons-material/Person";
 import LogoutIcon from "@mui/icons-material/Logout";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
+import InfoIcon from '@mui/icons-material/Info';
+
 import DashboardCustomizeIcon from '@mui/icons-material/DashboardCustomize';
 import {useTranslation} from "react-i18next"
 
@@ -91,6 +93,22 @@ const Navbar = () => {
           </ListItemButton>
         </ListItem>
 
+
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <InfoIcon sx={{ color: "#181D3D" }} />
+            </ListItemIcon>
+            <Link to="/aboutUs">
+              {" "}
+              <ListItemText
+                sx={{ color: "#181D3D" }}
+                primary={t("About")}
+
+              />{" "}
+            </Link>
+          </ListItemButton>
+        </ListItem>
         
         <ListItem disablePadding>
           <ListItemButton>

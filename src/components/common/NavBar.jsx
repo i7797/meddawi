@@ -49,6 +49,9 @@ function NavBar() {
                   <li className="  rounded-[25px] p-3 text-white w-[130px] lg:w-full text-center">
                   {t("Services")}                  </li>
                 </Link>
+                <Link to="/aboutUs">
+                  <li className="hidden lg:block"> {t("About")}</li>
+                </Link>
 
                 <Link to="/">
                   <li className="hidden lg:block"> {t("Home")}</li>

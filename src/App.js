@@ -1,16 +1,19 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home.jsx'; // Use the correct file extension
-import EmergencyContainer from './components/containers/EmergencyContainer.jsx'; // Use the correct file extension
-import Team from './components/containers/Team.jsx'; // Use the correct file extension
-import AskService from './components/containers/AskService.jsx'; // Use the correct file extension
-import AskCare from './components/containers/AskCare.jsx'; // Use the correct file extension
-import FinalService from './components/containers/FinalService.jsx'; // Use the correct file extension
-import NurseHome from './pages/NurseHome.jsx'; // Use the correct file extension
-import NurseTeam from './components/containers/NurseTeam.jsx'; // Use the correct file extension
-import NurseProfile from './components/containers/NurseProfile.jsx'; // Use the correct file extension
-import NursePost from './components/containers/NursePost.jsx'; // Use the correct file extension
-import NurseLayout from './pages/NurseLayout.jsx'; // Use the correct file extension
-import NurseStartPage from './pages/NurseStartPage.jsx'; // Use the correct file extension
+import Home from './pages/Home.jsx'; 
+import AboutUs from './pages/AboutUs.jsx'; 
+
+
+import EmergencyContainer from './components/containers/EmergencyContainer.jsx'; 
+import Team from './components/containers/Team.jsx'; 
+import AskService from './components/containers/AskService.jsx'; 
+import AskCare from './components/containers/AskCare.jsx'; 
+import FinalService from './components/containers/FinalService.jsx';
+import NurseHome from './pages/NurseHome.jsx'; 
+import NurseTeam from './components/containers/NurseTeam.jsx'; 
+import NurseProfile from './components/containers/NurseProfile.jsx';
+import NursePost from './components/containers/NursePost.jsx';
+import NurseLayout from './pages/NurseLayout.jsx'; 
+import NurseStartPage from './pages/NurseStartPage.jsx'; 
 import Signup from './Sign/SignUp.jsx';
 import Signin from './Sign/SignIn.jsx';
 import Profile from './Sign/Profile.jsx'
@@ -38,6 +41,7 @@ function App() {
           <Route path="/signup" element ={<Signup/>}/>
           <Route path="/signup" element ={< Footerr />}/>
 
+          <Route path="/aboutUs" element ={< AboutUs />}/>
 
           <Route path='/nursestartpage' element={<NurseStartPage/>}/>
           <Route path="/" element={<Home />} />
