@@ -1,6 +1,9 @@
 
 
 /* Arrows */
+.slick-prev, .slick-next {
+  width: 50px;
+}
 .slick-prev::before, .slick-next::before {
   color: rgb(6, 6, 59) !important; 
 }
