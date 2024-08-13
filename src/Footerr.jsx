@@ -45,7 +45,7 @@ const Footerr = () => {
 
 <div className=' flex space-x-4'>
     <a href='https://facebook.com'><i className="fab fa-twitter text-2xl">Facebook</i>    </a>
-    <a href='https://twitter.com'><i className="fab fa-twitter text-2xl">twitter</i>
+    <a href='https://x.com/'><i className="fab fa-twitter text-2xl">X</i>
     </a>
     <a href='https://linkedin.com'> <i className="fab fa-linkedin-in text-2xl">linkedin</i>
     </a>

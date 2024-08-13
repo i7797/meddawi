@@ -4,6 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../assets/css/Style.css"
 import {useTranslation} from "react-i18next"
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import XIcon from '@mui/icons-material/X';
 
 function TeamCard({ data }) {
   const { i18n,t}=useTranslation();
@@ -70,15 +75,23 @@ var settings = {
           
           {data.map((item,index) => (
             <div key={index} className="slick-slide-item">
-            <div className="  bg-slate-200 h-[400px]  text-black rounded-xl">
-              <div className="  h-56 rounded-t-xl bg-[#181D3D] flex justify-center items-center">
+            <div className="  bg-slate-200 h-[500px]  text-black rounded-xl">
+              <div className="  h-56 rounded-t-xl bg-[#181D3D] flex justify-center items-center ">
                 <img src={item.image} className="h-44 w-44 rounded-full border-slate-200	border-4" />
               </div>
-              <div className=" flex  flex-col justify-center items-center gap-4 p-4">
-                <p className="text-sm font-semibold"> {t( "Name")   } : {item.title}</p>
+              <div className=" flex  flex-col justify-center items-center gap-4 p-4 mt-10">
+                <p className="text-sm font-bold"> {t( "Name")   } : {item.title}</p>
 
-                <p  > {t( "Age")   } : {item.age} {t("years-old")} </p>
-                <p> {t( "Years of Experience")   } :  {item.years}</p>
+                <p  className="text-sm font-bold" > {t( "Age")   } : {item.age} {t("years-old")} </p>
+                <p className="text-sm font-bold"> {t( "Years of Experience")   } :  {item.years}</p>
+                <div className=" mt-7 space-x-4">
+                 <a href="https://linkedin.com"> <LinkedInIcon/></a> 
+                 <a href="https://www.facebook.com/">  <FacebookIcon/></a>
+                 <a href="https://www.instagram.com/">  <InstagramIcon/></a>
+                 <a href="https://x.com/">  <XIcon/></a>
+                 <a href="https://www.whatsapp.com/">  <WhatsAppIcon/></a>
+                
+                </div>
 
                 
               </div>
