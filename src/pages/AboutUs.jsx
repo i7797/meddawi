@@ -15,7 +15,7 @@ const AboutUs = () => {
         <NavBar />
       </div>
    
-    <div id="about" className="text-blue-950 px-4 py-8  text-center lg:flex lg:mt-12 lg:justify-betweenlg:items-start  ">
+    <div id="about" className="text-blue-950 px-4 py-8  text-center lg:flex lg:mt-12 lg:justify-between lg:items-start  ">
 
       
 
@@ -23,7 +23,7 @@ const AboutUs = () => {
         <div className="cricle mt-4"> </div>
         <img className="w-full h-auto object-cover rounded-full" src={imge} />
       </div>
-<div className=" lg:w-1/2 lg:pl-8 lg:text-left">
+<div className=" lg:w-1/2 lg:pl-8 lg:text-center">
 
 
       <div className=" mb-6 mt-10">
@@ -71,7 +71,7 @@ const AboutUs = () => {
           We invite you to explore our services and contact us to see how we can
           help you or your loved one live a healthier, happier life at home.
 
-          <div className=' flex space-x-4 mt-10 justify-center items-center lg:justify-start lg:items-start'>
+          <div className=' flex space-x-4 mt-10 justify-center items-center lg:justify-center lg:items-center'>
           <a href='https://watsapp.com/'><i className="fab fa-twitter text-2xl">Watsapp</i>
           </a>
     <a href='https://facebook.com'><i className="fab fa-twitter text-2xl">Facebook</i>    </a>
