@@ -27,7 +27,7 @@ const FinalService = () => {
         
         
         <div className="text-center col-span-12 mt-5 ">
-          <h1 className=" text-3xl text-pink-400 font-mono mb-8 "> - {t("OurMedicalServices")} -</h1>
+          <h1 className="  text-lg  lg:text-3xl text-pink-400 font-mono mb-8 "> - {t("OurMedicalServices")} -</h1>
             <p className="hidden md:px-36   lg:px-40 xl:px-60 text-center mt-2  text-white md:block lg:block  xl:block ">
 
               {t("MedicalServicesDescription")}
