@@ -13,7 +13,7 @@ const Footerr = () => {
 <p className="mt-2">{t('Healthy Future')}      </p>
 <p className='mt-4 text-sm'>  © Copyright 2024.</p>
 
-<div className=" flex space-x-4 mt-3">
+<div className=" flex space-x-4 mt-3 justify-center items-center">
   <button onClick={()=>i18n.changeLanguage('ar')}
     className=" bg-gradient-to-r from-pink-400 to-[#CA5050] text-white rounded-xl px-4 py-2">
       {t('Arabic')}
@@ -29,7 +29,6 @@ const Footerr = () => {
     <h2 className='text-xl font-bold '> {t('Quick Links')}:      </h2>
     <ul className='mt-2 space-y-2'> 
     <li> <a href='#home' > {t('Home')} </a></li>
-    <li> <a  href='#about'>  {t('About')}</a></li>
    <li>  <a  href='#service'>  {t('Services')}</a></li>
     <li><a  href='#team'> {t('Team')}</a></li>
     </ul>
@@ -43,7 +42,7 @@ const Footerr = () => {
       <i className='fas fa-phone-alt mr-2'>  {t('Phone')} : 077077777777  </i>
     </a>      
 
-<div className=' flex space-x-4'>
+<div className=' flex space-x-4 justify-center items-center'>
     <a href='https://facebook.com'><i className="fab fa-twitter text-2xl">Facebook</i>    </a>
     <a href='https://x.com/'><i className="fab fa-twitter text-2xl">X</i>
     </a>

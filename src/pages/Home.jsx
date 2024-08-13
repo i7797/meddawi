@@ -28,6 +28,7 @@ export default function Home() {
           <HeroSectio />
       
         </section>
+        
 
         <section
           id="serviceSection"
