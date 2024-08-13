@@ -2,7 +2,7 @@ import React from "react";
 import AskServiceForm from "../InputForm/AskServiceForm";
 import Drawer from "../common/Drawer";
 import NavBar from "../common/NavBar";
-import nurse from "../../assets/images/nurse (1).png";
+import nurse from "../../assets/images/Dementia-rafiki.svg";
 
 function AskService() {
   return (
