@@ -19,12 +19,12 @@ function Team() {
 
    
         
-      <div className="w-[90%] h-[30%] lg:w-full lg:h-[20%] lg:mt-[10px] mt-20 ">
+      <div className="w-[90%] h-[30%] lg:w-full lg:h-[20%] lg:mt-[10px] mt-10 ">
  
-      </div>
-      {/* <div className="TeamCards lg:h-[90%] lg:w-full h-full lg:mt-0 flex items-baseline lg:items-center lg:justify-center mt-[50px]"> */}
+      </div>  
+
+     
       <TeamCard data={TeamData}/>
-      {/* </div> */}
     
     </div>
         
