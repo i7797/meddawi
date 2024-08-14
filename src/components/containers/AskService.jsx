@@ -20,7 +20,7 @@ function AskService() {
       <img
         src={nurse}
         alt="ambulance"
-        className=" w-64 mb-0  md:w-64 lg:w-64 mt-24 lg:mt-2 lg:ml-[100px]  rounded-3xl "
+        className=" w-64 mb-0  md:w-64 mt-24 lg:mt-2 lg:ml-[100px]  lg:w-96  rounded-3xl "
       />
       <AskServiceForm />
     </div>

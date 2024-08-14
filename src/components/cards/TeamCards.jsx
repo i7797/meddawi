@@ -89,7 +89,6 @@ var settings = {
                  <a href="https://www.facebook.com/">  <FacebookIcon/></a>
                  <a href="https://www.instagram.com/">  <InstagramIcon/></a>
                  <a href="https://x.com/">  <XIcon/></a>
-                 <a href="https://www.whatsapp.com/">  <WhatsAppIcon/></a>
                 
                 </div>
 
