@@ -6,7 +6,7 @@ const Footerr = () => {
   const { i18n,t}=useTranslation();
 
   return (
-    <footer id='footerSection'  className='bg-gradient-to-r from-[#3d436e] to-[#040a37] text-white py-10 mt-0'> 
+    <footer id='footerSection'  className='bg-[#040a37] text-white py-10 mt-0'> 
 <div className='container  mx-auto  grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-3  gap-10 px-5   '>
 <div>
 <h2 className='text-3xl font-serif'> Meddawi</h2>
