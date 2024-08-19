@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import TextField from '@mui/material/TextField';
 import '../../assets/css/Style.css'
 import SendBtn from '../bottons/SendBtn';
 import {useTranslation} from "react-i18next"
+import { FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
+
 
 import axios from 'axios';
 
@@ -39,6 +40,7 @@ export default function AskServiceForm() {
 }; 
   return (
     <div className=' w-full h-[70%]  flex flex-col mt-6 gap-[20px] lg:w-1/2 lg:justify-center'>
+            <SendBtn/>
       <form onSubmit={handleSubmit} className='flex mt-0 flex-col gap-5 w-full items-center'>
       <TextField
       className='inputText mt-0 w-[70%] border-solid border-2 border-[#181D3D] '
@@ -69,6 +71,8 @@ export default function AskServiceForm() {
       value={noOfVisit}
       onChange={(e)=>setNoOfvisit(e.target.value)}
       required/>
+
+
         <TextField  
       id="outlined-basic" 
       className='w-[70%]' 
@@ -78,28 +82,25 @@ export default function AskServiceForm() {
       value={address}
       onChange={(e)=>setAddress(e.target.value)}
       required/>
+<FormControl variant="outlined" className='w-[70%]'>
 
+<InputLabel id="health-case-label">{t("Chooes the service")}</InputLabel>
+  <Select
+    labelId="health-case-label"
+    value={healthCase}
+    onChange={(e) => setHealthCase(e.target.value)}
+    label={t("Chooes the service")}
+  >
+    <MenuItem value='pressure'>{t("bloodPressure-title")}</MenuItem>
+    <MenuItem value='suger'>{t("sugar-title")}</MenuItem>
+    <MenuItem value='cannula'>{t("cannula-title")}</MenuItem>
+    <MenuItem value='injection'>{t("injection-title")}</MenuItem>
+    <MenuItem value='burn'>{t("hand-title")}</MenuItem>
+    <MenuItem value='suture'>{t("suture-title")}</MenuItem>
+  </Select>
 
+  </FormControl>
 
-
-
-      <select 
-
-      value={healthCase}
-      onChange={(e)=>setHealthCase(e.target.value)}
-      className='w-[70%]'
-      name='اختر الخدمة'
-      > 
-        <option  value='pressure'> {t("bloodPressure-title")} </option>
-        <option  value='suger'>{t("sugar-title")}</option>
-        <option  value='cannula'>{t("cannula-title")}</option>
-        <option  value='injection'>{t("injection-tilte")} </option>
-        <option  value='burn'>{t("hand-title")}  </option>
-        <option  value='suture'>  {t("suture-title")}</option>
-
-      </select>
-      <SendBtn/>
-      
       </form>
     </div>
   )

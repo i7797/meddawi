@@ -14,25 +14,31 @@ export default function HomeCards() {
   return (
 
     <div className="homediv lg:hidden ">
-    <div className="cards     flex flex-col   items-center justify-center">
+    <div className="cards  flex flex-col text-xl text-center  gap-8 ">
       <Link to='/services'>
-        <div className="card flex justify-center items-center  bg-red-500">
-          <h1 className="text-white  ">{t("Services")}</h1>
-          <img className="px-4 py-4 " src={service} alt="cardone" />
+
+        <div className="card bg-gray-500   justify-between rounded-3xl ">
+
+        <img className="px-4 py-4 " src={service} alt="cardone" />
+
+          <h1 className="text-white  px-4 py-4  ">{t("Services")}</h1>
+
         </div>
       </Link>
 
       <Link to ="/askservice">
-      <div className="card flex justify-center items-center  bg-red-500">
-        <h1 className="text-white "> {t( "Ongoing Care")}</h1>
-        <img className="px-4 py-4 mr-3 "  src={dailyService} alt="cardone " />
+      <div className="card bg-gray-500   justify-between rounded-3xl ">
+      <img className="px-4 py-4  "  src={dailyService} alt="cardone " />
+
+        <h1 className="text-white px-4 py-4  "> {t( "Ongoing Care")}</h1>
       </div>
       </Link>
       
       <Link to="/team1">
-        <div className="card flex justify-center items-center  bg-red-500">
-          <h1 className="text-white 	"> {t("Team")}</h1>
-          <img  className="px-4 py-4 ml-7 " src={teamwork} alt="cardone" />
+      <div className="card bg-gray-500   justify-between rounded-3xl ">
+      <img  className="px-4 py-4  " src={teamwork} alt="cardone" />
+
+          <h1 className="text-white px-4 py-4 	"> {t("Team")}</h1>
         </div>
       </Link>
     </div>

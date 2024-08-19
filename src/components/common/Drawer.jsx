@@ -19,7 +19,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import LogoutIcon from "@mui/icons-material/Logout";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import InfoIcon from '@mui/icons-material/Info';
-
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import DashboardCustomizeIcon from '@mui/icons-material/DashboardCustomize';
 import {useTranslation} from "react-i18next"
 
@@ -53,29 +53,22 @@ const Navbar = () => {
   };
 
   const list = (anchor) => (
+    <> 
+    <div className=" mt-0 bg-blue-950">
+         <MenuOpenIcon className="ml-3 mb-3 mt-3 w-28 text-white " />
+         </div>
     <Box
       sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
+      
       <List>
-        {/* {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem key={text} disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                            </ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItemButton>
-                    </ListItem>
-                ))} */}
+        
+         
 
-        <h1 class="bg-pink-100 text-[#181D3D] h-10 font-bold pl-2 pt-2 mb-2 mt-0">
-       
-          {" "}
-          MEDDAWI{" "}
-        </h1>
+        
 
         <ListItem disablePadding>
           <ListItemButton>
@@ -110,21 +103,7 @@ const Navbar = () => {
           </ListItemButton>
         </ListItem>
         
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <DashboardCustomizeIcon sx={{ color: "#181D3D" }} />
-            </ListItemIcon>
-            <Link to="/dashboard">
-              {" "}
-              <ListItemText
-                sx={{ color: "#181D3D" }}
-                primary={"Dashboard"}
-
-              />{" "}
-            </Link>
-          </ListItemButton>
-        </ListItem>
+        
 
         <ListItem disablePadding>
           <ListItemButton>
@@ -171,18 +150,7 @@ const Navbar = () => {
       <List>
         {currentUser ? (
           <>
-            <ListItem disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  <PersonIcon sx={{ color: "#181D3D" }} />
-                </ListItemIcon>
-                <Link to="/profile">
-                  <ListItemText sx={{ color: "#181D3D" }}                 
-                  primary={t("Profile")}
- />
-                </Link>
-              </ListItemButton>
-            </ListItem>
+      
             <ListItem disablePadding onClick={handleLogout}>
               <ListItemButton>
                 <ListItemIcon>
@@ -230,7 +198,9 @@ const Navbar = () => {
 
 
       </List>
+  
     </Box>
+    </>
   );
 
   return (
@@ -247,9 +217,8 @@ const Navbar = () => {
                     </Drawer>
                 </React.Fragment>
             ))} */}
-
-      <MenuIcon
-        sx={{ color: "#181D3D", width: "40px", height: "40px", marginTop:"10px", marginLeft:"10px" }}
+<div></div>
+      <MenuIcon className ="ml-3 mt-3 text-white"
         onClick={toggleDrawer("left", true)}
       />
 

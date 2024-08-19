@@ -8,14 +8,17 @@ const AboutUs = () => {
   return (
 
     <>
-    <div className=" mb-6 lg:hidden  text-start">
-        <Drawer />
+   <div id="aboutus" className="bg-blue-950 top-0 mt-0 flex justify-between lg:hidden">
+        <div className="lg:hidden w-10">
+          <Drawer />
+        </div>
+        <h1 className="text-white mr-4 mt-5 font-mono"> Medawi</h1>
       </div>
       <div className=" hidden lg:block">
         <NavBar />
       </div>
    
-    <div id="about" className="text-blue-950 px-4 py-8  text-center lg:flex lg:mt-12 lg:justify-between lg:items-start  ">
+    <div id="about" className="text-blue-950 lg:mt-28 px-4 py-8  text-center lg:flex  lg:justify-between lg:items-start  ">
 
       
 

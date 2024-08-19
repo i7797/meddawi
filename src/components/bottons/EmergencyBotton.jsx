@@ -13,11 +13,10 @@ export default function EmergencyBotton() {
 
 
   return (
+   
     <div className='btn'>
-        <Button variant="contained bg-gradient-to-r from-pink-400 to-[#CA5050]" 
-         sx={{fontSize:'30px',borderRadius:'10px', width:'90%',color:'white' }}><Link to='/emergency'>{t("Emergency")} </Link></Button>
+ 
     </div>
-
 
 
 

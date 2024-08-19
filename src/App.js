@@ -16,7 +16,6 @@ import NurseLayout from './pages/NurseLayout.jsx';
 import NurseStartPage from './pages/NurseStartPage.jsx'; 
 import Signup from './Sign/SignUp.jsx';
 import Signin from './Sign/SignIn.jsx';
-import Profile from './Sign/Profile.jsx'
 import { AuthProvider } from "./Sign/AuthContext.jsx";
 
 
@@ -57,7 +56,6 @@ function App() {
          
 
 
-          <Route path="/profile" element={<Profile />} />
 
         
           <Route path='/askservice' element={<AskService/>}/>

@@ -9,19 +9,26 @@ import Team from "../components/containers/Team";
 import Footerr from "../Footerr";
 import "../assets/css/Style.css";
 import Translate from "../Translate";
+import Front from "./Front";
+import Ourserver from "./Ourserver";
 export default function Home() {
   return (
     
     <>
-      <div  id="home" className="grid grid-cols-12 h-screen w-screen Homecontent  lg:mt-0">
 
-        <div className="lg:hidden ">
+  <div className="bg-blue-950 top-0 mt-0 flex justify-between lg:hidden">
+<div className="lg:hidden   w-10">
           <Drawer />
-        </div>
 
+        </div>
+        <h1 className="text-white mr-4 mt-5 font-extralight text-lg"> Medawi</h1>
+
+        </div>  
         <div className="hidden md:block col-span-12  ">
           <NavBar />
         </div>
+      <div  id="home" className="grid grid-cols-12 h-screen w-screen Homecontent  lg:mt-0">
+
         
 
         <section id="homeSection" className="  lg:block col-span-12">
@@ -29,7 +36,14 @@ export default function Home() {
       
         </section>
         
-
+        <section id="offer" className="  lg:block col-span-12">
+        <Front/>
+      
+        </section>
+        <section id="offer" className="  lg:block col-span-12">
+        <Ourserver/>
+      
+        </section>
         <section
           id="serviceSection"
           className="  hidden lg:block col-span-12"

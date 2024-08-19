@@ -80,15 +80,15 @@ var settings = {
                 <img src={item.image} className="h-44 w-44 rounded-full border-slate-200	border-4" />
               </div>
               <div className=" flex  flex-col justify-center items-center gap-4 p-4 mt-10">
-                <p className="text-sm font-bold"> {t( "Name")   } : {item.title}</p>
+                <p className="text-sm font-extralight"> {t( "Name")   } : {item.title}</p>
 
-                <p  className="text-sm font-bold" > {t( "Age")   } : {item.age} {t("years-old")} </p>
-                <p className="text-sm font-bold"> {t( "Years of Experience")   } :  {item.years}</p>
+                <p  className="text-sm font-extralight" > {t( "Age")   } : {item.age} {t("years-old")} </p>
+                <p className="text-sm font-extralight"> {t( "Years of Experience")   } :  {item.years}</p>
                 <div className=" mt-7 space-x-4">
+                  <p className="text-center font-extralight mb-5"> Their works </p>
                  <a href="https://linkedin.com"> <LinkedInIcon/></a> 
                  <a href="https://www.facebook.com/">  <FacebookIcon/></a>
                  <a href="https://www.instagram.com/">  <InstagramIcon/></a>
-                 <a href="https://x.com/">  <XIcon/></a>
                 
                 </div>
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TextField from '@mui/material/TextField';
 import '../../assets/css/Style.css';
-import SendBtn from '../bottons/SendBtn';
+import EmergencyOerder from '../bottons/EmergencyOerder';
 import axios from 'axios';
 import {useTranslation} from "react-i18next"
 
@@ -131,7 +131,7 @@ export default function EmergencyForm() {
           onChange={(e) => setAddress(e.target.value)}
           required
         />
-        <SendBtn />
+        <EmergencyOerder />
       </form>
     </div>
   );

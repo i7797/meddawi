@@ -3,10 +3,9 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import EmergencyData from "./EmergencyData";
 import ServiceData from "./ServiceData";
-import admin from "../../assets/images/user (4).png";
+import admin from "../../assets/images/Nursing home-pana.svg";
 import image from "../../assets/images/dashboardImage.svg";
 import alarm from "../../assets/images/alarm.png";
-import DailyCare from "../../assets/images/DailyCare.png";
 function Dashboard() {
   const [showEmergencyData, setShowEmergencyData] = useState(false);
   const [showDailyServiceData, setShowDailyServiceData] = useState(false);
