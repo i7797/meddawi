@@ -2,16 +2,21 @@ import { Link, useNavigate } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/config";
 import { useState } from "react";
+import {useTranslation} from "react-i18next"
+
 
 const SignIn = () => {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const navigate = useNavigate();
+  const { i18n,t}=useTranslation();
+
   return (
 
 
     <>
-      <title>Signin</title>
+      <title>  {t("Sign-in")}
+      </title>
 
       <main className="flex items-center justify-center min-h-screen bg-gray-100">
 
@@ -19,7 +24,7 @@ const SignIn = () => {
 
 
           <p className="text-2xl mb-6 font-semibold text-center">
-            Sign in to your account
+          {t("Sign in to your account")}
           </p>
 
 
@@ -30,7 +35,7 @@ const SignIn = () => {
                 setemail(eo.target.value);
               }}
               required
-              placeholder=" E-mail : "
+              placeholder= {t("email")}
               type="email"
             />
           </div>
@@ -41,7 +46,7 @@ const SignIn = () => {
                 setpassword(eo.target.value);
               }}
               required
-              placeholder=" Password : "
+              placeholder={t("password")}
               type="password"
             />
           </div>
@@ -66,14 +71,14 @@ const SignIn = () => {
                 });
             }}
           >
-            Sign in
+             {t("Sign-in")}
           </button>
 
 
           <p className="mt-4 text-center">
-            Don't have an account?{" "}
+          {t("Don't have an account?")}
             <Link to="/signup" className="text-[#181D3D] hover:underline">
-              Sign-up
+            {t("Sign up")}
             </Link>
           </p>
 

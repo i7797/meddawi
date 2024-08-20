@@ -3,11 +3,15 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import {auth } from "../firebase/config"
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import {useTranslation} from "react-i18next"
+
 
 const SignUp= () => {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const navigate = useNavigate();
+  const { i18n,t}=useTranslation();
+
 
 
   return (
@@ -20,7 +24,8 @@ const SignUp= () => {
         <form className="bg-white shadow-md rounded-lg p-8 max-w-sm w-full">
 
           <p className="text-2xl mb-6 font-semibold text-center">
-            Create a new account
+          {t("Create a new account")}
+
           </p>
 
 
@@ -31,7 +36,8 @@ const SignUp= () => {
                 setemail(eo.target.value);
               }}
               required
-              placeholder=" E-mail : "
+              placeholder=   {t("email")}
+
               type="email"
             />
           </div>
@@ -42,7 +48,8 @@ const SignUp= () => {
                 setpassword(eo.target.value);
               }}
               required
-              placeholder=" Password : "
+              placeholder=  {t("password")}
+
               type="password"
             />
           </div>
@@ -69,16 +76,22 @@ const SignUp= () => {
                 });
             }}
           >
-            Sign up
+                     {t("Sign up")}
+
           </button>
 
 
           <p className="mt-4 text-center">
+          {t("Already have an account?")}
 
-            Already have an account?{" "}
+            
+            
+            {" "}
 
             <Link to="/signin" className="text-[#181D3D] hover:underline">
-              Sign-in
+            {t("Sign-in")}
+
+              
             </Link>
 
             
