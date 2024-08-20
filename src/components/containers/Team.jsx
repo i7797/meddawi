@@ -4,9 +4,13 @@ import Drawer from  "../common/Drawer";
 
 import TeamCard from "../cards/TeamCards"
 import '../../assets/css/MediaQuery.css'
+import {useTranslation} from "react-i18next"
+
 
 
 function Team() {
+  const { i18n,t}=useTranslation();
+
   return (
 
     <>          
@@ -24,11 +28,10 @@ function Team() {
       <div className="w-[90%] h-[30%] lg:w-full lg:h-[20%] lg:mt-[10px] mt-10 ">
  
       </div>  
-          <h1 className=" font-extralight text-xl text-blue-950 mb-10">- Our Team -</h1>
-          <p className="text-blue-950 text-center px-10 lg:px-52 mb-16  font-extralight" >Meddawi  team is composed of licensed, experienced caregivers, nurses,
-            <br>
-            </br> 
-            and healthcare professionals who are passionate about providing the best care possible.</p>
+          <h1 className=" font-extralight text-xl text-blue-950 mb-10"> - {t("ourteam")} - </h1>
+          <p className= " w-[90%] lg:w-[80%]    text-blue-950 text-center px-10 lg:px-52 mb-16  font-extralight" >
+          {t("teamp")}
+          </p>
      
       <TeamCard data={TeamData}/>
     

@@ -10,11 +10,13 @@ export default function HeroSectio() {
   return (
     <div className="HeroCentent sm:block  justify-center items-center lg:w-full lg:h-full lg:flex">
 
-<div class=" mt-10 ml-4">
+<div class="w-[90%]  mt-10 ml-4">
   <h2 class="text-2xl font-semibold text-gray-800 mb-4">
-    Enhancing the quality of life through home health care</h2>
+  {t("Enhancing ")}
+    </h2>
   <p class="text-gray-600 mb-6">
-  Meddawi provides compassionate home health care services to ensure the well-being of patients in the comfort of their homes. We are committed to setting the standard for home-based care.
+  {t("Meddawi")}
+
  
     {t("careMessage")}  
   </p>

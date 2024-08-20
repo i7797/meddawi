@@ -57,7 +57,7 @@ export default function Home() {
           <Team />
         </section>
         <section
-          id="footerSection"
+          id="footer"
           className="hidden lg:block col-span-12"
         >
           <Footerr />
