@@ -27,7 +27,8 @@ export default function Home() {
         <div className="hidden md:block col-span-12  ">
           <NavBar />
         </div>
-      <div  id="home" className="grid grid-cols-12 h-screen w-screen Homecontent  lg:mt-0">
+      <div  id="home" 
+      className="grid grid-cols-12 h-screen w-screen Homecontent  lg:mt-0">
 
         
 
@@ -36,11 +37,15 @@ export default function Home() {
       
         </section>
         
-        <section id="offer" className="  lg:block col-span-12">
+        <section id="offer" 
+          className="  hidden lg:block col-span-12"
+          >
         <Front/>
       
         </section>
-        <section id="offer" className="  lg:block col-span-12">
+        <section id="offer" 
+          className="  hidden lg:block col-span-12"
+          >
         <Ourserver/>
       
         </section>
