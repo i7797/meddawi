@@ -85,7 +85,6 @@ var settings = {
                 <p  className="text-sm font-extralight" > {t( "Age")   } : {item.age} {t("years-old")} </p>
                 <p className="text-sm font-extralight"> {t( "Years of Experience")   } :  {item.years}</p>
                 <div className=" mt-7 space-x-4">
-                  <p className="text-center font-extralight mb-5"> Their works </p>
                  <a href="https://linkedin.com"> <LinkedInIcon/></a> 
                  <a href="https://www.facebook.com/">  <FacebookIcon/></a>
                  <a href="https://www.instagram.com/">  <InstagramIcon/></a>
