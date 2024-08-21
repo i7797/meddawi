@@ -28,7 +28,7 @@ const AboutUs = () => {
         <NavBar />
       </div>
 
-      <div className=" mt-40  ">
+      <div className=" lg:mt-40  ">
         <div className="  flex flex-col lg:flex-row mb-6 mt-10 lg:text-start text-center items-center  ">
           <div className=" mx-auto  flex-1 p-4  text center  ml-4 lg:ml-10 lg:w-1/2 w-full   font-extraligh ">
             <h1 className="text-3xl mb-4  text center font-extralight   text-gray-500 ">
