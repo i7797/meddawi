@@ -10,7 +10,7 @@ import Footerr from "../Footerr";
 import "../assets/css/Style.css";
 import Translate from "../Translate";
 import Front from "./Front";
-import Ourserver from "./Ourserver";
+import AboutUs from "./AboutUs";
 export default function Home() {
   return (
     
@@ -43,12 +43,14 @@ export default function Home() {
         <Front/>
       
         </section>
-        <section id="offer" 
+       
+        <section id="aboutus"
           className="  hidden lg:block col-span-12"
           >
-        <Ourserver/>
+        <AboutUs/>
       
         </section>
+      
         <section
           id="serviceSection"
           className="  hidden lg:block col-span-12"

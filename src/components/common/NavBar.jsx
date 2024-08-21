@@ -84,11 +84,11 @@ function NavBar() {
                      <a  href='#service'>  {t('Services')}</a>
                     </li>
 
-                  <Link to="/aboutUs">
+                 
                     <li className=" hidden lg:block  text-xl rounded-[25px] p-3  w-[130px] lg:w-full text-center ">
                     <a href='#aboutus' >  {t("About")} </a>
                     </li>
-                  </Link>
+                 
 
                     <li className="  text-xl rounded-[25px] px w-[130px] lg:w-full text-center">
                      <a href='#home' > {t('Home')} </a>
