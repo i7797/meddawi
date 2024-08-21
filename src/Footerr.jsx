@@ -16,7 +16,7 @@ const Footerr = () => {
       <div className="  mx-auto  grid  mt-10 ml-10 grid-cols-1 md:grid-cols-3 lg:grid-cols-3  gap-10 px-5   ">
         <div>
           <div className=" ">
-            <p className="text-xl font-bold mb-4"> {t("Contact Us")}</p>
+            <p className="text-xl font-extralight mb-4"> {t("Contact Us")}</p>
             <a className="bg-gradient-to-r from-pink-400 to-[#CA5050] text-white rounded-xl px-6 py-3 mb-4 inline-flex items-center justify-center shadow-lg">
               <i className="fas fa-phone-alt mr-2">
                 {" "}
@@ -39,7 +39,7 @@ const Footerr = () => {
           </div>
         </div>
         <div className="">
-          <h2 className="text-xl font-bold "> {t("Quick Links")}: </h2>
+          <h2 className="text-xl font-extralight"> {t("Quick Links")}: </h2>
           <ul className="mt-2 space-y-2">
             <li>
               {" "}
@@ -55,7 +55,7 @@ const Footerr = () => {
           </ul>
         </div>
         <div>
-          <h2 className="text-3xl font-serif"> Meddawi</h2>
+          <h2 className="text-3xl font-extralight"> Meddawi</h2>
           <p className="mt-2">{t("Healthy Future")} </p>
           <p className="mt-4 text-sm"> © Copyright 2024.</p>
 
