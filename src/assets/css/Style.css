@@ -52,7 +52,7 @@
   position: relative;
   min-height:30%;
   width:100%;
-  background: rgb(12, 12, 60);
+  background: #181D3D;
   padding: 20px;
   border-radius: 0px 40px 0px 0px;
   display: grid;
@@ -73,7 +73,7 @@
   border-bottom-left-radius: 50%;
 
   /* box shadow to give the shadow of the pseudo-element the same color as the background */
-  box-shadow: 0 20px 0 0 rgb(12, 12, 60);
+  box-shadow: 0 20px 0 0 #181D3D;
 }
 
 

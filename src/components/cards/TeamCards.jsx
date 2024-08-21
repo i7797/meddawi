@@ -69,12 +69,12 @@ var settings = {
 
   return (
 
-    <div className="w-3/4   ">
+    <div className="w-3/4 mb-20  ">
       <div className="   ">
         <Slider {...settings}>
           
           {data.map((item,index) => (
-            <div key={index} className="slick-slide-item mb-5 ">
+            <div key={index} className="slick-slide-item  ">
             <div className="  bg-slate-200 h-[500px]   text-black rounded-xl">
               <div className="  h-56 rounded-t-xl bg-[#181D3D] flex justify-center items-center ">
                 <img src={item.image} className="h-44 w-44 rounded-full border-slate-200	border-4" />
