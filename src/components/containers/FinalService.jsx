@@ -24,7 +24,7 @@ const FinalService = () => {
       </div>
     <div
       id="service"
-      className="  grid grid-cols-12 w-screen justify-items-center overflow-x-hidden bg-blue-950     "
+      className="  grid grid-cols-12 w-screen justify-items-center overflow-x-hidden     "
     >
       
 

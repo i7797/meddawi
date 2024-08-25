@@ -8,7 +8,7 @@ export default function HeroSectio() {
   const { i18n,t}=useTranslation();
 
   return (
-    <div className="HeroCentent sm:block  justify-center items-center lg:w-full lg:h-full lg:flex">
+    <div className="HeroCentent text-end sm:block  justify-center items-center lg:w-full lg:h-full lg:flex">
 
 <div class="w-[90%]  mt-10 ml-4">
   <h2 class="text-2xl font-semibold text-gray-800 mb-4">

@@ -36,7 +36,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="lg:w-1/2 w-full flex justify-center lg:justify-end lg:order-2 order-1">
+          <div className="hidden lg:w-1/2 w-full lg:flex justify-center lg:justify-end lg:order-2 order-1">
             <img
               src={nurse}
               className="mx-auto w-40 lg:w-[60%] lg:rounded-full"
@@ -57,7 +57,7 @@ const AboutUs = () => {
               <div className="flex justify-center items-center">
 
                 <img
-                  className="object-cover mb-4  mx-auto lg:mx-0  lg:rounded-lg lg:block lg:w-[55%]  lg:p-10"
+                  className=" w-20 object-cover mb-4  mx-auto lg:mx-0  lg:rounded-lg lg:block lg:w-[55%]  lg:p-10"
                   src={call}/>
                                 </div>
 
@@ -73,7 +73,7 @@ const AboutUs = () => {
               <div className=" flex flex-col">
               <div className="flex justify-center items-center">
               <img
-                  className="object-cover justify-center items-center   mx-auto m-auto lg:mx-0 lg:rounded-lg lg:flex lg:w-[40%] lg:p-10"
+                  className=" w-20 object-cover justify-center items-center   mx-auto m-auto lg:mx-0 lg:rounded-lg lg:flex lg:w-[40%] lg:p-10"
                   src={service}/>
                 </div>
 
