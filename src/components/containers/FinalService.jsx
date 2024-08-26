@@ -24,11 +24,11 @@ const FinalService = () => {
       </div>
     <div
       id="service"
-      className="  grid grid-cols-12 w-screen justify-items-center overflow-x-hidden     "
+      className="  lg:bg-blue-950 grid grid-cols-12 w-screen justify-items-center overflow-x-hidden     "
     >
       
 
-      <div className="text-center col-span-12 mt-5 ">
+      <div className=" text-center col-span-12 mt-5 ">
         <h1 className=" text-[#181D3D] text-lg  lg:text-3xl lg:text-white font-mono mb-8 ">
           {" "}
           - {t("OurMedicalServices")} -
@@ -45,7 +45,7 @@ const FinalService = () => {
         )}
       </div>
 
-      <div className=" mt-10 col-span-12 w-full grid gap-5 p-4 grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+      <div className="  mt-10 col-span-12 w-full grid gap-5 p-4 grid-cols-1   md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         {data.map((e, index) => (
           <ServiceCardFinal data={e} key={index} />
         ))}

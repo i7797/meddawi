@@ -6,7 +6,7 @@ function ServiceCardFinal({ data }) {
 
   return (
     <>
-      <div className="bg-white max-w-sm rounded-xl overflow-hidden shadow-lg  ">
+      <div className=" bg-white max-w-sm rounded-xl overflow-hidden shadow-lg  ">
         <div className="h-48 w-full ">
           <img
             className="h-full w-full object-cover"
