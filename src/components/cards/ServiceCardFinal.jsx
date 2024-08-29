@@ -1,11 +1,13 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function ServiceCardFinal({ data }) {
   const { i18n, t } = useTranslation();
 
   return (
     <>
+    <Link to ="/askservice">
       <div className=" bg-white max-w-sm rounded-xl overflow-hidden shadow-lg  ">
         <div className="h-48 w-full ">
           <img
@@ -23,7 +25,7 @@ function ServiceCardFinal({ data }) {
         <p className="text-blue-950 font-extralight">{t(data.text)}</p>
       </div>
       </div>
-    
+      </Link>
     </>
   );
 }

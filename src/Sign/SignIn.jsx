@@ -3,6 +3,8 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/config";
 import { useState } from "react";
 import {useTranslation} from "react-i18next"
+import  Drawer from "../components/common/Drawer";
+import logosignin from "../assets/images/Reset password-pana.svg";
 
 
 const SignIn = () => {
@@ -15,10 +17,19 @@ const SignIn = () => {
 
 
     <>
+    
+  <div className="bg-blue-950 top-0 mt-0 flex justify-between lg:hidden">
+<div className="lg:hidden   w-10">
+          <Drawer />
+
+        </div>
+        <h1 className="text-white mr-4  p-2 font-extralight text-lg "> Medawi</h1>
+
+        </div>  
       <title>  {t("Sign-in")}
       </title>
 
-      <main className="flex items-center justify-center min-h-screen bg-gray-100">
+      <main className="flex flex-col-reverse items-center justify-center min-h-screen bg-gray-100 lg:flex-row lg:gap-8 lg:px-10">
 
         <form className="bg-white shadow-md rounded-lg p-8 max-w-sm w-full">
 
@@ -84,6 +95,8 @@ const SignIn = () => {
 
           
         </form>
+        <img className="w-44 mb-6 lg:mb-0 lg:w-[40%]" src={logosignin} alt="Sign Up Illustration" />
+  
       </main>
     </>
   );

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import ServicesData from "../../data/ServiceData";
 import ServiceCardFinal from "../cards/ServiceCardFinal";
 import Drawer from "../common/Drawer";
-import NavBar from "../common/NavBar";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "../../Sign/AuthContext";
 
@@ -36,13 +34,7 @@ const FinalService = () => {
         <p className=" text-pink-400  px-11 md:px-36   lg:px-40 xl:px-60 text-center mt-2  lg:text-white md:block lg:block  xl:block ">
           {t("MedicalServicesDescription")}
         </p>
-        {currentUser && (
-          <Link to="/askservice">
-            <button className="bg-[#2e3564]  hover:bg-[#9b9fb1]  text-white  font-extralight lg:text-blue-950 lg:bg-slate-200 py-2 px-4 rounded-lg mt-5 ">
-              {t("Ask-The-Servive")}
-            </button>
-          </Link>
-        )}
+       
       </div>
 
       <div className="justify-items-center items-center  mt-10 col-span-12 w-full grid gap-5 p-4 grid-cols-1   md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
