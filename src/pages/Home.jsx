@@ -21,7 +21,7 @@ export default function Home() {
           <Drawer />
 
         </div>
-        <h1 className="text-white mr-4 mt-5 font-extralight text-lg"> Medawi</h1>
+        <h1 className="text-white mr-4  p-2 font-extralight text-lg "> Medawi</h1>
 
         </div>  
         <div className="hidden md:block col-span-12  ">

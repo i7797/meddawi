@@ -14,7 +14,7 @@ export default function HeroSectio() {
   <h2 class="text-2xl font-semibold text-gray-800 mb-4">
   {t("Enhancing ")}
     </h2>
-  <p class="text-gray-600 mb-6">
+  <p class="text-gray-600 mb-4">
   {t("Meddawi")}
 
  

@@ -42,10 +42,9 @@ function SendBtn() {
           />
         </>
       ) : (
-        <p className="px-4 py-2 mb-10  rounded-lg text-center w-[40%] h-14 bg-[#181D3D] text-white font-bold">
+        <p className=" hidden ">
           {" "}
-          You should Login to Oreder
-        </p>
+               </p>
       )}
     </div>
   );

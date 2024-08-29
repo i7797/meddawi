@@ -28,7 +28,7 @@ function NavBar() {
             <div className="flex  mt-4">
             <li className="  hidden lg:block  text-xl rounded-[25px]  px-4  py-2  h-10 text-center w-[30px] lg:w-36  font-extralight">
             
-              <li className="  text-xl rounded-[25px] px w-[130px] lg:w-full text-center">
+              <li className="  text-xl rounded-[25px]  w-[130px] lg:w-full text-center  ">
                      <a href='#footer' > {t('Conect Us')} </a>
                     </li>
             </li>
@@ -90,7 +90,7 @@ function NavBar() {
                     </li>
                  
 
-                    <li className="  text-xl rounded-[25px] px w-[130px] lg:w-full text-center">
+                    <li className="  text-xl rounded-[25px] p-3  w-[130px] lg:w-full text-center">
                      <a href='#home' > {t('Home')} </a>
                     </li>
                 </ul>

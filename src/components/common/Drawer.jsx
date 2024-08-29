@@ -19,7 +19,6 @@ import GTranslateIcon from '@mui/icons-material/GTranslate';import LogoutIcon fr
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import InfoIcon from "@mui/icons-material/Info";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import DashboardCustomizeIcon from "@mui/icons-material/DashboardCustomize";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
@@ -138,7 +137,28 @@ const Navbar = () => {
           </ListItem>
         </List>
         <Divider />
+
+
+        
+<ListItem disablePadding>
+            <ListItemButton  onClick={toggleArEn}>
+              <ListItemIcon>
+                <GTranslateIcon sx={{ color: "#181D3D" }} />
+              </ListItemIcon>
+            
+                {" "}
+                <ListItemText
+                  sx={{ color: "#181D3D" }}
+                  primary=
+                  {i18n.language === "en" ? t("Arabic") : t("English")}
+
+                />{" "}
+            
+            </ListItemButton>
+          </ListItem>
+          
         <List>
+
           {currentUser ? (
             <>
               <ListItem disablePadding onClick={handleLogout}>
@@ -169,22 +189,6 @@ const Navbar = () => {
             </ListItem>
           )}
 
-<ListItem disablePadding>
-            <ListItemButton  onClick={toggleArEn}>
-              <ListItemIcon>
-                <GTranslateIcon sx={{ color: "#181D3D" }} />
-              </ListItemIcon>
-            
-                {" "}
-                <ListItemText
-                  sx={{ color: "#181D3D" }}
-                  primary=
-                  {i18n.language === "en" ? t("Arabic") : t("English")}
-
-                />{" "}
-            
-            </ListItemButton>
-          </ListItem>
 
          
         </List>
@@ -208,7 +212,7 @@ const Navbar = () => {
             ))} */}
       <div></div>
       <MenuIcon
-        className="ml-3 mt-3 text-white"
+        className="ml-3 mt-3  text-white"
         onClick={toggleDrawer("left", true)}
       />
 

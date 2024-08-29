@@ -1,138 +1,81 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
-import '../../assets/css/Style.css';
-import EmergencyOerder from '../bottons/EmergencyOerder';
 import axios from 'axios';
+import '../../assets/css/Style.css';
 import {useTranslation} from "react-i18next"
+import EmergencyOerder from '../bottons/EmergencyOerder';
 
-
-export default function EmergencyForm() {
+export default function AskCareForm() {
   const { i18n,t}=useTranslation();
 
-  const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
-  const [caseOfEmergency, setEmergencyCase] = useState('');
-  const [addressOfPatient, setAddress] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    address: '',
+    caseOfEmergency: '',
+  });
 
-  const [ipAddress , setIpAddress] = useState('')
-  const [geoInfo , setGeoInfo] = useState ({}) 
-
-  const getvisitorIP = async()=>{
-    try {
-       const response = await fetch('https://api.ipify.org')
-       const data = await response.text()
-       setIpAddress(data )
-    } catch (error) {
-      console.error('failed to fetch ip:' , error )
-    }
-    console.log(ipAddress)
-    
-    
-      }
-    
-    
-    const fetchIpInfo = async ()=>{
-      try {
-        const response = await fetch(`http://ip-api.com/json/${ipAddress}`)
-        const data = await response.json()
-        setGeoInfo(data)
-      } catch (error) {
-        console.error('failed to get user location' , error)
-      }
-      
-    }
-
-    //-----------------------
-  const sendMessage = () => {
-  const url = `https://web.whatsapp.com/send?phone=${phoneNo}&text=${patientLocation}&app_absent=0`;
-  window.open(url, '_blank');
-};
-//-----------------------
-    
-    useEffect(()=>{
-      getvisitorIP()
-      fetchIpInfo()
-  
-    },[])
-    console.log(geoInfo)
-    const lat = geoInfo.lat
-    const long = geoInfo.lon
-    const phoneNo = '07700443588'
-    const patientLocation =`https://www.google.com/maps/@${lat},${long}`
-
-
-  const handleSubmit = async (e) => {
-    
-    e.preventDefault();
-    const phonePattern = /^\d{11}$/;
-    if (!phonePattern.test(phone)) {
-      alert('Please enter a valid 11-digit phone number.');
-      return;
-    }
-
-    try {
-      await axios.post('http://localhost:5000/api/emergency', {
-        name,
-        phone,
-        caseOfEmergency,
-        addressOfPatient,
-        
-      });
-      console.log('Your data has been sent');
-      sendMessage(); 
-    } catch (e) {
-      console.error('Error submitting data', e);
-    }
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      console.log('Submitting data:', formData); 
+      const response = await axios.post('https://x8ki-letl-twmt.n7.xano.io/api:bpZzgRy-/emergencytablePost', formData);
+      console.log('Form submitted successfully:', response.data);
+    } catch (error) {
+      console.error('Error submitting form:', error.response ? error.response.data : error.message);
+    }
+  };
+  
+
   return (
-    <div className='flex flex-col items-center w-full h-full gap-5 lg:w-1/2'>
-      
-      <form onSubmit={handleSubmit} className='flex flex-col gap-5 w-full items-center'>
-
-
-        <TextField
-          className='w-4/5 border-solid border-2 border-[#181D3D]'
-          id="outlined-basic" 
-          label={t("Name")} 
-          variant="outlined" 
-          type='text'
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        <TextField 
-          id="outlined-basic" 
-          className='w-4/5 border-solid border-2 border-[#181D3D]'
-          label={t("Phone-Number")} 
-          variant="outlined" 
-          type='number'
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          required
-        />
-        <TextField 
-          id="outlined-basic" 
-          className='w-4/5 border-solid border-2 border-[#181D3D]'
-          label={t("Disease-condition")} 
-          variant="outlined" 
-          type='text'
-          value={caseOfEmergency}
-          onChange={(e) => setEmergencyCase(e.target.value)}
-          required
-        />
-        <TextField 
-          id="outlined-basic" 
-          className='w-4/5 border-solid border-2 border-[#181D3D]'
-          label={t("Address")} 
-          variant="outlined" 
-          type='text'
-          value={addressOfPatient}
-          onChange={(e) => setAddress(e.target.value)}
-          required
-        />
-        <EmergencyOerder />
-      </form>
-    </div>
+    <form 
+      onSubmit={handleSubmit} 
+      className='w-full h-[70%] flex flex-col items-center justify-start gap-[20px]'
+    >
+      <TextField
+        className='inputText w-[70%] border-solid border-2 border-[#181D3D]'
+        id="outlined-name"
+        name="name"
+        label={t("Name")}
+        variant="outlined"
+        value={formData.name}
+        onChange={handleChange}
+      />
+      <TextField
+        id="outlined-phone"
+        className='w-[70%]'
+        name="phone"
+        label={t("Phone-Number")}
+        variant="outlined"
+        value={formData.phone}
+        onChange={handleChange}
+      />
+      <TextField
+        id="outlined-address"
+        className='w-[70%]'
+        name="address"
+        label={t("Address")}
+        variant="outlined"
+        value={formData.address}
+        onChange={handleChange}
+      />
+       <TextField
+        id="outlined-caseOfEmergency"
+        className='w-[70%]'
+        name="caseOfEmergency"
+        label={t("caseOfEmergency")}
+        variant="outlined"
+        value={formData.caseOfEmergency}
+        onChange={handleChange}
+      />
+      <EmergencyOerder />
+    </form>
   );
 }
