@@ -13,12 +13,12 @@ export default function ServiceData() {
         },[])
 
   return (
-    <div className='flex'>
+    <div className='w-full h-[83vh] rounded-3xl'>
     <div className=''>
-    <h1>هذا الجدول خاص ببيانات الخدمة المستمرة</h1>
-    <table className=''>
-      <thead className=''>
+    <table className='w-full h-[90%] rounded-3xl'>
+      <thead className='text-black py-3 px-5 border-b-2 border-blue-200 h-[3rem]'>
          <tr >
+          <th>Id</th>
           <th className=''>الاسم</th>
           <th className=''>رقم الهاتف</th>
           <th className=''>الحالة المرضية</th>
@@ -30,12 +30,13 @@ export default function ServiceData() {
       <tbody id='dataArea' className=' text-center '>
      {dailyService.map(service =>{
       console.log('this is daily service data' , dailyService)
-        return <tr className='cursor-pointer duration-300'>
-          <td className='py-3 px-5  border-b-2 border-solid border-black'>{service.name}</td>
-          <td className='border-2 border-b-2 border-solid border-black'>{service.phone}</td>
-          <td className='border-2 border-b-2 border-solid border-black'>{service.Chooestheservice }</td>
-          <td className='border-2 border-b-2 border-solid border-black'>{service.NumberOFvisits}</td>
-          <td className='border-2 border-b-2 border-solid border-black'>{service.address}</td>
+        return <tr className='cursor-pointer duration-300 border-b-2 border-blue-200'>
+          <td>{service.id}</td>
+          <td className='py-3 px-5'>{service.name}</td>
+          <td className='py-3 px-5'>{service.phone}</td>
+          <td className='py-3 px-5'>{service.Chooestheservice }</td>
+          <td className='py-3 px-5'>{service.NumberOFvisits}</td>
+          <td className='py-3 px-5'>{service.address}</td>
          </tr>
      })}
       </tbody>

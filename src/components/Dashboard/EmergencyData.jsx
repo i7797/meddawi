@@ -11,7 +11,6 @@ useEffect(()=>{
 },[])
   return (
     <div className='w-full h-[83vh] rounded-3xl'>
-   
     <table className='  w-full h-[90%] rounded-3xl'>
     <thead className='text-black py-3 px-5 border-b-2 border-blue-200 h-[3rem]'>
        <tr>

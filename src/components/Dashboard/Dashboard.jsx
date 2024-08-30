@@ -55,14 +55,6 @@ function Dashboard() {
               </Link>
               <br />
               <br />
-              <Link
-                to="/nurse"
-                className="py-2 px-4 bg-slate-500 text-white w-44 mt-5 hover:bg-gray-200 rounded"
-              >
-                Nurse Home Page
-              </Link>
-              <br />
-              <br />
               <button
                 className="bg-blue-900  text-white py-2 px-4 rounded w-44  mt-5 "
                 onClick={() => setShowEmergencyData(!showEmergencyData)}
@@ -107,7 +99,7 @@ function Dashboard() {
               )}
             </div>
 
-            <div className="bg-white p-2 w-[20%] mr-3 h-[90%] rounded-3xl shadow-lg flex flex-col justify-between "> 
+            <div className="bg-white p-2 w-[20%] mr-3 h-[90%] rounded-3xl shadow-lg flex flex-col justify-evenly "> 
               <div className="bg-indigo-100 h-20 rounded-3xl flex items-center ">
                 <img
                   src={alarm}
@@ -127,30 +119,6 @@ function Dashboard() {
                 />
                 <span className=" text-gray-700 font-semibold">
                   Daily service request:{dailyServiceRequest}
-                </span>
-              </div>
-
-              <div className="bg-indigo-100 p-6  rounded-3xl flex items-center">
-                <img
-                  src={alarm}
-                  alt="alarm image "
-                  className="h-16 w-16 mr-4"
-                />
-                <span className=" text-gray-700 font-semibold">
-                  {" "}
-                  patien login
-                </span>
-              </div>
-
-              <div className="bg-indigo-100 p-6  rounded-3xl flex items-center">
-                <img
-                  src={alarm}
-                  alt="alarm image "
-                  className="h-16 w-16 mr-4"
-                />
-                <span className=" text-gray-700 font-semibold">
-                  {" "}
-                  nurse login
                 </span>
               </div>
             </div>
