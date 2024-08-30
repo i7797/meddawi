@@ -6,6 +6,7 @@ import ServiceData from "./ServiceData";
 import admin from "../../assets/images/Nursing home-pana.svg";
 import image from "../../assets/images/dashboardImage.svg";
 import alarm from "../../assets/images/alarm.png";
+import service from  "../../assets/images/cService.png";
 function Dashboard() {
 
   const [emergencyRequests, setEmergencyRequests] = useState(0);
@@ -113,7 +114,7 @@ function Dashboard() {
 
               <div className="bg-indigo-100 h-20  rounded-3xl flex items-center">
                 <img
-                  src={alarm}
+                  src={service}
                   alt="alarm image "
                   className="h-12 w-12 mr-4"
                 />
