@@ -10,21 +10,23 @@ useEffect(()=>{
     .catch(err=>console.log(err))
 },[])
   return (
-    <div>
-    <h1>هذا الجدول خاص بالحالات الطارئة</h1>
-    <table className='shadow-2xl border-cyan-200 '>
-    <thead className='text-white py-3 px-5'>
+    <div className='w-full h-[83vh] rounded-3xl'>
+   
+    <table className='  w-full h-[90%] rounded-3xl'>
+    <thead className='text-black py-3 px-5 border-b-2 border-blue-200 h-[3rem]'>
        <tr>
-        <th className='bg-cyan-800'>الاسم</th>
-        <th className='bg-cyan-800'>رقم الهاتف</th>
-        <th className='bg-cyan-800'>الحالة المرضية</th>
+        <th>Id</th>
+        <th className=''>الاسم</th>
+        <th className=''>رقم الهاتف</th>
+        <th className=''>الحالة المرضية</th>
    
        </tr>
     </thead>
-    <tbody id='dataArea' className='bg-cyan-900 text-center'>
+    <tbody id='dataArea' className=' text-center'>
    { cases.map(item =>{
     console.log('this is emergency service data' , cases)
-      return <tr className='bg-cyan-200 cursor-pointer duration-300'>
+      return <tr className=' cursor-pointer duration-300 border-b-2 border-blue-200 '>
+        <td>{item.id}</td>
         <td className='py-3 px-5'>{item.name}</td>
         <td>{item.phone}</td>
         <td>{item.caseOfEmergency}</td>

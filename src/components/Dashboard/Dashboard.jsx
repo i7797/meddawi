@@ -27,8 +27,8 @@ function Dashboard() {
   const [showDailyServiceData, setShowDailyServiceData] = useState(false);
 
   return (
-    <div className="bg-gradient-to-br from-pink-200 via-blue-900 to-blue-300">
-      <header className=" flex items-center justify-between mb-6">
+    <div className="flex justify-between flex-col items-center w-screen h-screen bg-gradient-to-br from-pink-200 via-blue-900 to-blue-300 ">
+      <header className=" flex items-center justify-between mb-6 w-full">
         <h1 className=" text-3xl font-blod  text-blue- ml-7">Dashboard</h1>
         <div className=" flex items-center">
           <button className="bg-gray-200 px-4 py-2 rounded mr-4 mt-4">
@@ -36,8 +36,8 @@ function Dashboard() {
           </button>
         </div>
       </header>
-      <div className=" block   lg:flex lg:h-screen   ">
-        <div className="bg-white w-92 md:w-92 lg:w-64 shadow-lg flex rounded-3xl m-4  flex-col items-center py-4">
+      <div className=" block  w-full lg:flex lg:h-[90%]  ">
+        <div className="bg-white w-92 md:w-92 lg:w-64 shadow-lg flex rounded-3xl mr-3 h-[95%]  flex-col items-center py-4">
           <h1 className="font-extrabold mb-4 text-blue-900 text-2xl">
             MEDDAWI
           </h1>
@@ -86,9 +86,9 @@ function Dashboard() {
           </nav>
         </div>
 
-        <main className="block lg:flex-1 p-6">
-          <section className="space-y-5 md:grid md:grid-cols-2 md:gap-6  mt-10 lg:grid lg:grid-cols-2 lg:gap-6 mb-6">
-            <div className=" bg-white p-6 rounded-3xl  shadow-lg">
+        <main className=" w-full flex ">
+          <section className="flex w-full justify-between">
+            <div className=" bg-white h-[95%] w-3/4 rounded-3xl flex flex-col"> 
               {showEmergencyData || showDailyServiceData ? (
                 <div>
                   {showEmergencyData && <EmergencyData />}
@@ -96,34 +96,34 @@ function Dashboard() {
                 </div>
               ) : (
                 <div className="text-center">
-                  <h1 className="text-xl font-bold mb-4">
+                  <h1 className="text-xl font-bold ">
                     Hello,
                     <br />
                     Maryam & Noor
                   </h1>
-                  <p className="mb-4">What we will do today?</p>
-                  <img src={image} alt="welcome image" className="w-full" />
+                  <p className="">What we will do today?</p>
+                  <img src={image} alt="welcome image" className="w-[90%] h-[60%]" />
                 </div>
               )}
             </div>
 
-            <div className="bg-white p-8 rounded-3xl shadow-lg space-y-10 ">
-              <div className="bg-indigo-100 p-6  rounded-3xl flex items-center">
+            <div className="bg-white p-2 w-[20%] mr-3 h-[90%] rounded-3xl shadow-lg flex flex-col justify-between "> 
+              <div className="bg-indigo-100 h-20 rounded-3xl flex items-center ">
                 <img
                   src={alarm}
                   alt="alarm image "
-                  className="h-16 w-16 mr-4"
+                  className="h-12 w-12 mr-4"
                 />
                 <span className=" text-gray-700 font-semibold">
                   Emergency requests: {emergencyRequests}
                 </span>
               </div>
 
-              <div className="bg-indigo-100 p-6  rounded-3xl flex items-center">
+              <div className="bg-indigo-100 h-20  rounded-3xl flex items-center">
                 <img
                   src={alarm}
                   alt="alarm image "
-                  className="h-16 w-16 mr-4"
+                  className="h-12 w-12 mr-4"
                 />
                 <span className=" text-gray-700 font-semibold">
                   Daily service request:{dailyServiceRequest}
