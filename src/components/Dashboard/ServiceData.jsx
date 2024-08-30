@@ -7,35 +7,35 @@ export default function ServiceData() {
 
         //fetch daily services data
         useEffect(()=>{
-        axios.get('http://localhost:5000/api/daily-services')
+        axios.get('https://x8ki-letl-twmt.n7.xano.io/api:bpZzgRy-/dailyserviceGet')
         .then(dailyService => setDailyService(dailyService.data))
         .catch(err => console.log(err))
         },[])
 
   return (
-    <div className='flex bg-blue-200 '>
-    <div className='bg-red-200'>
+    <div className='flex'>
+    <div className=''>
     <h1>هذا الجدول خاص ببيانات الخدمة المستمرة</h1>
-    <table className='shadow-2xl border-cyan-200 '>
-      <thead className='text-white py-3 px-5'>
-         <tr>
-          <th className='bg-cyan-800'>الاسم</th>
-          <th className='bg-cyan-800'>رقم الهاتف</th>
-          <th className='bg-cyan-800'>الحالة المرضية</th>
-          <th className='bg-cyan-800'>عدد مرات الزيارة</th>
-          <th className='bg-cyan-800'> عنوان السكن</th>
+    <table className=''>
+      <thead className=''>
+         <tr >
+          <th className=''>الاسم</th>
+          <th className=''>رقم الهاتف</th>
+          <th className=''>الحالة المرضية</th>
+          <th className=''>عدد مرات الزيارة</th>
+          <th className=''> عنوان السكن</th>
           
          </tr>
       </thead>
-      <tbody id='dataArea' className='bg-cyan-900 text-center'>
+      <tbody id='dataArea' className=' text-center '>
      {dailyService.map(service =>{
       console.log('this is daily service data' , dailyService)
-        return <tr className='bg-cyan-200 cursor-pointer duration-300'>
-          <td className='py-3 px-5'>{service.paientName}</td>
-          <td>{service.phone}</td>
-          <td>{service.healthCase}</td>
-          <td>{service.noOfVisits}</td>
-          <td>{service.address}</td>
+        return <tr className='cursor-pointer duration-300'>
+          <td className='py-3 px-5  border-b-2 border-solid border-black'>{service.name}</td>
+          <td className='border-2 border-b-2 border-solid border-black'>{service.phone}</td>
+          <td className='border-2 border-b-2 border-solid border-black'>{service.Chooestheservice }</td>
+          <td className='border-2 border-b-2 border-solid border-black'>{service.NumberOFvisits}</td>
+          <td className='border-2 border-b-2 border-solid border-black'>{service.address}</td>
          </tr>
      })}
       </tbody>

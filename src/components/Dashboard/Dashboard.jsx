@@ -7,6 +7,22 @@ import admin from "../../assets/images/Nursing home-pana.svg";
 import image from "../../assets/images/dashboardImage.svg";
 import alarm from "../../assets/images/alarm.png";
 function Dashboard() {
+
+  const [emergencyRequests, setEmergencyRequests] = useState(0);
+  const [dailyServiceRequest, setDailyServiceRequest] = useState(0);
+
+  useEffect(() => {
+    fetch('https://x8ki-letl-twmt.n7.xano.io/api:bpZzgRy-/emergencytableGet')
+      .then(response => response.json())
+      .then(data => setEmergencyRequests(data.length));
+  }, []);
+
+  useEffect(() => {
+    fetch('https://x8ki-letl-twmt.n7.xano.io/api:bpZzgRy-/dailyserviceGet')
+      .then(response => response.json())
+      .then(data => setDailyServiceRequest(data.length));
+  }, []);
+
   const [showEmergencyData, setShowEmergencyData] = useState(false);
   const [showDailyServiceData, setShowDailyServiceData] = useState(false);
 
@@ -99,7 +115,7 @@ function Dashboard() {
                   className="h-16 w-16 mr-4"
                 />
                 <span className=" text-gray-700 font-semibold">
-                  Emergency request
+                  Emergency requests: {emergencyRequests}
                 </span>
               </div>
 
@@ -110,7 +126,7 @@ function Dashboard() {
                   className="h-16 w-16 mr-4"
                 />
                 <span className=" text-gray-700 font-semibold">
-                  Daily service request
+                  Daily service request:{dailyServiceRequest}
                 </span>
               </div>
 

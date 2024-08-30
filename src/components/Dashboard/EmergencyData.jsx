@@ -5,7 +5,7 @@ function EmergencyData() {
     const [cases , setCases] = useState([])
     //fetch emergency data
 useEffect(()=>{
-    axios.get('http://localhost:5000/api/emergency-data')
+    axios.get('https://x8ki-letl-twmt.n7.xano.io/api:bpZzgRy-/emergencytableGet')
     .then(cases => setCases(cases.data))
     .catch(err=>console.log(err))
 },[])
@@ -28,7 +28,6 @@ useEffect(()=>{
         <td className='py-3 px-5'>{item.name}</td>
         <td>{item.phone}</td>
         <td>{item.caseOfEmergency}</td>
-       
        </tr>
    })}
    </tbody>
